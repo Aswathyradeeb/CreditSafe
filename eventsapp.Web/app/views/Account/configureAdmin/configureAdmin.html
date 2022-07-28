@@ -1,0 +1,54 @@
+﻿<form name="Form">
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="cancel()">x</button>
+        <h4 class="modal-title">Configure Admin</h4>
+    </div>
+    <div class="modal-body row">
+        <div class="col-md-12 m-b-5">
+            <label class="col-md-4">Name: </label>
+            <div class="col-md-8 has-feedback">{{userDetails.firstName}}</div>
+        </div>
+        <div class="col-md-12 m-b-5">
+            <label class="col-md-4">Role: </label>
+            <div class="col-md-8 has-feedback">{{userDetails.roles[0].name}}</div>
+        </div>
+        <div class="col-md-12 m-b-5">
+            <label class="col-md-4">Email: </label>
+            <div class="col-md-8 has-feedback">{{userDetails.email}}</div>
+        </div>
+        <div class="col-md-12 m-b-5">
+            <label class="col-md-4">Mobile: </label>
+            <div class="col-md-8 has-feedback">{{userDetails.phoneNumber}}</div>
+        </div>
+        <div class="col-md-12 m-b-5">
+            <label class="col-md-4">No Of Events </label>
+            <div class=" col-md-8">
+                <ui-select ng-model="userDetailsObj.noOfEvents" validator="required" name="newPassword" theme="bootstrap" class="text-left">
+                    <ui-select-match placeholder="Number of events">{{$select.selected}}</ui-select-match>
+                    <ui-select-choices repeat="num in noOfEvents | filter: $select.search">
+                        <div ng-bind-html="num | highlight: $select.search"></div>
+                    </ui-select-choices>
+                </ui-select>
+                <!--<input type="text" name="newPassword" placeholder="No Of Events" autocomplete="off"
+                       class="form-control" ng-model="userDetailsObj.noOfEvents" validator="required" />-->
+            </div>
+            </div>
+        <div class="col-md-12 m-b-5">
+            <label class="col-md-4">Is Approved</label>
+            <div class=" col-md-8">
+                <div class="radio radio-info radio-inline">
+                    <input type="radio" id="isApproved1" ng-model="userDetailsObj.isApproved" ng-value="true" name="isApproved" >
+                    <label for="inlineRadio1"> Yes </label>
+                </div>
+                <div class="radio radio-info radio-inline">
+                    <input type="radio" id="isApproved2" ng-model="userDetailsObj.isApproved" ng-value="false" name="isApproved" >
+                    <label for="inlineRadio1"> No </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer mt">
+        <button ng-click="cancel()" class="btn btn-danger">{{'general.cancel' | translate}}</button>
+        <button ng-click="ok()" class="btn btn-primary" data-translate="general.ok" validation-submit="Form"></button>
+    </div>
+</form>

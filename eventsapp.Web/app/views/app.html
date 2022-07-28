@@ -1,0 +1,17 @@
+<!-- top navbar-->
+<header ng-include="'app/views/cached/top-navbar.html'" ng-class="app.theme.topbar"></header>
+<!-- Sidebar-->
+<aside ng-include="'app/views/cached/sidebar.html'" ng-class="app.theme.sidebar"></aside>
+
+<!-- Main-->
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container" style="min-height: 800px;">
+            <div ui-view="" autoscroll="false" ng-class="app.views.animation" class="app"></div>
+            <toaster-container toaster-options="{'close-button': true}"></toaster-container>
+        </div>
+    </div>
+    <!-- Page footer-->
+    <footer ng-include="'templates/footer.html'" class="footer text-right"></footer>
+</div>

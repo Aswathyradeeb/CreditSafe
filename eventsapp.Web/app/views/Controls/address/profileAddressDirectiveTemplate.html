@@ -1,0 +1,54 @@
+﻿<div class="row form-group">
+    <div class="col-md-6">
+        <label>{{'address.country' | translate}}<span class="text-danger">*</span></label>
+        <ui-select ng-model="address.country" name="country" validator="required" ng-disabled="viewMode" ng-change="fn.onChangeCountry()">
+            <ui-select-match placeholder="{{'address.country' | translate}}">{{$select.selected | localizeString : "nameEn" : "nameAr"}}</ui-select-match>
+            <ui-select-choices repeat="country in countries  | propsFilter: {nameEn : $select.search ,nameAr: $select.search}">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-bind-html="country  | localizeString : 'nameEn' : 'nameAr' | highlight: $select.search"></div>
+                    </div>
+                </div>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+    <div class="col-md-6">
+        <label>{{'address.city' | translate}}<span class="text-danger">*</span></label>
+        <ui-select ng-model="address.state" name="city" validator="required" ng-disabled="viewMode" ng-change="showMap()">
+            <ui-select-match placeholder="{{'address.city' | translate}}">{{$select.selected | localizeString : "nameEn" : "nameAr"}}</ui-select-match>
+            <ui-select-choices repeat="state in address.country.states | propsFilter: {nameEn : $select.search ,nameAr: $select.search}">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-bind-html="state  | localizeString : 'nameEn' : 'nameAr' | highlight: $select.search"></div>
+                    </div>
+                </div>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+    <div class="col-md-6">
+        <label>{{'address.Street' | translate}}<span class="text-danger">*</span></label>
+        <input id="input-id-1" ng-model="address.street" type="text" class="form-control" validator="required" name="Street" ng-disabled="viewMode" ng-change="showMap()" />
+    </div>
+    <div class="col-md-6"></div>
+</div>
+<div class="col-md-12"><br /></div>
+<div class="container-fluid row" ng-show="isShowMap">
+    <div id="dvMap" style="width: 100%; height: 500px; margin: auto;"></div>
+</div>
+<div class="row form-group">
+    <div class="col-md-6">
+        <label>{{'address.lat' | translate}}<span class="text-danger">*</span></label>
+        <input type="text" id="input-id-1" ng-model="address.lat" class="form-control" validator="required" name="lat" ng-disabled="viewMode" />
+    </div>
+    <div class="col-md-6">
+        <label>{{'address.lng' | translate}}<span class="text-danger">*</span></label>
+        <input id="input-id-1" ng-model="address.lng" type="text" class="form-control" validator="required" name="lng" ng-disabled="viewMode" />
+    </div>
+</div>
+
+<div class="row form-group">
+    <div class="col-md-6">
+        <label>{{'address.locationPhoto' | translate}}</label>
+        <uploading-files copyUrl="address.locationPhoto" copyUrlFullPath="address.locationPhotoFullPath" url="locationPhotoPath" isreadonly="viewMode" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+    </div>
+</div>

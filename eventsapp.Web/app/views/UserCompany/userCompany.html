@@ -1,0 +1,64 @@
+﻿<div ng-controller="userCompanyController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="mdi mdi-home-modern"></i> {{'company.companyDetails' | translate}}  </h4>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel panel-body">
+        <form role="form" class="mb-lg form-horizontal" name="companyForm">
+            <div class="col-md-12 alert alert-danger" ng-if="!company.id && vm.user.roleName == 2">
+                <i class="fa fa-info-circle"></i> {{'company.companyApplyMsg' | translate}} <span ng-if="vm.event.id!=null" class="text-bold"> - {{vm.event | localizeString}}</span>
+            </div>
+            <div class="col-md-12 alert alert-danger" ng-if="!company.id && vm.user.roleName == 3">
+                <i class="fa fa-info-circle"></i>{{'company.companyReqdMsg' | translate}}
+            </div>
+            <div class="col-md-12">
+                <label>{{'company.companyCode' | translate}}  </label>
+                <input ng-model="company.companyCode" placeholder="{{'company.companyCode' | translate}}" disabled="disabled" autocomplete="off" class="form-control" name="nameEn" />
+            </div>
+            <div class="col-md-12">
+                <label>{{'company.nameEn' | translate}} <span class="text-danger">*</span></label>
+                <input ng-model="company.nameEn" placeholder="{{'company.nameEn' | translate}}" autocomplete="off" class="form-control" name="nameEn" validator="required" />
+            </div>
+            <div class="col-md-12">
+                <label>{{'company.nameAr' | translate}} <span class="text-danger">*</span></label>
+                <input ng-model="company.nameAr" id="nameAr" ng-change="$root.setArabicInit()" placeholder="{{'company.nameAr' | translate}}" autocomplete="off" class="form-control" name="nameAr" validator="required"/>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-5">
+                    <label>{{'company.photo' | translate}}</label>
+                    <uploading-files copyUrl="company.photo" copyUrlFullPath="company.photoFullPath" url="PhotoPath" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label>{{'company.phone' | translate}}<span class="text-danger">*</span></label>
+                <input ng-model="company.phone" placeholder="{{'company.phone' | translate}}" autocomplete="off" class="form-control" name="name" validator="required, phoneNumber" />
+            </div>
+            <div class="col-md-12">
+                <label>{{'company.email' | translate}}<span class="text-danger">*</span></label>
+                <input ng-model="company.email" placeholder="{{'company.email' | translate}}" ng-disabled="true" autocomplete="off" class="form-control" name="name" validator="required, email" />
+            </div>
+            <div class="col-xs-12">
+                <label>{{'register.selectPreferredLanguages' | translate}}<span class="text-danger">*</span></label>
+                <ui-select ng-model="vm.preferredLanguagesList" validator="required" name="preferredLanguages" theme="bootstrap" class="text-left" multiple>
+                    <ui-select-match placeholder="{{'register.selectPreferredLanguages' | translate}}">
+                        {{$item | localizeString}}
+                    </ui-select-match>
+                    <ui-select-choices repeat="language in vm.languages | filter: $select.search">
+                        <div>{{language | localizeString}}</div>
+                    </ui-select-choices>
+                </ui-select>
+                <label class="text-danger" ng-if="!vm.preferredLanguagesList.length && vm.showRequiredLanguageError">{{'general.required' | translate}}</label>
+            </div>
+            <div class="col-md-12">
+                <div class="col-sm-12">
+                    <profile-address ng-model="company.address"></profile-address>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-sm-12">
+                    <button ng-click="saveCompany()" type="submit" validation-submit="companyForm" class="btn btn-primary pull-right" data-translate="general.save"></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

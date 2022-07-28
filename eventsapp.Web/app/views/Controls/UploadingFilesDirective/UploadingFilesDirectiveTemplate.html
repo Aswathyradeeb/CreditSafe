@@ -1,0 +1,38 @@
+﻿<div class="row" ng-if="copyurlfullpath">
+    <div class="col-md-12">
+        <div ng-if="copyurlfullpath.split('.').pop().toLowerCase() =='jpg' || copyurlfullpath.split('.').pop().toLowerCase() =='png' || copyurlfullpath.split('.').pop().toLowerCase() =='jpeg'" chained-animation="fadeInUp">
+            <a class="col-md-12" href="{{copyurlfullpath}}" target="_blank" title="Unsplash images">
+                <img src="{{copyurlfullpath}}" alt="thumb" title="Unsplash images" class="thumbnail" style="max-height:200px;width: 100%;" />
+            </a>
+        </div>
+        <a class="col-md-12" target="_blank" ng-if="copyurlfullpath.split('.').pop().toLowerCase() !=='jpg' && copyurlfullpath.split('.').pop().toLowerCase() !=='png' && copyurlfullpath.split('.').pop().toLowerCase() !=='jpeg'" href="{{copyurlfullpath}}">
+            <em ng-if="copyurlfullpath.indexOf('.pdf') !== -1 || copyurlfullpath.indexOf('.PDF') !== -1" class="fa fa-5x fa-file-pdf-o"></em>
+            <em ng-if="copyurlfullpath.indexOf('.docx') !== -1 || copyurlfullpath.indexOf('.doc') !== -1 || copyurlfullpath.indexOf('.DOCX') !== -1 || copyurlfullpath.indexOf('.DOC') !== -1" class="fa fa-5x fa-file-word-o"></em>
+            <em ng-if="copyurlfullpath.indexOf('.xls') !== -1 || copyurlfullpath.indexOf('.xlsx') !== -1 || copyurlfullpath.indexOf('.XLS') !== -1 || copyurlfullpath.indexOf('.XLSX') !== -1" class="fa fa-5x fa-file-excel-o"></em>
+            <em ng-if="copyurlfullpath.indexOf('.pptx') !== -1 || copyurlfullpath.indexOf('.ppt') !== -1 || copyurlfullpath.indexOf('.PPTX') !== -1 || copyurlfullpath.indexOf('.PPT') !== -1" class="fa fa-5x fa-file-powerpoint-o"></em>
+        </a>
+    </div>
+    <div class="col-md-12">
+        <button type="button" ripple="" class="btn btn-danger pull-left" ng-click="uploadAgain()" ng-disabled="isreadonly">
+            <i class="fa fa-trash"></i> {{'general.uploadAgain' | translate}}<span class="ripple"></span>
+        </button>
+    </div>
+</div>
+
+<div ng-if="uploader && copyurlfullpath == undefined">
+    <input filestyle="" type="file" data-icon-name="icon-upload" data-button-text="{{'general.UploadFile' | translate}}" data-class-button="btn btn-default" accept="{{fileType}}"
+           data-classinput="form-control inline" nv-file-select="" uploader="uploader" class="form-control" ng-model="copyurl" />
+</div>
+
+<div ng-if="uploader && copyurlfullpath == undefined">
+    <div><i class="fa fa-info-circle" aria-hidden="true"></i> <span>{{'general.uploadFileTypes' | translate}} ({{fileType}}). </span><span>{{'general.uploadFileSize' | translate}} ({{maxsizeMB}}) MB. </span></div>
+</div>
+<div>
+    <div class="alert alert-danger" ng-if="incorrectType">
+        <i class="fa fa-times-circle-o"></i>{{'general.uploadFileTypeMsg' | translate}}
+    </div>
+    <div class="alert alert-danger" ng-if="incorrectSize">
+        <i class="fa fa-times-circle"></i>{{'general.uploadFileSizeMsg' | translate}} 
+    </div>
+</div>
+

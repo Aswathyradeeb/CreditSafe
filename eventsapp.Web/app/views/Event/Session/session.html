@@ -1,0 +1,24 @@
+﻿<div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="closeModal()">x</button>
+    <h4 id="myModalLabel" class="modal-title" data-translate="event.session"></h4>
+</div>
+<div class="modal-body">
+    <form role="form" class="mb-lg form-horizontal" name="form">
+        <div class="row form-group">
+            <label>{{'session.nameEn' | translate}} <span ng-if="$root.englishPreferredLanguage" class="text-danger"> *</span> </label>
+            <input type="text" class="form-control" name="nameEn" validator="{{$root.englishPreferredLanguage == true ? 'required' :'null'}}" placeholder="{{'session.nameEn' | translate}}" autocomplete="off" ng-model="session.nameEn"  />
+        </div>
+        <div class="row form-group">
+            <label>{{'session.nameAr' | translate}} <span ng-if="$root.arabicPreferredLanguage" class="text-danger"> *</span> </label>
+            <input type="text" class="form-control" name="nameAr" id="nameAr" ng-change="$root.setArabicInit()" placeholder="{{'session.nameAr' | translate}}" autocomplete="off" ng-model="session.nameAr" validator="{{$root.arabicPreferredLanguage == true ? 'required' :'null'}}"/>
+        </div>
+        <!--<div class="row form-group">
+            <label>{{'session.orderNumber' | translate}} <span class="text-danger"> *</span> </label>
+            <input class="form-control" type="number" name="orderNumber" placeholder="{{'session.orderNumber' | translate}}" validator="required" autocomplete="off" ng-model="session.orderNumber"/>
+        </div>-->
+    </form>
+</div>
+<div class="modal-footer">
+    <button ng-click="ok()" class="btn btn-primary" validation-submit="form" data-translate="general.save"></button>
+    <button ng-click="closeModal()" class="btn btn-danger" data-translate="general.cancel"></button>
+</div>

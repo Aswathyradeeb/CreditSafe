@@ -1,0 +1,2386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eventsappModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="eventsappEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LoggedUserConnections" EntityType="eventsappModel.LoggedUserConnection" />
+    <EntitySet Name="PreferredLanguages" EntityType="eventsappModel.PreferredLanguage" />
+    <EntitySet Name="Roles" EntityType="eventsappModel.Role" />
+    <EntitySet Name="UserActionsTakens" EntityType="eventsappModel.UserActionsTaken" />
+    <EntitySet Name="UserClaims" EntityType="eventsappModel.UserClaim" />
+    <EntitySet Name="UserCompanies" EntityType="eventsappModel.UserCompany" />
+    <EntitySet Name="UserLogins" EntityType="eventsappModel.UserLogin" />
+    <EntitySet Name="Users" EntityType="eventsappModel.User" />
+    <EntitySet Name="Addresses" EntityType="eventsappModel.Address" />
+    <EntitySet Name="Companies" EntityType="eventsappModel.Company" />
+    <EntitySet Name="IOSDevices" EntityType="eventsappModel.IOSDevice" />
+    <EntitySet Name="Persons" EntityType="eventsappModel.Person" />
+    <EntitySet Name="Agenda" EntityType="eventsappModel.Agendum" />
+    <EntitySet Name="AgendaSessions" EntityType="eventsappModel.AgendaSession" />
+    <EntitySet Name="AthleteVouchers" EntityType="eventsappModel.AthleteVoucher" />
+    <EntitySet Name="AttendeeQuestions" EntityType="eventsappModel.AttendeeQuestion" />
+    <EntitySet Name="ClaimedVouchers" EntityType="eventsappModel.ClaimedVoucher" />
+    <EntitySet Name="EventAddresses" EntityType="eventsappModel.EventAddress" />
+    <EntitySet Name="EventCompanies" EntityType="eventsappModel.EventCompany" />
+    <EntitySet Name="EventNews" EntityType="eventsappModel.EventNew" />
+    <EntitySet Name="EventPersons" EntityType="eventsappModel.EventPerson" />
+    <EntitySet Name="Events" EntityType="eventsappModel.Event" />
+    <EntitySet Name="EventUsers" EntityType="eventsappModel.EventUser" />
+    <EntitySet Name="GuestVouchers" EntityType="eventsappModel.GuestVoucher" />
+    <EntitySet Name="InterestedAgendas" EntityType="eventsappModel.InterestedAgenda" />
+    <EntitySet Name="Notifications" EntityType="eventsappModel.Notification" />
+    <EntitySet Name="Packages" EntityType="eventsappModel.Package" />
+    <EntitySet Name="Photos" EntityType="eventsappModel.Photo" />
+    <EntitySet Name="Presentations" EntityType="eventsappModel.Presentation" />
+    <EntitySet Name="SpeakerRatings" EntityType="eventsappModel.SpeakerRating" />
+    <EntitySet Name="Surveys" EntityType="eventsappModel.Survey" />
+    <EntitySet Name="SurveyOptions" EntityType="eventsappModel.SurveyOption" />
+    <EntitySet Name="SurveyResults" EntityType="eventsappModel.SurveyResult" />
+    <EntitySet Name="BackgroundThemes" EntityType="eventsappModel.BackgroundTheme" />
+    <EntitySet Name="CompanyTypes" EntityType="eventsappModel.CompanyType" />
+    <EntitySet Name="Configurations" EntityType="eventsappModel.Configuration" />
+    <EntitySet Name="Countries" EntityType="eventsappModel.Country" />
+    <EntitySet Name="EventPackages" EntityType="eventsappModel.EventPackage" />
+    <EntitySet Name="EventTypes" EntityType="eventsappModel.EventType" />
+    <EntitySet Name="Languages" EntityType="eventsappModel.Language" />
+    <EntitySet Name="ParticipantsRegistrationTypes" EntityType="eventsappModel.ParticipantsRegistrationType" />
+    <EntitySet Name="PaymentStatuses" EntityType="eventsappModel.PaymentStatus" />
+    <EntitySet Name="PersonTypes" EntityType="eventsappModel.PersonType" />
+    <EntitySet Name="RegistrationTypes" EntityType="eventsappModel.RegistrationType" />
+    <EntitySet Name="SponserTypes" EntityType="eventsappModel.SponserType" />
+    <EntitySet Name="States" EntityType="eventsappModel.State" />
+    <EntitySet Name="UserActions" EntityType="eventsappModel.UserAction" />
+    <EntitySet Name="Vouchers" EntityType="eventsappModel.Voucher" />
+    <EntitySet Name="PushNotifications" EntityType="eventsappModel.PushNotification" />
+    <EntitySet Name="Recipients" EntityType="eventsappModel.Recipient" />
+    <EntitySet Name="Transactions" EntityType="eventsappModel.Transaction" />
+    <EntitySet Name="UserSubscriptions" EntityType="eventsappModel.UserSubscription" />
+    <AssociationSet Name="FK_LoggedUserConnections_Users" Association="eventsappModel.FK_LoggedUserConnections_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="LoggedUserConnection" EntitySet="LoggedUserConnections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreferredLanguages_Languages" Association="eventsappModel.FK_PreferredLanguages_Languages">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="PreferredLanguage" EntitySet="PreferredLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreferredLanguages_Users" Association="eventsappModel.FK_PreferredLanguages_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="PreferredLanguage" EntitySet="PreferredLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActions_Roles" Association="eventsappModel.FK_UserActions_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserAction" EntitySet="UserActions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActionsTaken_UserActions" Association="eventsappModel.FK_UserActionsTaken_UserActions">
+      <End Role="UserAction" EntitySet="UserActions" />
+      <End Role="UserActionsTaken" EntitySet="UserActionsTakens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActionsTaken_Users" Association="eventsappModel.FK_UserActionsTaken_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserActionsTaken" EntitySet="UserActionsTakens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActionsTaken_Users1" Association="eventsappModel.FK_UserActionsTaken_Users1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserActionsTaken" EntitySet="UserActionsTakens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_UserClaims_Account_Users_UserId" Association="eventsappModel.FK_Account_UserClaims_Account_Users_UserId">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserClaim" EntitySet="UserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCompanies_Companies" Association="eventsappModel.FK_UserCompanies_Companies">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="UserCompany" EntitySet="UserCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCompanies_Users" Association="eventsappModel.FK_UserCompanies_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserCompany" EntitySet="UserCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_UserLogins_Account_Users_UserId" Association="eventsappModel.FK_Account_UserLogins_Account_Users_UserId">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserLogin" EntitySet="UserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AthleteVoucher_Users" Association="eventsappModel.FK_AthleteVoucher_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AthleteVoucher" EntitySet="AthleteVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestion_Users" Association="eventsappModel.FK_AttendeeQuestion_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AttendeeQuestion" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClaimedVouchers_Users" Association="eventsappModel.FK_ClaimedVouchers_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ClaimedVoucher" EntitySet="ClaimedVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClaimedVouchers_Users1" Association="eventsappModel.FK_ClaimedVouchers_Users1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ClaimedVoucher" EntitySet="ClaimedVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_Users" Association="eventsappModel.FK_Companies_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Users" Association="eventsappModel.FK_Events_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Users1" Association="eventsappModel.FK_Events_Users1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Users2" Association="eventsappModel.FK_Events_Users2">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_Users" Association="eventsappModel.FK_EventUsers_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="EventUser" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GuestVoucher_Users" Association="eventsappModel.FK_GuestVoucher_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="GuestVoucher" EntitySet="GuestVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GuestVoucher_Users1" Association="eventsappModel.FK_GuestVoucher_Users1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="GuestVoucher" EntitySet="GuestVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Users" Association="eventsappModel.FK_InterestedAgenda_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgendas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IOSDevices_Users" Association="eventsappModel.FK_IOSDevices_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="IOSDevice" EntitySet="IOSDevices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentTransactions_Users" Association="eventsappModel.FK_PaymentTransactions_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persons_Users" Association="eventsappModel.FK_Persons_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Person" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Users" Association="eventsappModel.FK_SurveyResults_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="SurveyResult" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Companies" Association="eventsappModel.FK_Users_Companies">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Events" Association="eventsappModel.FK_Users_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Persons" Association="eventsappModel.FK_Users_Persons">
+      <End Role="Person" EntitySet="Persons" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_RegistrationType" Association="eventsappModel.FK_Users_RegistrationType">
+      <End Role="RegistrationType" EntitySet="RegistrationTypes" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_Users" Association="eventsappModel.FK_UserSubcriptions_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Voucher_Users" Association="eventsappModel.FK_Voucher_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Voucher" EntitySet="Vouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_Countries" Association="eventsappModel.FK_Address_Countries">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_State" Association="eventsappModel.FK_Address_State">
+      <End Role="State" EntitySet="States" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_Address" Association="eventsappModel.FK_Company_Address">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAddress_Address" Association="eventsappModel.FK_EventAddress_Address">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="EventAddress" EntitySet="EventAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventExhabitor_Company" Association="eventsappModel.FK_EventExhabitor_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="EventCompany" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Agenda_Persons" Association="eventsappModel.FK_Agenda_Persons">
+      <End Role="Person" EntitySet="Persons" />
+      <End Role="Agendum" EntitySet="Agenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestion_Person" Association="eventsappModel.FK_AttendeeQuestion_Person">
+      <End Role="Person" EntitySet="Persons" />
+      <End Role="AttendeeQuestion" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventRating_Person" Association="eventsappModel.FK_EventRating_Person">
+      <End Role="Person" EntitySet="Persons" />
+      <End Role="SpeakerRating" EntitySet="SpeakerRatings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventSpeaker_Person" Association="eventsappModel.FK_EventSpeaker_Person">
+      <End Role="Person" EntitySet="Persons" />
+      <End Role="EventPerson" EntitySet="EventPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Persons" Association="eventsappModel.FK_InterestedAgenda_Persons">
+      <End Role="Person" EntitySet="Persons" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgendas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Agenda_AgendaSessions" Association="eventsappModel.FK_Agenda_AgendaSessions">
+      <End Role="AgendaSession" EntitySet="AgendaSessions" />
+      <End Role="Agendum" EntitySet="Agenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Agenda_Event" Association="eventsappModel.FK_Agenda_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Agendum" EntitySet="Agenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestions_Agenda" Association="eventsappModel.FK_AttendeeQuestions_Agenda">
+      <End Role="Agendum" EntitySet="Agenda" />
+      <End Role="AttendeeQuestion" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_Agenda" Association="eventsappModel.FK_EventUsers_Agenda">
+      <End Role="Agendum" EntitySet="Agenda" />
+      <End Role="EventUser" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Agenda" Association="eventsappModel.FK_InterestedAgenda_Agenda">
+      <End Role="Agendum" EntitySet="Agenda" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgendas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presentations_Agenda" Association="eventsappModel.FK_Presentations_Agenda">
+      <End Role="Agendum" EntitySet="Agenda" />
+      <End Role="Presentation" EntitySet="Presentations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Survey_Agenda" Association="eventsappModel.FK_Survey_Agenda">
+      <End Role="Agendum" EntitySet="Agenda" />
+      <End Role="Survey" EntitySet="Surveys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Agenda" Association="eventsappModel.FK_SurveyResults_Agenda">
+      <End Role="Agendum" EntitySet="Agenda" />
+      <End Role="SurveyResult" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgendaSessions_Events" Association="eventsappModel.FK_AgendaSessions_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="AgendaSession" EntitySet="AgendaSessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AthleteVoucher_Voucher" Association="eventsappModel.FK_AthleteVoucher_Voucher">
+      <End Role="Voucher" EntitySet="Vouchers" />
+      <End Role="AthleteVoucher" EntitySet="AthleteVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestion_Event" Association="eventsappModel.FK_AttendeeQuestion_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="AttendeeQuestion" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClaimedVouchers_Events" Association="eventsappModel.FK_ClaimedVouchers_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="ClaimedVoucher" EntitySet="ClaimedVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAddress_Event" Association="eventsappModel.FK_EventAddress_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="EventAddress" EntitySet="EventAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventCompanies_CompanyTypes" Association="eventsappModel.FK_EventCompanies_CompanyTypes">
+      <End Role="CompanyType" EntitySet="CompanyTypes" />
+      <End Role="EventCompany" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventCompanies_Package" Association="eventsappModel.FK_EventCompanies_Package">
+      <End Role="Package" EntitySet="Packages" />
+      <End Role="EventCompany" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventExhabitor_Event" Association="eventsappModel.FK_EventExhabitor_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="EventCompany" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventNews_Events" Association="eventsappModel.FK_EventNews_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="EventNew" EntitySet="EventNews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventPerons_PersonTypes" Association="eventsappModel.FK_EventPerons_PersonTypes">
+      <End Role="PersonType" EntitySet="PersonTypes" />
+      <End Role="EventPerson" EntitySet="EventPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventSpeaker_Event" Association="eventsappModel.FK_EventSpeaker_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="EventPerson" EntitySet="EventPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventRating_Event" Association="eventsappModel.FK_EventRating_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="SpeakerRating" EntitySet="SpeakerRatings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_BGTheme" Association="eventsappModel.FK_Events_BGTheme">
+      <End Role="BackgroundTheme" EntitySet="BackgroundThemes" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventPackages" Association="eventsappModel.FK_Events_EventPackages">
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventTypes" Association="eventsappModel.FK_Events_EventTypes">
+      <End Role="EventType" EntitySet="EventTypes" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_ParticipantsRegistrationType" Association="eventsappModel.FK_Events_ParticipantsRegistrationType">
+      <End Role="ParticipantsRegistrationType" EntitySet="ParticipantsRegistrationTypes" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUser_Event" Association="eventsappModel.FK_EventUser_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="EventUser" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Events" Association="eventsappModel.FK_InterestedAgenda_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgendas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notifications_Events" Association="eventsappModel.FK_Notifications_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Notification" EntitySet="Notifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Package_Events" Association="eventsappModel.FK_Package_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Package" EntitySet="Packages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Photos_Event" Association="eventsappModel.FK_Photos_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Photo" EntitySet="Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presentations_Events" Association="eventsappModel.FK_Presentations_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Presentation" EntitySet="Presentations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Survey_Events" Association="eventsappModel.FK_Survey_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Survey" EntitySet="Surveys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Events" Association="eventsappModel.FK_SurveyResults_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="SurveyResult" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubscriptions_Events" Association="eventsappModel.FK_UserSubscriptions_Events">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_RegistrationType" Association="eventsappModel.FK_EventUsers_RegistrationType">
+      <End Role="RegistrationType" EntitySet="RegistrationTypes" />
+      <End Role="EventUser" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_UserSubcriptions" Association="eventsappModel.FK_EventUsers_UserSubcriptions">
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+      <End Role="EventUser" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GuestVoucher_Voucher" Association="eventsappModel.FK_GuestVoucher_Voucher">
+      <End Role="Voucher" EntitySet="Vouchers" />
+      <End Role="GuestVoucher" EntitySet="GuestVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Package_SponserTypes" Association="eventsappModel.FK_Package_SponserTypes">
+      <End Role="SponserType" EntitySet="SponserTypes" />
+      <End Role="Package" EntitySet="Packages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyOptions_Surveys" Association="eventsappModel.FK_SurveyOptions_Surveys">
+      <End Role="Survey" EntitySet="Surveys" />
+      <End Role="SurveyOption" EntitySet="SurveyOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Survey" Association="eventsappModel.FK_SurveyResults_Survey">
+      <End Role="Survey" EntitySet="Surveys" />
+      <End Role="SurveyResult" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_SurveyOptions" Association="eventsappModel.FK_SurveyResults_SurveyOptions">
+      <End Role="SurveyOption" EntitySet="SurveyOptions" />
+      <End Role="SurveyResult" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_SurveyResults" Association="eventsappModel.FK_SurveyResults_SurveyResults">
+      <End Role="SurveyResult" EntitySet="SurveyResults" />
+      <End Role="SurveyResult1" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_State_Countries" Association="eventsappModel.FK_State_Countries">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="State" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_EventPackages" Association="eventsappModel.FK_UserSubcriptions_EventPackages">
+      <End Role="EventPackage" EntitySet="EventPackages" />
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_PaymentStatuses" Association="eventsappModel.FK_UserSubcriptions_PaymentStatuses">
+      <End Role="PaymentStatus" EntitySet="PaymentStatuses" />
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notification_Recipient" Association="eventsappModel.FK_Notification_Recipient">
+      <End Role="PushNotification" EntitySet="PushNotifications" />
+      <End Role="Recipient" EntitySet="Recipients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentTransactions_UserSubcriptions" Association="eventsappModel.FK_PaymentTransactions_UserSubcriptions">
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_PaymentTransactions" Association="eventsappModel.FK_UserSubcriptions_PaymentTransactions">
+      <End Role="Transaction" EntitySet="Transactions" />
+      <End Role="UserSubscription" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="UserRoles" Association="eventsappModel.UserRoles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="LoggedUserConnection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_LoggedUserConnections_Users" FromRole="LoggedUserConnection" ToRole="User" />
+  </EntityType>
+  <EntityType Name="PreferredLanguage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="LanguageId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Language" Relationship="eventsappModel.FK_PreferredLanguages_Languages" FromRole="PreferredLanguage" ToRole="Language" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_PreferredLanguages_Users" FromRole="PreferredLanguage" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Discriminator" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserActions" Relationship="eventsappModel.FK_UserActions_Roles" FromRole="Role" ToRole="UserAction" />
+    <NavigationProperty Name="Users" Relationship="eventsappModel.UserRoles" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserActionsTaken">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="ActionDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="Note" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserActionId" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="UserAction" Relationship="eventsappModel.FK_UserActionsTaken_UserActions" FromRole="UserActionsTaken" ToRole="UserAction" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_UserActionsTaken_Users" FromRole="UserActionsTaken" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="eventsappModel.FK_UserActionsTaken_Users1" FromRole="UserActionsTaken" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_Account_UserClaims_Account_Users_UserId" FromRole="UserClaim" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="CompanyId" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="eventsappModel.FK_UserCompanies_Companies" FromRole="UserCompany" ToRole="Company" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_UserCompanies_Users" FromRole="UserCompany" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_Account_UserLogins_Account_Users_UserId" FromRole="UserLogin" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="EventId" Type="Int32" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="PersonId" Type="Int32" />
+    <Property Name="RegistrationTypeId" Type="Int32" />
+    <Property Name="QrImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AssignedFoodVouchers" Type="Int32" />
+    <Property Name="AssignedDrinkVouchers" Type="Int32" />
+    <Property Name="UsedFoodVouchers" Type="Int32" />
+    <Property Name="UsedDrinkVouchers" Type="Int32" />
+    <Property Name="GuestOf" Type="Int32" />
+    <Property Name="UserCode" Type="Int32" />
+    <Property Name="Relation" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LoggedUserConnections" Relationship="eventsappModel.FK_LoggedUserConnections_Users" FromRole="User" ToRole="LoggedUserConnection" />
+    <NavigationProperty Name="PreferredLanguages" Relationship="eventsappModel.FK_PreferredLanguages_Users" FromRole="User" ToRole="PreferredLanguage" />
+    <NavigationProperty Name="UserActionsTakens" Relationship="eventsappModel.FK_UserActionsTaken_Users" FromRole="User" ToRole="UserActionsTaken" />
+    <NavigationProperty Name="UserActionsTakens1" Relationship="eventsappModel.FK_UserActionsTaken_Users1" FromRole="User" ToRole="UserActionsTaken" />
+    <NavigationProperty Name="UserClaims" Relationship="eventsappModel.FK_Account_UserClaims_Account_Users_UserId" FromRole="User" ToRole="UserClaim" />
+    <NavigationProperty Name="UserCompanies" Relationship="eventsappModel.FK_UserCompanies_Users" FromRole="User" ToRole="UserCompany" />
+    <NavigationProperty Name="UserLogins" Relationship="eventsappModel.FK_Account_UserLogins_Account_Users_UserId" FromRole="User" ToRole="UserLogin" />
+    <NavigationProperty Name="AthleteVouchers" Relationship="eventsappModel.FK_AthleteVoucher_Users" FromRole="User" ToRole="AthleteVoucher" />
+    <NavigationProperty Name="AttendeeQuestions" Relationship="eventsappModel.FK_AttendeeQuestion_Users" FromRole="User" ToRole="AttendeeQuestion" />
+    <NavigationProperty Name="ClaimedVouchers" Relationship="eventsappModel.FK_ClaimedVouchers_Users" FromRole="User" ToRole="ClaimedVoucher" />
+    <NavigationProperty Name="ClaimedVouchers1" Relationship="eventsappModel.FK_ClaimedVouchers_Users1" FromRole="User" ToRole="ClaimedVoucher" />
+    <NavigationProperty Name="Companies" Relationship="eventsappModel.FK_Companies_Users" FromRole="User" ToRole="Company" />
+    <NavigationProperty Name="Events" Relationship="eventsappModel.FK_Events_Users" FromRole="User" ToRole="Event" />
+    <NavigationProperty Name="Events1" Relationship="eventsappModel.FK_Events_Users1" FromRole="User" ToRole="Event" />
+    <NavigationProperty Name="Events2" Relationship="eventsappModel.FK_Events_Users2" FromRole="User" ToRole="Event" />
+    <NavigationProperty Name="EventUsers" Relationship="eventsappModel.FK_EventUsers_Users" FromRole="User" ToRole="EventUser" />
+    <NavigationProperty Name="GuestVouchers" Relationship="eventsappModel.FK_GuestVoucher_Users" FromRole="User" ToRole="GuestVoucher" />
+    <NavigationProperty Name="GuestVouchers1" Relationship="eventsappModel.FK_GuestVoucher_Users1" FromRole="User" ToRole="GuestVoucher" />
+    <NavigationProperty Name="InterestedAgendas" Relationship="eventsappModel.FK_InterestedAgenda_Users" FromRole="User" ToRole="InterestedAgenda" />
+    <NavigationProperty Name="IOSDevices" Relationship="eventsappModel.FK_IOSDevices_Users" FromRole="User" ToRole="IOSDevice" />
+    <NavigationProperty Name="Transactions" Relationship="eventsappModel.FK_PaymentTransactions_Users" FromRole="User" ToRole="Transaction" />
+    <NavigationProperty Name="Persons" Relationship="eventsappModel.FK_Persons_Users" FromRole="User" ToRole="Person" />
+    <NavigationProperty Name="SurveyResults" Relationship="eventsappModel.FK_SurveyResults_Users" FromRole="User" ToRole="SurveyResult" />
+    <NavigationProperty Name="Company" Relationship="eventsappModel.FK_Users_Companies" FromRole="User" ToRole="Company" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Users_Events" FromRole="User" ToRole="Event" />
+    <NavigationProperty Name="Person" Relationship="eventsappModel.FK_Users_Persons" FromRole="User" ToRole="Person" />
+    <NavigationProperty Name="RegistrationType" Relationship="eventsappModel.FK_Users_RegistrationType" FromRole="User" ToRole="RegistrationType" />
+    <NavigationProperty Name="UserSubscriptions" Relationship="eventsappModel.FK_UserSubcriptions_Users" FromRole="User" ToRole="UserSubscription" />
+    <NavigationProperty Name="Vouchers" Relationship="eventsappModel.FK_Voucher_Users" FromRole="User" ToRole="Voucher" />
+    <NavigationProperty Name="Roles" Relationship="eventsappModel.UserRoles" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateId" Type="Int32" />
+    <Property Name="CountryId" Type="Int32" />
+    <Property Name="Street" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LocationPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Lat" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Lng" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Country" Relationship="eventsappModel.FK_Address_Countries" FromRole="Address" ToRole="Country" />
+    <NavigationProperty Name="State" Relationship="eventsappModel.FK_Address_State" FromRole="Address" ToRole="State" />
+    <NavigationProperty Name="Companies" Relationship="eventsappModel.FK_Company_Address" FromRole="Address" ToRole="Company" />
+    <NavigationProperty Name="EventAddresses" Relationship="eventsappModel.FK_EventAddress_Address" FromRole="Address" ToRole="EventAddress" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AddressId" Type="Int32" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="DeletedOn" Type="DateTime" Precision="3" />
+    <Property Name="CompanyCode" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="InstagramURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="FacebookURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TwitterURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedInURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UniqueId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserCompanies" Relationship="eventsappModel.FK_UserCompanies_Companies" FromRole="Company" ToRole="UserCompany" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_Companies_Users" FromRole="Company" ToRole="User" />
+    <NavigationProperty Name="Users" Relationship="eventsappModel.FK_Users_Companies" FromRole="Company" ToRole="User" />
+    <NavigationProperty Name="Address" Relationship="eventsappModel.FK_Company_Address" FromRole="Company" ToRole="Address" />
+    <NavigationProperty Name="EventCompanies" Relationship="eventsappModel.FK_EventExhabitor_Company" FromRole="Company" ToRole="EventCompany" />
+  </EntityType>
+  <EntityType Name="IOSDevice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="DeviceToken" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DeviceId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_IOSDevices_Users" FromRole="IOSDevice" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TitleEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TitleAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="Byte" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+    <Property Name="Resume" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PassportNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmiratesID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsResidentOfUAE" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="DeletedOn" Type="DateTime" Precision="3" />
+    <Property Name="InstagramURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="FacebookURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TwitterURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedInURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_Persons_Users" FromRole="Person" ToRole="User" />
+    <NavigationProperty Name="Users" Relationship="eventsappModel.FK_Users_Persons" FromRole="Person" ToRole="User" />
+    <NavigationProperty Name="Agenda" Relationship="eventsappModel.FK_Agenda_Persons" FromRole="Person" ToRole="Agendum" />
+    <NavigationProperty Name="AttendeeQuestions" Relationship="eventsappModel.FK_AttendeeQuestion_Person" FromRole="Person" ToRole="AttendeeQuestion" />
+    <NavigationProperty Name="SpeakerRatings" Relationship="eventsappModel.FK_EventRating_Person" FromRole="Person" ToRole="SpeakerRating" />
+    <NavigationProperty Name="EventPersons" Relationship="eventsappModel.FK_EventSpeaker_Person" FromRole="Person" ToRole="EventPerson" />
+    <NavigationProperty Name="InterestedAgendas" Relationship="eventsappModel.FK_InterestedAgenda_Persons" FromRole="Person" ToRole="InterestedAgenda" />
+  </EntityType>
+  <EntityType Name="Agendum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TitleEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TitleAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="FromTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ToTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="SpeakerId" Type="Int32" />
+    <Property Name="SessionId" Type="Int32" />
+    <Property Name="Location" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ParticipantsLimit" Type="Int32" />
+    <Property Name="ReservationCount" Type="Int32" />
+    <Property Name="AttendanceCount" Type="Int32" />
+    <NavigationProperty Name="Person" Relationship="eventsappModel.FK_Agenda_Persons" FromRole="Agendum" ToRole="Person" />
+    <NavigationProperty Name="AgendaSession" Relationship="eventsappModel.FK_Agenda_AgendaSessions" FromRole="Agendum" ToRole="AgendaSession" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Agenda_Event" FromRole="Agendum" ToRole="Event" />
+    <NavigationProperty Name="AttendeeQuestions" Relationship="eventsappModel.FK_AttendeeQuestions_Agenda" FromRole="Agendum" ToRole="AttendeeQuestion" />
+    <NavigationProperty Name="EventUsers" Relationship="eventsappModel.FK_EventUsers_Agenda" FromRole="Agendum" ToRole="EventUser" />
+    <NavigationProperty Name="InterestedAgendas" Relationship="eventsappModel.FK_InterestedAgenda_Agenda" FromRole="Agendum" ToRole="InterestedAgenda" />
+    <NavigationProperty Name="Presentations" Relationship="eventsappModel.FK_Presentations_Agenda" FromRole="Agendum" ToRole="Presentation" />
+    <NavigationProperty Name="Surveys" Relationship="eventsappModel.FK_Survey_Agenda" FromRole="Agendum" ToRole="Survey" />
+    <NavigationProperty Name="SurveyResults" Relationship="eventsappModel.FK_SurveyResults_Agenda" FromRole="Agendum" ToRole="SurveyResult" />
+  </EntityType>
+  <EntityType Name="AgendaSession">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Agenda" Relationship="eventsappModel.FK_Agenda_AgendaSessions" FromRole="AgendaSession" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_AgendaSessions_Events" FromRole="AgendaSession" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="AthleteVoucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="VoucherId" Type="Int32" Nullable="false" />
+    <Property Name="IsValid" Type="Boolean" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_AthleteVoucher_Users" FromRole="AthleteVoucher" ToRole="User" />
+    <NavigationProperty Name="Voucher" Relationship="eventsappModel.FK_AthleteVoucher_Voucher" FromRole="AthleteVoucher" ToRole="Voucher" />
+  </EntityType>
+  <EntityType Name="AttendeeQuestion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="EventId" Type="Int32" />
+    <Property Name="SpeakerId" Type="Int32" />
+    <Property Name="Answered" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AgendaId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_AttendeeQuestion_Users" FromRole="AttendeeQuestion" ToRole="User" />
+    <NavigationProperty Name="Person" Relationship="eventsappModel.FK_AttendeeQuestion_Person" FromRole="AttendeeQuestion" ToRole="Person" />
+    <NavigationProperty Name="Agendum" Relationship="eventsappModel.FK_AttendeeQuestions_Agenda" FromRole="AttendeeQuestion" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_AttendeeQuestion_Event" FromRole="AttendeeQuestion" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="ClaimedVoucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="ClaimedFoodVoucher" Type="Int32" />
+    <Property Name="ClaimedDrinkVoucher" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_ClaimedVouchers_Users" FromRole="ClaimedVoucher" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="eventsappModel.FK_ClaimedVouchers_Users1" FromRole="ClaimedVoucher" ToRole="User" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_ClaimedVouchers_Events" FromRole="ClaimedVoucher" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="EventAddress">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AddressId" />
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddressId" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Address" Relationship="eventsappModel.FK_EventAddress_Address" FromRole="EventAddress" ToRole="Address" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_EventAddress_Event" FromRole="EventAddress" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="EventCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="PackageId" Type="Int32" />
+    <Property Name="StandLocation" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="StandNumber" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModified" Type="DateTime" Precision="3" />
+    <Property Name="CompanyTypeId" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="eventsappModel.FK_EventExhabitor_Company" FromRole="EventCompany" ToRole="Company" />
+    <NavigationProperty Name="CompanyType" Relationship="eventsappModel.FK_EventCompanies_CompanyTypes" FromRole="EventCompany" ToRole="CompanyType" />
+    <NavigationProperty Name="Package" Relationship="eventsappModel.FK_EventCompanies_Package" FromRole="EventCompany" ToRole="Package" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_EventExhabitor_Event" FromRole="EventCompany" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="EventNew">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_EventNews_Events" FromRole="EventNew" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="EventPerson">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonId" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModified" Type="DateTime" Precision="3" />
+    <Property Name="PersonTypeId" Type="Int32" />
+    <NavigationProperty Name="Person" Relationship="eventsappModel.FK_EventSpeaker_Person" FromRole="EventPerson" ToRole="Person" />
+    <NavigationProperty Name="PersonType" Relationship="eventsappModel.FK_EventPerons_PersonTypes" FromRole="EventPerson" ToRole="PersonType" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_EventSpeaker_Event" FromRole="EventPerson" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="EventTypeId" Type="Int32" />
+    <Property Name="BannerPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HasSponsors" Type="Boolean" Nullable="false" />
+    <Property Name="HasExhibitors" Type="Boolean" Nullable="false" />
+    <Property Name="HasSpeaker" Type="Boolean" Nullable="false" />
+    <Property Name="HasPartners" Type="Boolean" Nullable="false" />
+    <Property Name="HasVIP" Type="Boolean" Nullable="false" />
+    <Property Name="SponsorsOnlineRegister" Type="Boolean" Nullable="false" />
+    <Property Name="ExhibitorsOnlineRegister" Type="Boolean" Nullable="false" />
+    <Property Name="SpeakerOnlineRegister" Type="Boolean" Nullable="false" />
+    <Property Name="PartnersOnlineRegister" Type="Boolean" Nullable="false" />
+    <Property Name="VIPOnlineRegister" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModified" Type="DateTime" Precision="3" />
+    <Property Name="DeletedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="BadgePhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VideoURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InstagramURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="FacebookURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TwitterURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedInURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ThemeURL" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UniqueId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UserSubscriptionId" Type="Int32" />
+    <Property Name="ParticipantsLimit" Type="Int32" Nullable="false" />
+    <Property Name="ParticipantFees" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="HasPayment" Type="Boolean" />
+    <Property Name="BgImageId" Type="Int32" />
+    <Property Name="SelectedCurrency" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParticipantsRegistrationTypeId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_Events_Users" FromRole="Event" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="eventsappModel.FK_Events_Users1" FromRole="Event" ToRole="User" />
+    <NavigationProperty Name="User2" Relationship="eventsappModel.FK_Events_Users2" FromRole="Event" ToRole="User" />
+    <NavigationProperty Name="Users" Relationship="eventsappModel.FK_Users_Events" FromRole="Event" ToRole="User" />
+    <NavigationProperty Name="Agenda" Relationship="eventsappModel.FK_Agenda_Event" FromRole="Event" ToRole="Agendum" />
+    <NavigationProperty Name="AgendaSessions" Relationship="eventsappModel.FK_AgendaSessions_Events" FromRole="Event" ToRole="AgendaSession" />
+    <NavigationProperty Name="AttendeeQuestions" Relationship="eventsappModel.FK_AttendeeQuestion_Event" FromRole="Event" ToRole="AttendeeQuestion" />
+    <NavigationProperty Name="ClaimedVouchers" Relationship="eventsappModel.FK_ClaimedVouchers_Events" FromRole="Event" ToRole="ClaimedVoucher" />
+    <NavigationProperty Name="EventAddresses" Relationship="eventsappModel.FK_EventAddress_Event" FromRole="Event" ToRole="EventAddress" />
+    <NavigationProperty Name="EventCompanies" Relationship="eventsappModel.FK_EventExhabitor_Event" FromRole="Event" ToRole="EventCompany" />
+    <NavigationProperty Name="EventNews" Relationship="eventsappModel.FK_EventNews_Events" FromRole="Event" ToRole="EventNew" />
+    <NavigationProperty Name="EventPersons" Relationship="eventsappModel.FK_EventSpeaker_Event" FromRole="Event" ToRole="EventPerson" />
+    <NavigationProperty Name="SpeakerRatings" Relationship="eventsappModel.FK_EventRating_Event" FromRole="Event" ToRole="SpeakerRating" />
+    <NavigationProperty Name="BackgroundTheme" Relationship="eventsappModel.FK_Events_BGTheme" FromRole="Event" ToRole="BackgroundTheme" />
+    <NavigationProperty Name="UserSubscription" Relationship="eventsappModel.FK_Events_EventPackages" FromRole="Event" ToRole="UserSubscription" />
+    <NavigationProperty Name="EventType" Relationship="eventsappModel.FK_Events_EventTypes" FromRole="Event" ToRole="EventType" />
+    <NavigationProperty Name="ParticipantsRegistrationType" Relationship="eventsappModel.FK_Events_ParticipantsRegistrationType" FromRole="Event" ToRole="ParticipantsRegistrationType" />
+    <NavigationProperty Name="EventUsers" Relationship="eventsappModel.FK_EventUser_Event" FromRole="Event" ToRole="EventUser" />
+    <NavigationProperty Name="InterestedAgendas" Relationship="eventsappModel.FK_InterestedAgenda_Events" FromRole="Event" ToRole="InterestedAgenda" />
+    <NavigationProperty Name="Notifications" Relationship="eventsappModel.FK_Notifications_Events" FromRole="Event" ToRole="Notification" />
+    <NavigationProperty Name="Packages" Relationship="eventsappModel.FK_Package_Events" FromRole="Event" ToRole="Package" />
+    <NavigationProperty Name="Photos" Relationship="eventsappModel.FK_Photos_Event" FromRole="Event" ToRole="Photo" />
+    <NavigationProperty Name="Presentations" Relationship="eventsappModel.FK_Presentations_Events" FromRole="Event" ToRole="Presentation" />
+    <NavigationProperty Name="Surveys" Relationship="eventsappModel.FK_Survey_Events" FromRole="Event" ToRole="Survey" />
+    <NavigationProperty Name="SurveyResults" Relationship="eventsappModel.FK_SurveyResults_Events" FromRole="Event" ToRole="SurveyResult" />
+    <NavigationProperty Name="UserSubscriptions" Relationship="eventsappModel.FK_UserSubscriptions_Events" FromRole="Event" ToRole="UserSubscription" />
+  </EntityType>
+  <EntityType Name="EventUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="IsAttended" Type="Boolean" />
+    <Property Name="RegistrationTypeId" Type="Int32" />
+    <Property Name="QRCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentName" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModified" Type="DateTime" Precision="3" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="UserSubscriptionId" Type="Int32" />
+    <Property Name="IsRegistered" Type="Boolean" />
+    <Property Name="AgendaId" Type="Int32" />
+    <Property Name="IsIndividual" Type="Boolean" />
+    <Property Name="VisitorCount" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_EventUsers_Users" FromRole="EventUser" ToRole="User" />
+    <NavigationProperty Name="Agendum" Relationship="eventsappModel.FK_EventUsers_Agenda" FromRole="EventUser" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_EventUser_Event" FromRole="EventUser" ToRole="Event" />
+    <NavigationProperty Name="RegistrationType" Relationship="eventsappModel.FK_EventUsers_RegistrationType" FromRole="EventUser" ToRole="RegistrationType" />
+    <NavigationProperty Name="UserSubscription" Relationship="eventsappModel.FK_EventUsers_UserSubcriptions" FromRole="EventUser" ToRole="UserSubscription" />
+  </EntityType>
+  <EntityType Name="GuestVoucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <Property Name="voucherId" Type="Int32" Nullable="false" />
+    <Property Name="sharedBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_GuestVoucher_Users" FromRole="GuestVoucher" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="eventsappModel.FK_GuestVoucher_Users1" FromRole="GuestVoucher" ToRole="User" />
+    <NavigationProperty Name="Voucher" Relationship="eventsappModel.FK_GuestVoucher_Voucher" FromRole="GuestVoucher" ToRole="Voucher" />
+  </EntityType>
+  <EntityType Name="InterestedAgenda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="AgendaId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="SpeakerId" Type="Int32" />
+    <Property Name="EventId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_InterestedAgenda_Users" FromRole="InterestedAgenda" ToRole="User" />
+    <NavigationProperty Name="Person" Relationship="eventsappModel.FK_InterestedAgenda_Persons" FromRole="InterestedAgenda" ToRole="Person" />
+    <NavigationProperty Name="Agendum" Relationship="eventsappModel.FK_InterestedAgenda_Agenda" FromRole="InterestedAgenda" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_InterestedAgenda_Events" FromRole="InterestedAgenda" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IsRead" Type="Boolean" />
+    <Property Name="EventId" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Notifications_Events" FromRole="Notification" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Benefits" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Int32" />
+    <Property Name="SponsorTypeId" Type="Int32" />
+    <Property Name="EventId" Type="Int32" />
+    <NavigationProperty Name="EventCompanies" Relationship="eventsappModel.FK_EventCompanies_Package" FromRole="Package" ToRole="EventCompany" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Package_Events" FromRole="Package" ToRole="Event" />
+    <NavigationProperty Name="SponserType" Relationship="eventsappModel.FK_Package_SponserTypes" FromRole="Package" ToRole="SponserType" />
+  </EntityType>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="Approved" Type="Boolean" />
+    <Property Name="DescEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DescAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Photos_Event" FromRole="Photo" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Presentation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AttachmentUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="AgendaId" Type="Int32" />
+    <NavigationProperty Name="Agendum" Relationship="eventsappModel.FK_Presentations_Agenda" FromRole="Presentation" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Presentations_Events" FromRole="Presentation" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="SpeakerRating">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PersonId" />
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonId" Type="Int32" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="Rating" Type="Int32" />
+    <NavigationProperty Name="Person" Relationship="eventsappModel.FK_EventRating_Person" FromRole="SpeakerRating" ToRole="Person" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_EventRating_Event" FromRole="SpeakerRating" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Survey">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="AgendaId" Type="Int32" />
+    <Property Name="DeletedOn" Type="DateTime" Precision="3" />
+    <Property Name="FromSpeaker" Type="Boolean" />
+    <Property Name="ResponseAlotTime" Type="Int32" />
+    <NavigationProperty Name="Agendum" Relationship="eventsappModel.FK_Survey_Agenda" FromRole="Survey" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_Survey_Events" FromRole="Survey" ToRole="Event" />
+    <NavigationProperty Name="SurveyOptions" Relationship="eventsappModel.FK_SurveyOptions_Surveys" FromRole="Survey" ToRole="SurveyOption" />
+    <NavigationProperty Name="SurveyResults" Relationship="eventsappModel.FK_SurveyResults_Survey" FromRole="Survey" ToRole="SurveyResult" />
+  </EntityType>
+  <EntityType Name="SurveyOption">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyId" Type="Int32" />
+    <Property Name="OrderNumber" Type="Int32" />
+    <NavigationProperty Name="Survey" Relationship="eventsappModel.FK_SurveyOptions_Surveys" FromRole="SurveyOption" ToRole="Survey" />
+    <NavigationProperty Name="SurveyResults" Relationship="eventsappModel.FK_SurveyResults_SurveyOptions" FromRole="SurveyOption" ToRole="SurveyResult" />
+  </EntityType>
+  <EntityType Name="SurveyResult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SurveyOptionId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="SurveyId" Type="Int32" />
+    <Property Name="AgendaId" Type="Int32" />
+    <Property Name="EventId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_SurveyResults_Users" FromRole="SurveyResult" ToRole="User" />
+    <NavigationProperty Name="Agendum" Relationship="eventsappModel.FK_SurveyResults_Agenda" FromRole="SurveyResult" ToRole="Agendum" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_SurveyResults_Events" FromRole="SurveyResult" ToRole="Event" />
+    <NavigationProperty Name="Survey" Relationship="eventsappModel.FK_SurveyResults_Survey" FromRole="SurveyResult" ToRole="Survey" />
+    <NavigationProperty Name="SurveyOption" Relationship="eventsappModel.FK_SurveyResults_SurveyOptions" FromRole="SurveyResult" ToRole="SurveyOption" />
+    <NavigationProperty Name="SurveyResults1" Relationship="eventsappModel.FK_SurveyResults_SurveyResults" FromRole="SurveyResult" ToRole="SurveyResult1" />
+    <NavigationProperty Name="SurveyResult1" Relationship="eventsappModel.FK_SurveyResults_SurveyResults" FromRole="SurveyResult1" ToRole="SurveyResult" />
+  </EntityType>
+  <EntityType Name="BackgroundTheme">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Events" Relationship="eventsappModel.FK_Events_BGTheme" FromRole="BackgroundTheme" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="CompanyType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EventCompanies" Relationship="eventsappModel.FK_EventCompanies_CompanyTypes" FromRole="CompanyType" ToRole="EventCompany" />
+  </EntityType>
+  <EntityType Name="Configuration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FullNameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="FullNameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameEn" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ISOCode2" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="ISOCode3" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FlagUrl" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="BigFlagUrl" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneCode" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="NumericCode" Type="Int16" Nullable="false" />
+    <Property Name="RegionId" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Addresses" Relationship="eventsappModel.FK_Address_Countries" FromRole="Country" ToRole="Address" />
+    <NavigationProperty Name="States" Relationship="eventsappModel.FK_State_Countries" FromRole="Country" ToRole="State" />
+  </EntityType>
+  <EntityType Name="EventPackage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="8" Scale="2" />
+    <NavigationProperty Name="UserSubscriptions" Relationship="eventsappModel.FK_UserSubcriptions_EventPackages" FromRole="EventPackage" ToRole="UserSubscription" />
+  </EntityType>
+  <EntityType Name="EventType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Events" Relationship="eventsappModel.FK_Events_EventTypes" FromRole="EventType" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsRTL" Type="Boolean" />
+    <NavigationProperty Name="PreferredLanguages" Relationship="eventsappModel.FK_PreferredLanguages_Languages" FromRole="Language" ToRole="PreferredLanguage" />
+  </EntityType>
+  <EntityType Name="ParticipantsRegistrationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Events" Relationship="eventsappModel.FK_Events_ParticipantsRegistrationType" FromRole="ParticipantsRegistrationType" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="PaymentStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserSubscriptions" Relationship="eventsappModel.FK_UserSubcriptions_PaymentStatuses" FromRole="PaymentStatus" ToRole="UserSubscription" />
+  </EntityType>
+  <EntityType Name="PersonType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EventPersons" Relationship="eventsappModel.FK_EventPerons_PersonTypes" FromRole="PersonType" ToRole="EventPerson" />
+  </EntityType>
+  <EntityType Name="RegistrationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="eventsappModel.FK_Users_RegistrationType" FromRole="RegistrationType" ToRole="User" />
+    <NavigationProperty Name="EventUsers" Relationship="eventsappModel.FK_EventUsers_RegistrationType" FromRole="RegistrationType" ToRole="EventUser" />
+  </EntityType>
+  <EntityType Name="SponserType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameEn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Packages" Relationship="eventsappModel.FK_Package_SponserTypes" FromRole="SponserType" ToRole="Package" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameAr" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameEn" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="CountryID" Type="Int32" />
+    <NavigationProperty Name="Addresses" Relationship="eventsappModel.FK_Address_State" FromRole="State" ToRole="Address" />
+    <NavigationProperty Name="Country" Relationship="eventsappModel.FK_State_Countries" FromRole="State" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="UserAction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="NameEn" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameAr" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="eventsappModel.FK_UserActions_Roles" FromRole="UserAction" ToRole="Role" />
+    <NavigationProperty Name="UserActionsTakens" Relationship="eventsappModel.FK_UserActionsTaken_UserActions" FromRole="UserAction" ToRole="UserActionsTaken" />
+  </EntityType>
+  <EntityType Name="Voucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameAr" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NameEn" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DescAr" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DescEn" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="StartFrom" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StartEnd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_Voucher_Users" FromRole="Voucher" ToRole="User" />
+    <NavigationProperty Name="AthleteVouchers" Relationship="eventsappModel.FK_AthleteVoucher_Voucher" FromRole="Voucher" ToRole="AthleteVoucher" />
+    <NavigationProperty Name="GuestVouchers" Relationship="eventsappModel.FK_GuestVoucher_Voucher" FromRole="Voucher" ToRole="GuestVoucher" />
+  </EntityType>
+  <EntityType Name="PushNotification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ReferenceId" Type="Int32" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Recipients" Relationship="eventsappModel.FK_Notification_Recipient" FromRole="PushNotification" ToRole="Recipient" />
+  </EntityType>
+  <EntityType Name="Recipient">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecipientId" Type="Int32" />
+    <Property Name="ReferenceConnectionId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NotificationId" Type="Int32" Nullable="false" />
+    <Property Name="IsSent" Type="Boolean" />
+    <NavigationProperty Name="PushNotification" Relationship="eventsappModel.FK_Notification_Recipient" FromRole="Recipient" ToRole="PushNotification" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cartId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="test" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="amount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="currency" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="reference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="paymentref" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="forenames" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="country" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="line1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="authorisedURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="statusCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="statusText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserSubscriptionId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_PaymentTransactions_Users" FromRole="Transaction" ToRole="User" />
+    <NavigationProperty Name="UserSubscription" Relationship="eventsappModel.FK_PaymentTransactions_UserSubcriptions" FromRole="Transaction" ToRole="UserSubscription" />
+    <NavigationProperty Name="UserSubscriptions" Relationship="eventsappModel.FK_UserSubcriptions_PaymentTransactions" FromRole="Transaction" ToRole="UserSubscription" />
+  </EntityType>
+  <EntityType Name="UserSubscription">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="EventPackageId" Type="Int32" />
+    <Property Name="TransactionId" Type="Int32" />
+    <Property Name="PaymentStatusId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="Fees" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="EventId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="eventsappModel.FK_UserSubcriptions_Users" FromRole="UserSubscription" ToRole="User" />
+    <NavigationProperty Name="Events" Relationship="eventsappModel.FK_Events_EventPackages" FromRole="UserSubscription" ToRole="Event" />
+    <NavigationProperty Name="Event" Relationship="eventsappModel.FK_UserSubscriptions_Events" FromRole="UserSubscription" ToRole="Event" />
+    <NavigationProperty Name="EventUsers" Relationship="eventsappModel.FK_EventUsers_UserSubcriptions" FromRole="UserSubscription" ToRole="EventUser" />
+    <NavigationProperty Name="EventPackage" Relationship="eventsappModel.FK_UserSubcriptions_EventPackages" FromRole="UserSubscription" ToRole="EventPackage" />
+    <NavigationProperty Name="PaymentStatus" Relationship="eventsappModel.FK_UserSubcriptions_PaymentStatuses" FromRole="UserSubscription" ToRole="PaymentStatus" />
+    <NavigationProperty Name="Transactions" Relationship="eventsappModel.FK_PaymentTransactions_UserSubcriptions" FromRole="UserSubscription" ToRole="Transaction" />
+    <NavigationProperty Name="Transaction" Relationship="eventsappModel.FK_UserSubcriptions_PaymentTransactions" FromRole="UserSubscription" ToRole="Transaction" />
+  </EntityType>
+  <Association Name="FK_LoggedUserConnections_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.LoggedUserConnection" Role="LoggedUserConnection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="LoggedUserConnection">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreferredLanguages_Languages">
+    <End Type="eventsappModel.Language" Role="Language" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.PreferredLanguage" Role="PreferredLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreferredLanguage">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreferredLanguages_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.PreferredLanguage" Role="PreferredLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreferredLanguage">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActions_Roles">
+    <End Type="eventsappModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="eventsappModel.UserAction" Role="UserAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserAction">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActionsTaken_UserActions">
+    <End Type="eventsappModel.UserAction" Role="UserAction" Multiplicity="1" />
+    <End Type="eventsappModel.UserActionsTaken" Role="UserActionsTaken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAction">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActionsTaken">
+        <PropertyRef Name="UserActionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActionsTaken_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.UserActionsTaken" Role="UserActionsTaken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActionsTaken">
+        <PropertyRef Name="ActionBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActionsTaken_Users1">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.UserActionsTaken" Role="UserActionsTaken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActionsTaken">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_UserClaims_Account_Users_UserId">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.UserClaim" Role="UserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCompanies_Companies">
+    <End Type="eventsappModel.Company" Role="Company" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.UserCompany" Role="UserCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserCompany">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCompanies_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.UserCompany" Role="UserCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserCompany">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_UserLogins_Account_Users_UserId">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.UserLogin" Role="UserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AthleteVoucher_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.AthleteVoucher" Role="AthleteVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AthleteVoucher">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestion_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.AttendeeQuestion" Role="AttendeeQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestion">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClaimedVouchers_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.ClaimedVoucher" Role="ClaimedVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClaimedVoucher">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClaimedVouchers_Users1">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.ClaimedVoucher" Role="ClaimedVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClaimedVoucher">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.Company" Role="Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Users1">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="DeletedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Users2">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="ModifiedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.EventUser" Role="EventUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GuestVoucher_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.GuestVoucher" Role="GuestVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GuestVoucher">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GuestVoucher_Users1">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.GuestVoucher" Role="GuestVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GuestVoucher">
+        <PropertyRef Name="sharedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.InterestedAgenda" Role="InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IOSDevices_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.IOSDevice" Role="IOSDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="IOSDevice">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentTransactions_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persons_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResult">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Companies">
+    <End Type="eventsappModel.Company" Role="Company" Multiplicity="0..1" />
+    <End Type="eventsappModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Persons">
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="0..1" />
+    <End Type="eventsappModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_RegistrationType">
+    <End Type="eventsappModel.RegistrationType" Role="RegistrationType" Multiplicity="0..1" />
+    <End Type="eventsappModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegistrationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RegistrationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscription">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Voucher_Users">
+    <End Type="eventsappModel.User" Role="User" Multiplicity="1" />
+    <End Type="eventsappModel.Voucher" Role="Voucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Voucher">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_Countries">
+    <End Type="eventsappModel.Country" Role="Country" Multiplicity="0..1" />
+    <End Type="eventsappModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_State">
+    <End Type="eventsappModel.State" Role="State" Multiplicity="0..1" />
+    <End Type="eventsappModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_Address">
+    <End Type="eventsappModel.Address" Role="Address" Multiplicity="0..1" />
+    <End Type="eventsappModel.Company" Role="Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAddress_Address">
+    <End Type="eventsappModel.Address" Role="Address" Multiplicity="1" />
+    <End Type="eventsappModel.EventAddress" Role="EventAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAddress">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventExhabitor_Company">
+    <End Type="eventsappModel.Company" Role="Company" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.EventCompany" Role="EventCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompany">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Agenda_Persons">
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="0..1" />
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agendum">
+        <PropertyRef Name="SpeakerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestion_Person">
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="0..1" />
+    <End Type="eventsappModel.AttendeeQuestion" Role="AttendeeQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestion">
+        <PropertyRef Name="SpeakerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventRating_Person">
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.SpeakerRating" Role="SpeakerRating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SpeakerRating">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventSpeaker_Person">
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.EventPerson" Role="EventPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPerson">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Persons">
+    <End Type="eventsappModel.Person" Role="Person" Multiplicity="0..1" />
+    <End Type="eventsappModel.InterestedAgenda" Role="InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="SpeakerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Agenda_AgendaSessions">
+    <End Type="eventsappModel.AgendaSession" Role="AgendaSession" Multiplicity="0..1" />
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgendaSession">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agendum">
+        <PropertyRef Name="SessionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Agenda_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agendum">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestions_Agenda">
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="0..1" />
+    <End Type="eventsappModel.AttendeeQuestion" Role="AttendeeQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestion">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_Agenda">
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="0..1" />
+    <End Type="eventsappModel.EventUser" Role="EventUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUser">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Agenda">
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="1" />
+    <End Type="eventsappModel.InterestedAgenda" Role="InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presentations_Agenda">
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="0..1" />
+    <End Type="eventsappModel.Presentation" Role="Presentation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Presentation">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Survey_Agenda">
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="0..1" />
+    <End Type="eventsappModel.Survey" Role="Survey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Survey">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Agenda">
+    <End Type="eventsappModel.Agendum" Role="Agendum" Multiplicity="0..1" />
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResult">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgendaSessions_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.AgendaSession" Role="AgendaSession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgendaSession">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AthleteVoucher_Voucher">
+    <End Type="eventsappModel.Voucher" Role="Voucher" Multiplicity="1" />
+    <End Type="eventsappModel.AthleteVoucher" Role="AthleteVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AthleteVoucher">
+        <PropertyRef Name="VoucherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestion_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.AttendeeQuestion" Role="AttendeeQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestion">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClaimedVouchers_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.ClaimedVoucher" Role="ClaimedVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClaimedVoucher">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAddress_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.EventAddress" Role="EventAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAddress">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventCompanies_CompanyTypes">
+    <End Type="eventsappModel.CompanyType" Role="CompanyType" Multiplicity="0..1" />
+    <End Type="eventsappModel.EventCompany" Role="EventCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompany">
+        <PropertyRef Name="CompanyTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventCompanies_Package">
+    <End Type="eventsappModel.Package" Role="Package" Multiplicity="0..1" />
+    <End Type="eventsappModel.EventCompany" Role="EventCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Package">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompany">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventExhabitor_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.EventCompany" Role="EventCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompany">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventNews_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.EventNew" Role="EventNew" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventNew">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventPerons_PersonTypes">
+    <End Type="eventsappModel.PersonType" Role="PersonType" Multiplicity="0..1" />
+    <End Type="eventsappModel.EventPerson" Role="EventPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPerson">
+        <PropertyRef Name="PersonTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventSpeaker_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.EventPerson" Role="EventPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPerson">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventRating_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eventsappModel.SpeakerRating" Role="SpeakerRating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SpeakerRating">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_BGTheme">
+    <End Type="eventsappModel.BackgroundTheme" Role="BackgroundTheme" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BackgroundTheme">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="BgImageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventPackages">
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSubscription">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="UserSubscriptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventTypes">
+    <End Type="eventsappModel.EventType" Role="EventType" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="EventTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_ParticipantsRegistrationType">
+    <End Type="eventsappModel.ParticipantsRegistrationType" Role="ParticipantsRegistrationType" Multiplicity="0..1" />
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParticipantsRegistrationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="ParticipantsRegistrationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUser_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.EventUser" Role="EventUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUser">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.InterestedAgenda" Role="InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notifications_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.Notification" Role="Notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notification">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Package_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.Package" Role="Package" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Package">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Photos_Event">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.Photo" Role="Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Photo">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presentations_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.Presentation" Role="Presentation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Presentation">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Survey_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="eventsappModel.Survey" Role="Survey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Survey">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResult">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubscriptions_Events">
+    <End Type="eventsappModel.Event" Role="Event" Multiplicity="0..1" />
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscription">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_RegistrationType">
+    <End Type="eventsappModel.RegistrationType" Role="RegistrationType" Multiplicity="0..1" />
+    <End Type="eventsappModel.EventUser" Role="EventUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegistrationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUser">
+        <PropertyRef Name="RegistrationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_UserSubcriptions">
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="0..1" />
+    <End Type="eventsappModel.EventUser" Role="EventUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSubscription">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUser">
+        <PropertyRef Name="UserSubscriptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GuestVoucher_Voucher">
+    <End Type="eventsappModel.Voucher" Role="Voucher" Multiplicity="1" />
+    <End Type="eventsappModel.GuestVoucher" Role="GuestVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GuestVoucher">
+        <PropertyRef Name="voucherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Package_SponserTypes">
+    <End Type="eventsappModel.SponserType" Role="SponserType" Multiplicity="0..1" />
+    <End Type="eventsappModel.Package" Role="Package" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SponserType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Package">
+        <PropertyRef Name="SponsorTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyOptions_Surveys">
+    <End Type="eventsappModel.Survey" Role="Survey" Multiplicity="0..1" />
+    <End Type="eventsappModel.SurveyOption" Role="SurveyOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Survey">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyOption">
+        <PropertyRef Name="SurveyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Survey">
+    <End Type="eventsappModel.Survey" Role="Survey" Multiplicity="0..1" />
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Survey">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResult">
+        <PropertyRef Name="SurveyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_SurveyOptions">
+    <End Type="eventsappModel.SurveyOption" Role="SurveyOption" Multiplicity="1" />
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurveyOption">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResult">
+        <PropertyRef Name="SurveyOptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_SurveyResults">
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult" Multiplicity="1" />
+    <End Type="eventsappModel.SurveyResult" Role="SurveyResult1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SurveyResult">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResult1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_State_Countries">
+    <End Type="eventsappModel.Country" Role="Country" Multiplicity="0..1" />
+    <End Type="eventsappModel.State" Role="State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_EventPackages">
+    <End Type="eventsappModel.EventPackage" Role="EventPackage" Multiplicity="0..1" />
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventPackage">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscription">
+        <PropertyRef Name="EventPackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_PaymentStatuses">
+    <End Type="eventsappModel.PaymentStatus" Role="PaymentStatus" Multiplicity="0..1" />
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscription">
+        <PropertyRef Name="PaymentStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notification_Recipient">
+    <End Type="eventsappModel.PushNotification" Role="PushNotification" Multiplicity="1" />
+    <End Type="eventsappModel.Recipient" Role="Recipient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PushNotification">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Recipient">
+        <PropertyRef Name="NotificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentTransactions_UserSubcriptions">
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="0..1" />
+    <End Type="eventsappModel.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSubscription">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="UserSubscriptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_PaymentTransactions">
+    <End Type="eventsappModel.Transaction" Role="Transaction" Multiplicity="0..1" />
+    <End Type="eventsappModel.UserSubscription" Role="UserSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaction">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscription">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserRoles">
+    <End Type="eventsappModel.Role" Role="Role" Multiplicity="*" />
+    <End Type="eventsappModel.User" Role="User" Multiplicity="*" />
+  </Association>
+</Schema>

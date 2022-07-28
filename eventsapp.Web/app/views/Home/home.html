@@ -1,0 +1,152 @@
+<div class="clearfix" ng-controller="homeController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"> <i class="mdi mdi-calendar-multiple-check"></i>  {{'event.eventList' | translate}} </h4>
+        <ol class="breadcrumb p-0 m-0">
+            <li>
+                <a ng-if="vm.user.roleName == 1 || vm.user.roleName == 3" ui-sref="app.event" class="btn btn-primary btn-bordered waves-effect waves-light" style="margin:0 10px">
+                    <i class="glyphicon glyphicon-plus-sign"></i>  {{'event.addEvent' | translate}}
+                </a>
+            </li>
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+    <!--<div class="panel panel-border panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{'general.filterBy' | translate}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-3">
+                <label><span>{{'general.userType' | translate}}</span> </label>
+                <div>
+                    <ui-select ng-model="vm.filterParams.userRole" name="roleId" theme="bootstrap" class="text-left" allow-clear="true">
+                        <ui-select-match placeholder="{{'general.selectUserType' | translate}}" allow-clear="true">{{$select.selected.displayName}}   </ui-select-match>
+                        <ui-select-choices repeat="role.name as role  in  vm.userRoles | filter: $select.search">
+                            <div>{{role.displayName}}</div>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+            <div class="col-md-3" ng-if="vm.user.roleName == 2">
+                <label><span>{{'general.companyName' | translate}}</span> </label>
+                <div>
+                    <ui-select ng-model="vm.filterParams.companyId" name="companyId" theme="bootstrap" class="text-left" allow-clear="true">
+                        <ui-select-match placeholder="Select Company" allow-clear="true">{{$select.selected | localizeString}}   </ui-select-match>
+                        <ui-select-choices repeat="company.id as company in vm.companies | filter: $select.search">
+                            <div>{{company | localizeString}} -{{company.email}} </div>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label><span>{{'general.companyName' | translate}}</span> </label>
+                <div>
+                    <input id="input-id-1" ng-model="vm.filterParams.createdBy" type="text" class="form-control ng-pristine ng-pending ng-touched" name="email" style=""><span></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label><span>{{'general.eventName' | translate}}</span> </label>
+                <div>
+                    <input id="input-id-1" ng-model="vm.filterParams.eventName" type="text" class="form-control ng-pristine ng-pending ng-touched" name="eventName" style=""><span></span>
+                </div>
+            </div>
+            <div class="col-md-1 m-t-10">
+                <button type="button" ng-click="vm.setPage(1)" class="btn btn-primary pull-right ng-scope">{{'general.search' | translate}} </button>
+            </div>
+        </div>
+    </div>-->
+    <div>
+        <div class="eventList  row">
+            <div class="col-lg-4 col-md-4 col-sm-6  text-center doc-item" ng-repeat="event in vm.events track by $index">
+                <div class="comList animated fadeInUp clearfix ae-animation-fadeInUp">
+                    <ul class="list-inline social-lists animate">
+                        <!--<li>
+                            <a href="{{event.themeURL}}{{event.id}}" ng-if="event.themeURL != null" target="_blank">{{'event.viewEvent' | translate}}</a>
+                            <a href="{{$root.app.baseURL}}viewEvent/Layout1/index.html?id={{event.id}}" target="_blank" ng-if="event.themeURL == null">{{'event.viewEvent' | translate}}</a>
+                        </li>-->
+                        <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3"><a ui-sref="app.event({id: event.id})">{{'event.editEvent' | translate}}</a></li>
+                        <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3"><a ng-click="vm.delete(event.id)" style="cursor:pointer;">{{'general.delete' | translate}}</a></li>
+                        <!--<li ng-if="vm.user.roleName == 2">
+                            <input class="hidden" type="checkbox" ng-true-value="{{event}}" ng-false-value="{{event.id}}"
+                                   ng-click="Eventchecked(checkboxValue)" ng-checked="EventExists(checkboxValue)" ng-init="checkboxValue = event"
+                                   ng-model="checkboxValue">
+                        </li>-->
+                        <!--<li ng-if="vm.user.roleName == 2">
+                            <a style="cursor:pointer" ng-click="vm.registerEvent(event.id)">{{'event.register' | translate}}</a>
+                        </li>-->
+                        <!--<li ng-if="vm.user.roleName == 2">
+                            <a style="cursor:pointer" ng-click="vm.printCertificateOfParticipation(event)">{{'event.printCertificateOfParticipation' | translate}}</a>
+                        </li>-->
+                    </ul>
+                    <figure>
+                        <a href="{{event.bannerPhotoFullPath}}" data-gallery="#blueimp-image-carousel" title="Unsplash images" target="_blank">
+                            <img ng-if="event.bannerPhotoFullPath!= null" src="{{event.bannerPhotoFullPath}}" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2">
+                            <img ng-if="event.bannerPhotoFullPath== null" src="/app/img/eventBackground.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2">
+                        </a>
+                    </figure>
+                    <div class="event-category">
+                        <ol>
+                            <li class="pull-left"><i class="fa fa-tag"></i>   <span>{{event.eventType | localizeString : "nameEn" : "nameAr"}}</span></li>
+                            <li class="pull-right">
+                                <i class="fa fa-calendar-check-o"></i>  {{event.startDate | date  : "dd-MMMM-y" }}  - {{event.endDate | date  : "dd-MMM-y"  }}
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="text-content">
+                        <h5 ng-bind-html='event | localizeString : "nameEn" : "nameAr"'> </h5>
+                        <!-- <div class="for-border"></div> -->
+                        <p ng-bind-html='event | localizeString : "descriptionEn" : "descriptionAr"'> </p>
+                        <p ng-if="event.user != null && vm.user.roleName==1" class="text-danger">{{event.user.email}} - {{event.user.company | localizeString}} </p>
+                        <!--<div class="social-block">
+                            <div class="btn btn-primary btn-sm m-b-10" ng-if="vm.user.roleName != 2 && event.userSubscription != null">{{event.userSubscription.eventPackage | localizeString}} </div>
+                            <a ng-if="event.facebookURL!= null" href="{{event.facebookURL}}" style="cursor:pointer" target="_blank"><i class="ti-facebook"></i> </a>
+                            <a ng-if="event.twitterURL!= null" href="{{event.twitterURL}}" style="cursor:pointer" target="_blank"> <i class="ti-twitter-alt"></i></a>
+                            <a ng-if="event.linkedInURL!= null" href="{{event.linkedInURL}}" style="cursor:pointer" target="_blank"> <i class="ti-linkedin"></i></a>
+                            <div class="addthis_inline_share_toolbox" ng-if="event.themeURL != null"
+                                 data-url="{{event.themeURL}}{{event.id}}"
+                                 data-title="{{event | localizeString : 'nameEn' : 'nameAr'}}"
+                                 data-description="{{event | localizeString : 'descriptionEn' : 'descriptionAr'}}"></div>
+                            <div class="addthis_inline_share_toolbox" ng-if="event.themeURL == null"
+                                 data-url="{{$root.app.baseURL}}viewEvent/Layout1/index.html?id={{event.id}}"
+                                 data-title="{{event | localizeString : 'nameEn' : 'nameAr'}}"
+                                 data-description="{{event | localizeString : 'descriptionEn' : 'descriptionAr'}}"></div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-if="vm.pager.totalRecords == 0">
+            <div class="col-md-12">
+                <uib-alert type="info"><i class="fa fa-info-circle"></i> {{'general.noDataFound' | translate}}</uib-alert>
+            </div>
+        </div>
+        <div class="row col-md-12" ng-if="vm.pager.totalRecords > 0">
+            <ul class="pager custompager">
+                <li>
+                    <button ng-click="vm.setPage(1)" ng-disabled="vm.pager.currentPage === 1" class="btn btn-margin btn-applegreen">{{'Pager.first' | translate}}</button>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.currentPage - 1)" ng-disabled="vm.pager.currentPage === 1" class="btn btn-margin btn-applegreen"><i ng-class="{'fa fa-arrow-right':app.layout.isRTL,'fa fa-arrow-left':!app.layout.isRTL}"></i> {{'Pager.previous' | translate}}</button>
+                </li>
+                <li>
+                    <span class="text-center text-sm text-bold"> {{vm.pager.currentPage}} / {{vm.pager.totalPages}} {{'Pager.pages' | translate}}</span>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.currentPage + 1)" ng-disabled="vm.pager.toRecord === vm.pager.totalRecords" class="btn btn-margin btn-applegreen">{{'Pager.next' | translate}} <i ng-class="{'fa fa-arrow-left':app.layout.isRTL,'fa fa-arrow-right':!app.layout.isRTL}"></i></button>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.totalPages)" ng-disabled="vm.pager.toRecord === vm.pager.totalRecords" class="btn btn-margin btn-applegreen">{{'Pager.last' | translate}}</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+<!-- The Gallery as lightbox dialog, should be a child element of the document body-->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides">
+        <h3 class="title"></h3><a class="prev">&lsaquo;</a><a class="next">&rsaquo;</a><a class="close">&times;</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+</div>

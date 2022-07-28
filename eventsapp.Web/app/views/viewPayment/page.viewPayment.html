@@ -1,0 +1,94 @@
+﻿<div ng-controller="viewPaymentController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="fa fa-credit-card"></i> {{'payment.transactionDetail'|translate}}</h4>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <!-- <div class="panel-heading">
+                    <h4>Invoice</h4>
+                </div> -->
+                <div class="panel-body">
+                    <div class="clearfix">
+                        <div>
+                            <h4>  {{'payment.paymentRef'|translate}} # <br> <strong> {{vm.transaction.paymentref}} </strong> </h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="javascript:window.print()" class="btn pull-right btn-inverse waves-effect waves-light"><i class="fa fa-print"></i></a>
+                            <div class="col-md-10" ng-if="vm.transaction.userSubscription.user.company != null">
+                                <h4>{{'payment.companyDetails'|translate}}: </h4>
+                                <address>
+                                    <strong>{{vm.transaction.userSubscription.user.company | localizeString}}</strong><br>
+                                    {{vm.transaction.userSubscription.user.company.address.street}}
+                                    {{vm.transaction.userSubscription.user.company.address.state| localizeString}}
+                                    {{vm.transaction.userSubscription.user.company.address.country| localizeString}}<br>
+                                    <abbr title="Phone">P:</abbr>       {{vm.transaction.userSubscription.user.company.phone}}
+                                </address>
+                            </div>
+                            <div class="col-md-12">
+                                <h4>{{'payment.transactionDetail'|translate}}: </h4>
+                                <p class="col-md-4"><strong>{{'payment.paymentId'|translate}}: </strong> #{{vm.transaction.cartId}} </p>
+                                <p class="col-md-4"><strong>{{'payment.paymentDate'|translate}}: </strong>{{vm.transaction.createdOn | date :'dd-MMM-yyyy'}}</p>
+                                <p class="col-md-4">
+                                    <strong>{{'payment.paymentStatus'|translate}}: </strong>
+                                    <span class="label label-success" ng-if="vm.transaction.userSubscription.paymentStatus.id == 3">{{vm.transaction.userSubscription.paymentStatus | localizeString}}</span>
+                                    <span class="label label-info" ng-if="vm.transaction.userSubscription.paymentStatus.id == 2">{{vm.transaction.userSubscription.paymentStatus | localizeString}}</span>
+                                    <span class="label label-danger" ng-if="vm.transaction.userSubscription.paymentStatus.id == 1">{{vm.transaction.userSubscription.paymentStatus | localizeString}}</span>
+                                </p>
+                                <p class="col-md-4">
+                                    <strong>{{'payment.transactionStatus'|translate}}: </strong>
+                                    <span class="text-danger" ng-if="vm.transaction.statusText != 'Paid'"> {{vm.transaction.statusText}}</span>
+                                    <span class="text-success" ng-if="vm.transaction.statusText == 'Paid'"> {{vm.transaction.statusText}}</span>
+                                </p>
+                                <p class="col-md-4"><strong>{{'payment.transactionStatusCode'|translate}}: </strong> {{vm.transaction.statusCode}} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="m-h-50"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table m-t-30 table-colored table-info">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>{{'package.noOfEvents'|translate}} </th>
+                                            <th>{{'package.cost'|translate}} </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>{{vm.transaction.userSubscription.eventPackage.noOfEvents}}</td>
+                                            <td>{{vm.transaction.userSubscription.eventPackage.price}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="clearfix m-t-40">
+                                <h5 class="small text-inverse font-600">{{'payment.termsHeading'|translate}}</h5>
+                                <small>
+                                    {{'payment.terms1'|translate}}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-3">
+                            <hr>
+                            <h3 class="text-right">  {{'package.aed'|translate}} {{vm.transaction.amount}}</h3>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

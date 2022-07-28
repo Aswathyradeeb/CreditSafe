@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6a2d3d81eb1248cd822ef239228cd19e" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="eventsappModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="eventsappModel.EventSpeaker" Width="1.5" PointX="6" PointY="18.125" />
+        <EntityTypeShape EntityType="eventsappModel.LoggedUserConnection" Width="1.5" PointX="12" PointY="50" />
+        <EntityTypeShape EntityType="eventsappModel.PreferredLanguage" Width="1.5" PointX="15" PointY="53.25" />
+        <EntityTypeShape EntityType="eventsappModel.Role" Width="1.5" PointX="7.5" PointY="48.875" />
+        <EntityTypeShape EntityType="eventsappModel.UserActionsTaken" Width="1.5" PointX="12" PointY="60.875" />
+        <EntityTypeShape EntityType="eventsappModel.UserClaim" Width="1.5" PointX="12" PointY="54.25" />
+        <EntityTypeShape EntityType="eventsappModel.UserCompany" Width="1.5" PointX="12" PointY="57.25" />
+        <EntityTypeShape EntityType="eventsappModel.UserLogin" Width="1.5" PointX="12" PointY="92.25" />
+        <EntityTypeShape EntityType="eventsappModel.User" Width="1.5" PointX="9.75" PointY="51.875" />
+        <EntityTypeShape EntityType="eventsappModel.Address" Width="1.5" PointX="5.25" PointY="56.625" />
+        <EntityTypeShape EntityType="eventsappModel.Company" Width="1.5" PointX="7.5" PointY="55.625" />
+        <EntityTypeShape EntityType="eventsappModel.IOSDevice" Width="1.5" PointX="12" PointY="47.25" />
+        <EntityTypeShape EntityType="eventsappModel.Person" Width="1.5" PointX="12" PointY="84.5" />
+        <EntityTypeShape EntityType="eventsappModel.Agendum" Width="1.5" PointX="22.5" PointY="68.375" />
+        <EntityTypeShape EntityType="eventsappModel.AgendaSession" Width="1.5" PointX="20.25" PointY="61.5" />
+        <EntityTypeShape EntityType="eventsappModel.AthleteVoucher" Width="1.5" PointX="14.25" PointY="77" />
+        <EntityTypeShape EntityType="eventsappModel.AttendeeQuestion" Width="1.5" PointX="20.25" PointY="69.5" />
+        <EntityTypeShape EntityType="eventsappModel.ClaimedVoucher" Width="1.5" PointX="15" PointY="56.75" />
+        <EntityTypeShape EntityType="eventsappModel.EventAddress" Width="1.5" PointX="20.25" PointY="53.125" />
+        <EntityTypeShape EntityType="eventsappModel.EventCompany" Width="1.5" PointX="20.25" PointY="56.375" />
+        <EntityTypeShape EntityType="eventsappModel.EventNew" Width="1.5" PointX="20.25" PointY="90.75" />
+        <EntityTypeShape EntityType="eventsappModel.EventPerson" Width="1.5" PointX="20.25" PointY="64.875" />
+        <EntityTypeShape EntityType="eventsappModel.Event" Width="1.5" PointX="18" PointY="51.125" />
+        <EntityTypeShape EntityType="eventsappModel.EventUser" Width="1.5" PointX="25.5" PointY="62.25" />
+        <EntityTypeShape EntityType="eventsappModel.GuestVoucher" Width="1.5" PointX="14.25" PointY="80" />
+        <EntityTypeShape EntityType="eventsappModel.InterestedAgenda" Width="1.5" PointX="24.75" PointY="69.875" />
+        <EntityTypeShape EntityType="eventsappModel.Notification" Width="1.5" PointX="20.25" PointY="87.375" />
+        <EntityTypeShape EntityType="eventsappModel.Package" Width="1.5" PointX="23.25" PointY="51.875" />
+        <EntityTypeShape EntityType="eventsappModel.Photo" Width="1.5" PointX="20.25" PointY="84.25" />
+        <EntityTypeShape EntityType="eventsappModel.Presentation" Width="1.5" PointX="27.75" PointY="58.375" />
+        <EntityTypeShape EntityType="eventsappModel.SpeakerRating" Width="1.5" PointX="20.25" PointY="74.25" />
+        <EntityTypeShape EntityType="eventsappModel.Survey" Width="1.5" PointX="27.75" PointY="61.875" />
+        <EntityTypeShape EntityType="eventsappModel.SurveyOption" Width="1.5" PointX="30" PointY="62.5" />
+        <EntityTypeShape EntityType="eventsappModel.SurveyResult" Width="1.5" PointX="32.25" PointY="60.875" />
+        <EntityTypeShape EntityType="eventsappModel.BackgroundTheme" Width="1.5" PointX="15.75" PointY="63.125" />
+        <EntityTypeShape EntityType="eventsappModel.CompanyType" Width="1.5" PointX="18" PointY="48.25" />
+        <EntityTypeShape EntityType="eventsappModel.Configuration" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="eventsappModel.Country" Width="1.5" PointX="0.75" PointY="54.75" />
+        <EntityTypeShape EntityType="eventsappModel.EventPackage" Width="1.5" PointX="21" PointY="46.5" />
+        <EntityTypeShape EntityType="eventsappModel.EventType" Width="1.5" PointX="15.75" PointY="50" />
+        <EntityTypeShape EntityType="eventsappModel.Language" Width="1.5" PointX="12.75" PointY="44.125" />
+        <EntityTypeShape EntityType="eventsappModel.ParticipantsRegistrationType" Width="1.5" PointX="15.75" PointY="60.625" />
+        <EntityTypeShape EntityType="eventsappModel.PaymentStatus" Width="1.5" PointX="21" PointY="49.875" />
+        <EntityTypeShape EntityType="eventsappModel.PersonType" Width="1.5" PointX="18" PointY="66.375" />
+        <EntityTypeShape EntityType="eventsappModel.RegistrationType" Width="1.5" PointX="7.5" PointY="52.375" />
+        <EntityTypeShape EntityType="eventsappModel.SponserType" Width="1.5" PointX="21" PointY="43.25" />
+        <EntityTypeShape EntityType="eventsappModel.State" Width="1.5" PointX="3" PointY="59.375" />
+        <EntityTypeShape EntityType="eventsappModel.UserAction" Width="1.5" PointX="9.75" PointY="66.125" />
+        <EntityTypeShape EntityType="eventsappModel.Voucher" Width="1.5" PointX="12" PointY="100.875" />
+        <EntityTypeShape EntityType="eventsappModel.PushNotification" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="eventsappModel.Recipient" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="eventsappModel.Transaction" Width="1.5" PointX="25.5" PointY="55.375" />
+        <EntityTypeShape EntityType="eventsappModel.UserSubscription" Width="1.5" PointX="23.25" PointY="56.125" />
+        <AssociationConnector Association="eventsappModel.FK_LoggedUserConnections_Users" />
+        <AssociationConnector Association="eventsappModel.FK_PreferredLanguages_Languages" />
+        <AssociationConnector Association="eventsappModel.FK_PreferredLanguages_Users" />
+        <AssociationConnector Association="eventsappModel.FK_UserActions_Roles" />
+        <AssociationConnector Association="eventsappModel.FK_UserActionsTaken_UserActions" />
+        <AssociationConnector Association="eventsappModel.FK_UserActionsTaken_Users" />
+        <AssociationConnector Association="eventsappModel.FK_UserActionsTaken_Users1" />
+        <AssociationConnector Association="eventsappModel.FK_Account_UserClaims_Account_Users_UserId" />
+        <AssociationConnector Association="eventsappModel.FK_UserCompanies_Companies" />
+        <AssociationConnector Association="eventsappModel.FK_UserCompanies_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Account_UserLogins_Account_Users_UserId" />
+        <AssociationConnector Association="eventsappModel.FK_AthleteVoucher_Users" />
+        <AssociationConnector Association="eventsappModel.FK_AttendeeQuestion_Users" />
+        <AssociationConnector Association="eventsappModel.FK_ClaimedVouchers_Users" />
+        <AssociationConnector Association="eventsappModel.FK_ClaimedVouchers_Users1" />
+        <AssociationConnector Association="eventsappModel.FK_Companies_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Events_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Events_Users1" />
+        <AssociationConnector Association="eventsappModel.FK_Events_Users2" />
+        <AssociationConnector Association="eventsappModel.FK_EventUsers_Users" />
+        <AssociationConnector Association="eventsappModel.FK_GuestVoucher_Users" />
+        <AssociationConnector Association="eventsappModel.FK_GuestVoucher_Users1" />
+        <AssociationConnector Association="eventsappModel.FK_InterestedAgenda_Users" />
+        <AssociationConnector Association="eventsappModel.FK_IOSDevices_Users" />
+        <AssociationConnector Association="eventsappModel.FK_PaymentTransactions_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Persons_Users" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyResults_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Users_Companies" />
+        <AssociationConnector Association="eventsappModel.FK_Users_Events" />
+        <AssociationConnector Association="eventsappModel.FK_Users_Persons" />
+        <AssociationConnector Association="eventsappModel.FK_Users_RegistrationType" />
+        <AssociationConnector Association="eventsappModel.FK_UserSubcriptions_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Voucher_Users" />
+        <AssociationConnector Association="eventsappModel.FK_Address_Countries" />
+        <AssociationConnector Association="eventsappModel.FK_Address_State" />
+        <AssociationConnector Association="eventsappModel.FK_Company_Address" />
+        <AssociationConnector Association="eventsappModel.FK_EventAddress_Address" />
+        <AssociationConnector Association="eventsappModel.FK_EventExhabitor_Company" />
+        <AssociationConnector Association="eventsappModel.FK_Agenda_Persons" />
+        <AssociationConnector Association="eventsappModel.FK_AttendeeQuestion_Person" />
+        <AssociationConnector Association="eventsappModel.FK_EventRating_Person" />
+        <AssociationConnector Association="eventsappModel.FK_EventSpeaker_Person" />
+        <AssociationConnector Association="eventsappModel.FK_InterestedAgenda_Persons" />
+        <AssociationConnector Association="eventsappModel.FK_Agenda_AgendaSessions" />
+        <AssociationConnector Association="eventsappModel.FK_Agenda_Event" />
+        <AssociationConnector Association="eventsappModel.FK_AttendeeQuestions_Agenda" />
+        <AssociationConnector Association="eventsappModel.FK_EventUsers_Agenda" />
+        <AssociationConnector Association="eventsappModel.FK_InterestedAgenda_Agenda" />
+        <AssociationConnector Association="eventsappModel.FK_Presentations_Agenda" />
+        <AssociationConnector Association="eventsappModel.FK_Survey_Agenda" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyResults_Agenda" />
+        <AssociationConnector Association="eventsappModel.FK_AgendaSessions_Events" />
+        <AssociationConnector Association="eventsappModel.FK_AthleteVoucher_Voucher" />
+        <AssociationConnector Association="eventsappModel.FK_AttendeeQuestion_Event" />
+        <AssociationConnector Association="eventsappModel.FK_ClaimedVouchers_Events" />
+        <AssociationConnector Association="eventsappModel.FK_EventAddress_Event" />
+        <AssociationConnector Association="eventsappModel.FK_EventCompanies_CompanyTypes" />
+        <AssociationConnector Association="eventsappModel.FK_EventCompanies_Package" />
+        <AssociationConnector Association="eventsappModel.FK_EventExhabitor_Event" />
+        <AssociationConnector Association="eventsappModel.FK_EventNews_Events" />
+        <AssociationConnector Association="eventsappModel.FK_EventPerons_PersonTypes" />
+        <AssociationConnector Association="eventsappModel.FK_EventSpeaker_Event" />
+        <AssociationConnector Association="eventsappModel.FK_EventRating_Event" />
+        <AssociationConnector Association="eventsappModel.FK_Events_BGTheme" />
+        <AssociationConnector Association="eventsappModel.FK_Events_EventPackages" />
+        <AssociationConnector Association="eventsappModel.FK_Events_EventTypes" />
+        <AssociationConnector Association="eventsappModel.FK_Events_ParticipantsRegistrationType" />
+        <AssociationConnector Association="eventsappModel.FK_EventUser_Event" />
+        <AssociationConnector Association="eventsappModel.FK_InterestedAgenda_Events" />
+        <AssociationConnector Association="eventsappModel.FK_Notifications_Events" />
+        <AssociationConnector Association="eventsappModel.FK_Package_Events" />
+        <AssociationConnector Association="eventsappModel.FK_Photos_Event" />
+        <AssociationConnector Association="eventsappModel.FK_Presentations_Events" />
+        <AssociationConnector Association="eventsappModel.FK_Survey_Events" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyResults_Events" />
+        <AssociationConnector Association="eventsappModel.FK_UserSubscriptions_Events" />
+        <AssociationConnector Association="eventsappModel.FK_EventUsers_RegistrationType" />
+        <AssociationConnector Association="eventsappModel.FK_EventUsers_UserSubcriptions" />
+        <AssociationConnector Association="eventsappModel.FK_GuestVoucher_Voucher" />
+        <AssociationConnector Association="eventsappModel.FK_Package_SponserTypes" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyOptions_Surveys" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyResults_Survey" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyResults_SurveyOptions" />
+        <AssociationConnector Association="eventsappModel.FK_SurveyResults_SurveyResults" />
+        <AssociationConnector Association="eventsappModel.FK_State_Countries" />
+        <AssociationConnector Association="eventsappModel.FK_UserSubcriptions_EventPackages" />
+        <AssociationConnector Association="eventsappModel.FK_UserSubcriptions_PaymentStatuses" />
+        <AssociationConnector Association="eventsappModel.FK_Notification_Recipient" />
+        <AssociationConnector Association="eventsappModel.FK_PaymentTransactions_UserSubcriptions" />
+        <AssociationConnector Association="eventsappModel.FK_UserSubcriptions_PaymentTransactions" />
+        <AssociationConnector Association="eventsappModel.UserRoles" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

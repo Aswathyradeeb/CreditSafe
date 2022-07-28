@@ -1,0 +1,43 @@
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\AutoMapper.dll
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EntityFramework.dll
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\System.Data.SqlServerCe.dll
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\AutoMapper.xml
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EntityFramework.xml
+D:\Workspace\Events\events\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Events\events\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CoreCompileInputs.cache
+D:\Workspace\Events\events\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CopyComplete
+D:\Workspace\Events\events\EventsApp.Domain\obj\Debug\EventsApp.Domain.dll
+D:\Workspace\Events\events\EventsApp.Domain\obj\Debug\EventsApp.Domain.pdb
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\AutoMapper.dll
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\System.Data.SqlServerCe.dll
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\AutoMapper.xml
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CoreCompileInputs.cache
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CopyComplete
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.dll
+D:\Workspace\Event E-Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\AutoMapper.dll
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\System.Data.SqlServerCe.dll
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\AutoMapper.xml
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.csprojAssemblyReference.cache
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CoreCompileInputs.cache
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CopyComplete
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.dll
+D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.pdb

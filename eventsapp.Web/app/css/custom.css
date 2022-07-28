@@ -1,0 +1,424 @@
+
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/*=============== Home-team ===============*/
+
+
+
+.eventList h2 {
+    font-weight: normal;
+}
+
+.eventList .comList {
+    background-color: #fff;
+}
+
+    .eventList .comList figure {
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+    }
+
+.eventList img {
+    width: 100%;
+    height: 150px; 
+}
+
+.eventList .comList h5 {
+    margin: 0 0 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3a3c41;
+}
+
+.eventList .comList .for-border {
+    margin-bottom: 20px;
+}
+
+.eventList .comList .text-content {
+    padding: 10px 0 13px;
+    height: 150px;
+    overflow: auto;
+}
+
+.eventList.doctors-var-two {
+    text-align: left;
+    background-color: #fff;
+}
+
+    .eventList.doctors-var-two .slogan-section {
+        text-align: left;
+    }
+
+    .eventList.doctors-var-two .comList {
+        background-color: transparent;
+    }
+
+        .eventList.doctors-var-two .comList .for-border {
+            display: none;
+        }
+
+        .eventList.doctors-var-two .comList .text-content {
+            padding: 20px 0 20px;
+        }
+
+    .eventList.doctors-var-two .text-center {
+        text-align: left;
+    }
+
+.slogan-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.eventList .comList .for-border {
+    margin-bottom: 20px;
+}
+
+.for-border {
+    height: 11px;
+    width: 100%;
+    background: transparent url(http://omarhabash.com/nova/wp-content/uploads/2014/08/feature-border.png) center center no-repeat;
+    border: none;
+}
+
+.eventList .comList h5 small {
+    color: #008fd5;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.eventList .comList ul {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -28px;
+    text-align: center;
+    margin-top: 10em;
+    opacity: 0;
+    z-index: 1;
+}
+
+.eventList .comList li a {
+    background: #008fd5;
+    color: white;
+    padding: 0.75em;
+    border: 5px solid rgba(255, 255, 255, 0.33);
+}
+
+
+.doc-img {
+    /* Webkit for Chrome and Safari */
+    -webkit-transform: scale(1, 1);
+    // This is the scale for the normal size of the image. -webkit-transition-duration: 500ms;
+    -webkit-transition-timing-function: ease-out;
+    /* Webkit for Mozila Firefox */
+    -moz-transform: scale(1, 1);
+    -moz-transition-duration: 500ms;
+    -moz-transition-timing-function: ease-out;
+    /* Webkit for IE( Version: 11, 10 ) */
+    -ms-transform: scale(1, 1);
+    -ms-transition-duration: 500ms;
+    -ms-transition-timing-function: ease-out;
+}
+
+.doc-item:hover .doc-img {
+    /* Webkit for Chrome and Safari */
+    -webkit-transform: scale(1.2, 1.2);
+    // This is the enlarged size scale of the image. -webkit-transition-duration: 500ms;
+    -webkit-transition-timing-function: ease-out;
+    /* Webkit for Mozila Firefox */
+    -moz-transform: scale(1.2, 1.2);
+    -moz-transition-duration: 500ms;
+    -moz-transition-timing-function: ease-out;
+    /* Webkit for IE( Version: 11, 10 ) */
+    -ms-transform: scale(1.20, 1.20);
+    -ms-transition-duration: 500ms;
+    -ms-transition-timing-function: ease-out;
+    opacity: 0.7;
+}
+
+.doc-item:hover .social-lists {
+    margin-top: -5em;
+    opacity: 1;
+}
+
+.doc-item {
+    margin-bottom: 20px;
+}
+
+.abcategory {
+    border: 1px solid #ccc;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+
+    .abcategory ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .abcategory ul li {
+            display: inline;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+            .abcategory ul li:last-child {
+                margin-right: 0px;
+            }
+
+/*=============== //Home-team ===============*/
+
+.event-category {
+    position: relative;
+    top: 0;;
+    width: 100%;
+    background: #f5707a;
+    color: white;
+}
+
+    .event-category ol {
+        list-style-type: none;
+        padding: 16px;
+        padding-bottom: 30px;
+    }
+
+        .event-category ol li {
+            display: inline;
+        }
+
+.member-thumb img {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn.btn-icon.waves-effect.waves-light.btn-info {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.autoadjust {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .autoadjust > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .autoadjust .card-box {
+        height: 100%;
+    }
+
+
+body *::-webkit-scrollbar {
+    width: .6em;
+}
+
+
+body *::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+body *::-webkit-scrollbar-thumb {
+    background-color: #d4d0d0;
+    outline: 1px solid slategrey;
+}
+.member-description {
+    max-height: 150px;
+    overflow: auto;
+}
+.page-title p {
+    margin: 0;
+    line-height: 1;
+}
+
+
+.modal-header.ng-scope {
+    background: #00acc1;
+}
+
+.modal-header {
+    padding: 20px !important;
+    background: #00acc1;
+    color: white !important;
+}
+
+.modal-body {
+    padding: 30px !important;
+}
+.modal-footer {
+    padding: 20px !important;
+}
+
+.modal-header button, .modal-header h4 {
+    color: white !important;
+}
+
+.modal-content {
+    padding: 0 !important;
+}
+
+.close {
+    opacity: 1;
+}
+.panel-border .panel-heading {
+    font-size: 18px;
+    padding-bottom: 15px;
+    border: 2px solid #ccc !important;
+} 
+
+.panel-border.panel-info .panel-heading {
+    border-color: #3ac9d67d !important;
+    color: #3ac9d6 !important;
+}
+
+.panel.panel-border.panel-info {
+    box-shadow: none;
+}
+
+.panel-border .panel-body {
+    padding: 15px 20px 20px 20px;
+    border: 2px solid #ccc !important;
+    border-color: #3ac9d67d !important;
+    color: #3ac9d6 !important;
+    box-shadow: none;
+}
+ 
+
+@-webkit-keyframes pendingApprovalUser {
+    from {
+        background-color: #f5707a;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+@-moz-keyframes pendingApprovalUser {
+    from {
+        background-color: #f5707a;
+        ;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+@-o-keyframes pendingApprovalUser {
+    from {
+        background-color: #f5707a;
+        ;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+@keyframes pendingApprovalUser {
+    from {
+        background-color: #f5707a;
+        ;
+    }
+
+    to {
+        background-color: inherit;
+    }
+}
+
+.pendingApprovalUser {
+    -webkit-animation: pendingApprovalUser 2s infinite; /* Safari 4+ */
+    -moz-animation: pendingApprovalUser 2s infinite; /* Fx 5+ */
+    -o-animation: pendingApprovalUser 2s infinite; /* Opera 12+ */
+    animation: pendingApprovalUser 2s infinite; /* IE 10+ */
+}
+
+img.img-responsive.thumb128.thumbnail.ng-scope {
+    max-width: 128px;
+}
+
+img.img-responsive.thumb128.ng-scope {
+    max-height: 128px;
+    max-width: 350px;
+}
+.social-block {
+    margin-top: 20px;
+}
+.social-block a {
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all linear 0.5s;
+    margin: 3px;
+}
+    .social-block a:nth-child(1) {
+        background-color: #3B5998;
+        color: white;
+        border: 1px solid #3B5998;
+    }
+    .social-block a:nth-child(1):hover {
+        background-color:white;
+        color: #3B5998
+    }
+    .social-block a:nth-child(2) {
+        background-color: #00ACEE;
+        color: white;
+        border: 1px solid #00ACEE;
+    }
+        .social-block a:nth-child(2):hover {
+            background-color: white;
+            color: #00ACEE
+        }
+    .social-block a:nth-child(3) {
+        background-color: #0e76a8;
+        color: white;
+        border: 1px solid #0e76a8;
+        margin-left: 0px;
+    }
+    .social-block a:nth-child(3):hover {
+        background-color: white;
+        color: #0e76a8
+    }
+
+    .social-block a:nth-child(4) {
+        background-color: #c10000;
+        color: white;
+        border: 1px solid #c10000;
+        margin-left: 0px;
+    }
+
+        .social-block a:nth-child(4):hover {
+            background-color: white;
+            color: #c10000
+        }
+.text-gray {
+    color: #777;
+}
+
+.eventList img {
+    width: auto;
+    height: 150px;
+}
+
+.multilineSelect > .ui-select-match .ui-select-toggle  {
+    height: 55px;
+}

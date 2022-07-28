@@ -1,0 +1,57 @@
+﻿<div ng-if="fileUploader">
+    <div nv-file-drop="" uploader="fileUploader" filters="queueLimit, customFilter">
+        <div class="row">
+            <div style="margin-bottom: 40px" class="col-md-12">
+                <div class="panel">
+                    <div class="panel-heading" ng-if="enableUpload">
+                        <input ng-if="isRequired" filestyle="" validator="required" type="file" data-icon-name="icon-upload" data-button-text="{{'general.UploadFile' | translate}}" data-class-button="btn btn-default" data-class-input="form-control inline" nv-file-select="" uploader="fileUploader" multiple="" class="form-control" />
+                        <input ng-if="!isRequired" filestyle="" type="file" data-icon-name="icon-upload" data-button-text="{{'general.UploadFile' | translate}}" data-class-button="btn btn-default" data-class-input="form-control inline" nv-file-select="" uploader="fileUploader" multiple="" class="form-control" />
+                    </div>
+                    <div class="panel-body">
+                        <div class="row autoadjust">
+                            <div class="col-md-3" ng-repeat="item in controlmodel track by $index">
+                                <div class="col-md-12">
+                                    <div class="col-md-12">
+                                        <div ng-if="item.documentFullPath.split('.').pop().toLowerCase() =='jpg' || item.documentFullPath.split('.').pop().toLowerCase() =='png' || item.documentFullPath.split('.').pop().toLowerCase() =='jpeg'" chained-animation="fadeInUp"  >
+                                            <a href="{{item.documentFullPath}}" target="_blank" title="Unsplash images">
+                                                <img src="{{item.documentFullPath}}" alt="thumb" title="Unsplash images" class="thumbnail"  style="max-height:200px; width: 100%;"/>
+                                            </a>
+                                        </div>
+                                        <a ng-if="item.documentFullPath.split('.').pop().toLowerCase() !=='jpg' && item.documentFullPath.split('.').pop().toLowerCase() !=='png' && item.documentFullPath.split('.').pop().toLowerCase() !=='jpeg'" target="_blank" href="{{item.documentFullPath}}">
+                                            <em ng-if="item.documentFullPath.indexOf('.pdf') !== -1 || item.documentFullPath.indexOf('.PDF') !== -1" class="fa fa-5x fa-file-pdf-o"></em>
+                                            <em ng-if="item.documentFullPath.indexOf('.docx') !== -1 || item.documentFullPath.indexOf('.doc') !== -1 || item.documentFullPath.indexOf('.DOCX') !== -1 || item.documentFullPath.indexOf('.DOC') !== -1" class="fa fa-5x fa-file-word-o"></em>
+                                            <em ng-if="item.documentFullPath.indexOf('.xls') !== -1 || item.documentFullPath.indexOf('.xlsx') !== -1 || item.documentFullPath.indexOf('.XLS') !== -1 || item.documentFullPath.indexOf('.XLSX') !== -1" class="fa fa-5x fa-file-excel-o"></em>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 mb" style="word-wrap: break-word;"> {{item.name}}</div>
+                                    <div class="col-md-12 mb" ng-if="(item.documentFullPath.split('.').pop().toLowerCase() =='jpg' || item.documentFullPath.split('.').pop().toLowerCase() =='png' || item.documentFullPath.split('.').pop().toLowerCase() =='jpeg') && iscopylink">
+                                        <input class="col-md-12 form-control" type="text" ng-model="item.documentFullPath" id="linkId{{$index}}" />
+                                        <label class="col-md-12 pull-left">
+                                            <i class="fa fa-clipboard"></i> Copy link
+                                        </label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" ripple="" class="btn btn-danger pull-left" ng-click="uploadAgain($index)" ng-disabled="isreadonly">
+                                          <i class="fa fa-trash"></i>  {{'general.uploadAgain' | translate}}<span class="ripple"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div ng-if="enableUpload"><i class="fa fa-info-circle" aria-hidden="true"></i> <span data-translate="general.uploadLimit"></span></div>
+                </div>
+                <div>
+                    <div class="alert alert-danger" ng-if="incorrectType">
+                        <i class="fa fa-times-circle-o"></i>{{'general.uploadFileTypeMsg' | translate}}
+                    </div>
+                    <div class="alert alert-danger" ng-if="incorrectSize">
+                        <i class="fa fa-times-circle"></i>{{'general.uploadFileSizeMsg' | translate}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,247 @@
+D:\Workspace\Events\events\eventsapp.Web\bin\ApplicationInsights.config
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\csc.exe
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\vbc.exe
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Events\events\eventsapp.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Events\events\eventsapp.Web\bin\eventsapp.Web.dll.config
+D:\Workspace\Events\events\eventsapp.Web\bin\eventsapp.Web.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\eventsapp.Web.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\EntityFramework.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.ApplicationInsights.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Newtonsoft.Json.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Buffers.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Memory.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\EntityFramework.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.WindowsServer.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.ApplicationInsights.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\Newtonsoft.Json.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Buffers.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Memory.xml
+D:\Workspace\Events\events\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Workspace\Events\events\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CoreCompileInputs.cache
+D:\Workspace\Events\events\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CopyComplete
+D:\Workspace\Events\events\eventsapp.Web\obj\Debug\eventsapp.Web.dll
+D:\Workspace\Events\events\eventsapp.Web\obj\Debug\eventsapp.Web.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.Web.dll
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.Web.pdb
+D:\Workspace\Events\events\eventsapp.Web\bin\Microsoft.AI.Web.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\ApplicationInsights.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\csc.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\vbc.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\eventsapp.Web.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\eventsapp.Web.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\eventsapp.Web.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Newtonsoft.Json.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Buffers.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Memory.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\Newtonsoft.Json.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Buffers.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Memory.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csprojAssemblyReference.cache
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CoreCompileInputs.cache
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CopyComplete
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\ApplicationInsights.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\csc.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\vbc.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\eventsapp.Web.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\eventsapp.Web.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\eventsapp.Web.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Newtonsoft.Json.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Buffers.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Memory.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\Newtonsoft.Json.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Buffers.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Memory.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csprojAssemblyReference.cache
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CoreCompileInputs.cache
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CopyComplete
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\ApplicationInsights.config
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\csc.exe
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\vbc.exe
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\VBCSCompiler.exe
+E:\workspace\e-voucher\eventsapp.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\workspace\e-voucher\eventsapp.Web\bin\eventsapp.Web.dll.config
+E:\workspace\e-voucher\eventsapp.Web\bin\eventsapp.Web.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\eventsapp.Web.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\EntityFramework.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\EntityFramework.SqlServer.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\Newtonsoft.Json.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Buffers.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Memory.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\workspace\e-voucher\eventsapp.Web\bin\EntityFramework.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\EntityFramework.SqlServer.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.PerfCounterCollector.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.Web.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.pdb
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.ApplicationInsights.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\Newtonsoft.Json.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Buffers.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Diagnostics.DiagnosticSource.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Memory.xml
+E:\workspace\e-voucher\eventsapp.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\workspace\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.AssemblyReference.cache
+E:\workspace\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CoreCompileInputs.cache
+E:\workspace\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.csproj.CopyComplete
+E:\workspace\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.dll
+E:\workspace\e-voucher\eventsapp.Web\obj\Debug\eventsapp.Web.pdb

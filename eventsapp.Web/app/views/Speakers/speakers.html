@@ -1,0 +1,68 @@
+<div ng-controller="speakersController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="ion-man"></i> {{'person.Speakers' | translate}}</h4>
+        <ol class="breadcrumb p-0 m-0">
+            <li>
+                <button type="button" class="btn btn-primary btn-bordered waves-effect waves-light" style="margin:0 10px" ng-click="vm.addSpeaker('lg')">
+                    {{'event.addNewSpeaker' | translate}}
+                </button>
+            </li>
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row autoadjust">
+        <div class="col-md-3" ng-repeat="speaker in vm.speakers">
+            <div class="text-center card-box">
+                <div class="dropdown pull-right">
+                    <a class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                        <h3 class="m-0 text-muted"><i class="mdi mdi-dots-horizontal"></i></h3>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a ng-click="vm.view(speaker)"> {{'general.view' | translate}}</a></li>
+                        <li><a ng-click="vm.edit(speaker)">{{'general.edit' | translate}}</a></li>
+                        <li><a ng-click="vm.delete(speaker.id)">{{'general.delete' | translate}}</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="member-card">
+                    <div class=" member-thumb m-b-10 center-block">
+                        <img src="app/img/blank.png" ng-if="!speaker.photoFullPath" class="img-responsive thumb128 thumbnail" />
+                        <img src="{{speaker.photoFullPath}}" ng-if="speaker.photoFullPath" class="img-responsive  thumb128 thumbnail" />
+                    </div>
+
+                    <div class="">
+                        <h4 class="m-b-5">  {{speaker | localizeString}}</h4>
+
+                        <p class=" member-description" ng-bind-html='speaker | localizeString : "titleEn" : "titleAr"'></p>
+                        <p class="text-muted" ng-if="speaker.phone != null">{{speaker.phone}} <span> | </span> <span> <a href="#" class="text-pink">{{speaker.email}}</a> </span></p>
+                    </div>
+
+                    <!--<p class="text-muted member-description font-13" ng-bind-html="speaker.descriptionEn"></p>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" ng-if="vm.pager.totalRecords == 0">
+            <uib-alert type="info"><i class="fa fa-info-circle"></i> {{'general.noDataFound' | translate}}</uib-alert>
+        </div>
+        <div class="row col-md-12" ng-if="vm.pager.totalRecords > 0">
+            <ul class="pager custompager">
+                <li>
+                    <button ng-click="vm.setPage(1)" ng-disabled="vm.pager.currentPage === 1" class="btn btn-margin btn-applegreen">{{'Pager.first' | translate}}</button>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.currentPage - 1)" ng-disabled="vm.pager.currentPage === 1" class="btn btn-margin btn-applegreen"><i ng-class="{'fa fa-arrow-right':app.layout.isRTL,'fa fa-arrow-left':!app.layout.isRTL}"></i> {{'Pager.previous' | translate}}</button>
+                </li>
+                <li>
+                    <span class="text-center text-sm text-bold"> {{vm.pager.currentPage}} / {{vm.pager.totalPages}} {{'Pager.pages' | translate}}</span>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.currentPage + 1)" ng-disabled="vm.pager.toRecord === vm.pager.totalRecords" class="btn btn-margin btn-applegreen">{{'Pager.next' | translate}} <i ng-class="{'fa fa-arrow-left':app.layout.isRTL,'fa fa-arrow-right':!app.layout.isRTL}"></i></button>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.totalPages)" ng-disabled="vm.pager.toRecord === vm.pager.totalRecords" class="btn btn-margin btn-applegreen">{{'Pager.last' | translate}}</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,429 @@
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\csc.exe
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\csc.exe.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\csc.rsp
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\csi.exe
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\csi.exe.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\csi.rsp
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.Managed.EditorConfig.targets
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Buffers.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Memory.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Numerics.Vectors.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\vbc.exe
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\vbc.exe.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\vbc.rsp
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\eventsapp.WebAPI.dll.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\eventsapp.WebAPI.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\eventsapp.WebAPI.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Antlr3.Runtime.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\AutoMapper.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Castle.Core.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Castle.Windsor.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Common.Logging.Core.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Common.Logging.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EntityFramework.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EventsApp.Domain.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EventsApp.Framework.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Eventsapp.Repositories.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Eventsapp.Services.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Cors.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Newtonsoft.Json.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Owin.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Quartz.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Swashbuckle.Core.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Buffers.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Memory.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Cors.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Helpers.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.Cors.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.Owin.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Mvc.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Optimization.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Razor.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.WebPages.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\WebActivatorEx.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\WebGrease.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\log4net.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EPPlus.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EventsApp.Domain.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EventsApp.Domain.dll.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EventsApp.Framework.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EventsApp.Framework.dll.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Eventsapp.Repositories.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Eventsapp.Repositories.dll.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Eventsapp.Services.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Eventsapp.Services.dll.config
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Antlr3.Runtime.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\AutoMapper.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Castle.Core.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Castle.Windsor.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Common.Logging.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Common.Logging.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Common.Logging.Core.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Common.Logging.Core.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EntityFramework.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Cors.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Newtonsoft.Json.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Quartz.pdb
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\Quartz.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Memory.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Helpers.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.Cors.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.Owin.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Mvc.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Optimization.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.Razor.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.WebPages.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\log4net.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\bin\EPPlus.xml
+D:\Workspace\Events\events\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csprojAssemblyReference.cache
+D:\Workspace\Events\events\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csproj.CoreCompileInputs.cache
+D:\Workspace\Events\events\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csproj.CopyComplete
+D:\Workspace\Events\events\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.dll
+D:\Workspace\Events\events\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csc.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csc.exe.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csc.rsp
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csi.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csi.exe.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csi.rsp
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.Managed.EditorConfig.targets
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Buffers.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Memory.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Numerics.Vectors.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\vbc.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\vbc.exe.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\vbc.rsp
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\eventsapp.WebAPI.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\eventsapp.WebAPI.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\eventsapp.WebAPI.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Antlr3.Runtime.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\AutoMapper.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Windsor.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Domain.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Framework.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Repositories.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Services.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Cors.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Newtonsoft.Json.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Owin.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Quartz.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Swashbuckle.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Buffers.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Memory.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Cors.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Helpers.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Cors.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Owin.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Mvc.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Optimization.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Razor.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\WebActivatorEx.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\WebGrease.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\log4net.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EPPlus.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Domain.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Domain.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Framework.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Framework.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Repositories.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Repositories.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Services.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Services.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Antlr3.Runtime.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\AutoMapper.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Windsor.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.Core.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Cors.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Newtonsoft.Json.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Quartz.pdb
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\Quartz.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Memory.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Helpers.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Cors.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Owin.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Mvc.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Optimization.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Razor.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\log4net.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\bin\EPPlus.xml
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csprojAssemblyReference.cache
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csproj.CoreCompileInputs.cache
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csproj.CopyComplete
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.dll
+D:\Workspace\Event E-Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csc.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csc.exe.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csc.rsp
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csi.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csi.exe.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\csi.rsp
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.Managed.EditorConfig.targets
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Buffers.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Memory.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Numerics.Vectors.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\vbc.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\vbc.exe.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\vbc.rsp
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\eventsapp.WebAPI.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\eventsapp.WebAPI.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\eventsapp.WebAPI.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Antlr3.Runtime.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\AutoMapper.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Windsor.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Domain.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Framework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Repositories.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Services.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Cors.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Newtonsoft.Json.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Owin.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Quartz.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Swashbuckle.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Buffers.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Memory.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Cors.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Helpers.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Cors.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Owin.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Mvc.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Optimization.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Razor.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\WebActivatorEx.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\WebGrease.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\log4net.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EPPlus.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Domain.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Domain.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Framework.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EventsApp.Framework.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Repositories.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Repositories.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Services.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Eventsapp.Services.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Antlr3.Runtime.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\AutoMapper.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Castle.Windsor.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.Core.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Common.Logging.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Gma.QrCodeNet.Encoding.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Cors.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Newtonsoft.Json.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Quartz.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\Quartz.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Memory.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Helpers.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Cors.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.Owin.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Mvc.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Optimization.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.Razor.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\log4net.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\bin\EPPlus.xml
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csprojAssemblyReference.cache
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csproj.CoreCompileInputs.cache
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.csproj.CopyComplete
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.dll
+D:\Workspace\Samples\E Voucher\e-voucher\eventsapp.WebAPI\obj\Debug\eventsapp.WebAPI.pdb

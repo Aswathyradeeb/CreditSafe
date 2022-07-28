@@ -1,0 +1,20 @@
+<div class="app-view-header">Event Venues</div>
+<div ng-controller="GoogleMapController as gmap" class="container-fluid">
+   <section id="map">
+      <div class="row">
+         <div class="col-md-6">
+            <ul>
+               <li ng-repeat="myMarker in gmap.myMarkers"><a href="" ng-click="gmap.myMap.panTo(myMarker.marker.getPosition())">{{myMarker.address}}</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md-12">
+            <!-- Giving the div an id="map_canvas" fix problems with twitter bootstrap affectinggoogle maps-->
+             <div ng-if="gmap.mapOptions">
+                 <div id="map_canvas" ui-map="gmap.myMap" ui-event="{'map-click': 'gmap.addMarker($event, $params)', 'map-zoom_changed': 'gmap.setZoomMessage(myMap.getZoom())' }" ui-options="gmap.mapOptions" class="gmap"></div>
+             </div>
+         </div>
+      </div>
+      <p class="text-right">{{zoomMessage}}</p>
+   </section>
+</div>

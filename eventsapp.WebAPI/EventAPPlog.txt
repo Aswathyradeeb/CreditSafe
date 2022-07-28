@@ -1,0 +1,32 @@
+2021-07-13 20:33:30,866 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436<---
+
+ 
+2021-07-13 20:33:30,867 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215<---
+
+ 
+2021-07-13 20:36:34,547 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215<---
+
+ 
+2021-07-13 20:36:34,550 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436<---
+
+ 

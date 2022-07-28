@@ -1,0 +1,66 @@
+﻿<style>
+    @media print {
+        .graph-img img {
+            display: inline;
+        }
+
+        body {
+            /*content: url(http://localhost:4445/app/img/badge.jpg);*/
+        }
+    }
+
+    #printdiv .member-card {
+        position: relative;
+        top: 65%;
+        left: 40%;
+    }
+
+    #printdiv {
+        /*width: 298px; height: ‭480‬px;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+</style>
+<form role="form" class="mb-lg form-horizontal" name="speakerForm">
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="closeModal()">x</button>
+        <h4 id="myModalLabel" class="modal-title">{{'users.print'|translate}}</h4>
+    </div>
+    <div class="modal-body">
+        <div class="text-center card-box" id="printdiv" style="background-image: url({{bgImage}});margin:0 auto; padding:0px;background-size: 100% 100%;width: 400px;">
+            <div class="text-center">
+                <img style="display:block;margin:0 auto;height:150px;" ng-if="eventObj.badgePhotoFullPath !=  null" src="{{eventObj.badgePhotoFullPath}}" />
+                <img style="display:block;margin:0 auto;height:150px;" ng-if="eventObj.badgePhotoFullPath ==  null" src="/app/img/inlogic.jpg" />
+            </div>
+            <div class="text-center" style=" height: 150px;margin-top:10px;">
+                <img style="display:block;margin:0 auto;height:150px;" ng-if="eventUser.user.photoFullPath != null" src="{{eventUser.user.photoFullPath}}" />
+                <img style="display:block;margin:0 auto;height:150px;" ng-if="eventUser.user.photoFullPath ==  null" src="/app/img/user/01.jpg" />
+            </div>
+            <div class="text-center">
+                <h4>{{personObj.firstName}} {{personObj.lastName}} </h4>
+                <p class="text-muted font-13" ng-if="personObj.phoneNumber != null"><strong>{{'users.phoneNumber'|translate}} :</strong> <span>{{personObj.phoneNumber}} </span></p>
+                <p class="text-muted font-13" ng-if="personObj.email != null"><strong>{{'users.email'|translate}} :</strong><span> {{personObj.email}} </span></p>
+            </div>
+            <div class="text-center" ng-if="eventUser.agendum">
+                <p>{{eventUser.agendum | localizeString : 'titleEn':'titleAr'}} ( {{eventUser.agendum.startDate | date : 'shortDate'}} ) </p>
+                <p>{{eventUser.agendum.fromTime}} -  {{eventUser.agendum.toTime}}</p>
+            </div>
+            <div class="text-center" ng-if="eventUser.qrCodeFullPath">
+                <img style="display:block;margin:0 auto;height:150px;" src="{{eventUser.qrCodeFullPath}}" />
+            </div>
+            <svg ng-if="!eventUser.qrCodeFullPath" id="barcode" style="/* width: 400px; *//* height: 100px; */display: block; margin: 0px auto;transform: translate(0px, 0px);"></svg>
+            <div style="background:black; margin-top:20px;"><h3 style="text-align:center;color:white;margin:0px; padding:10px 0 ">{{eventUser.registrationType | localizeString}}</h3> </div>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button ng-click="printDiv('printdiv')" class="btn btn-warning" data-translate="general.print"></button>
+        <button ng-click="closeModal()" class="btn btn-warning" data-translate="general.cancel"></button>
+    </div>
+</form>

@@ -1,0 +1,51 @@
+﻿<script type="text/ng-template" id="/terms.html">
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close">x</button>
+        <h4 id="myModalLabel" class="modal-title text-capitalize" data-translate="register.terms"></h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 data-translate="terms.logos"></h4>
+                <p data-translate="terms.logosDesc"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 data-translate="terms.prohibited"></h4>
+                <p data-translate="terms.prohibitedDesc"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p data-translate="terms.notAuthorized"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p data-translate="terms.surfers"></p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button ng-click="ok()" class="btn btn-primary" data-translate="general.ok"></button>
+    </div>
+</script>
+<form name="terms">
+    <div class="box-placeholder b0 bg-gray-lighter">
+        <h3 data-translate="terms.title"></h3>
+        <p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="checkbox c-checkbox mt0">
+                        <label>
+                            <input type="checkbox" ng-model="termsControl.isAgreed" name="isAgreed" />
+                            <span class="fa fa-check"></span>{{'register.agree' | translate}} <a href="" data-translate="register.terms" ng-click="openTerms('lg')"></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="terms.isAgreed.$dirty && !termsControl.isAgreed" style="color: #f34235; font-size:11px" data-translate="register.notAgreed"></div>
+        </p>
+    </div>
+</form>

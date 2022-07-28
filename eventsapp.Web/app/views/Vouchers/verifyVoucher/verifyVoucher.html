@@ -1,0 +1,132 @@
+<div ng-controller="VerifyVoucher as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="fa fa-user"></i> Verify User Details</h4>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-sm-12">
+        <div class="card-box">
+            <div class="row">
+                <!-- end col -->
+
+                <form class="form- " role="form" name="profileForm">
+                    <h3 class="col-md-12 text-primary">Event Details</h3>
+                    <div class="col-md-6">
+                        <label for="fname" class="col-md-12">Event</label>
+                        <div class="col-md-12">
+                            {{vm.user.event.nameEn}}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="fname" class="col-md-12">Event Dates</label>
+                        <div class="col-md-12">
+                            {{vm.user.event.startDate | date: 'longDate'}} - {{vm.user.event.endDate | date: 'longDate'}}
+                        </div>
+                    </div>
+
+                    <div class="col-md-12"><hr /></div>
+
+                    <h3 class="col-md-12 text-primary">User Details</h3>
+
+                    <div class="col-md-6">
+                        <label for="fname" class="col-md-12">{{'register.firstName' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="fname" ng-model="vm.user.firstName" placeholder="{{'register.firstName' | translate}}" ng-disabled="true">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="fname" class="col-md-12">{{'register.lastName' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="lname" ng-model="vm.user.lastName" placeholder="{{'register.lastName' | translate}}" ng-disabled="true">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail3" class="col-md-12"> {{'register.email' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" name="inputEmail3" placeholder="{{'register.email' | translate}}" ng-model="vm.user.email" ng-disabled="true">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-12">Is Active</label>
+                        <div class="col-md-12">
+                            <input type="checkbox" name="isActive" ng-model="vm.user.isActive" ng-checked="athlete.isActive == true" ng-disabled="true">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-12">{{'register.mobile' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="mobile" ng-model="vm.user.phoneNumber" ng-disabled="true" valid-method="blur" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-12">Assigned Food Voucher</label>
+                        <div class="col-md-12">
+                            <input type="number" ng-model="vm.user.assignedFoodVouchers" placeholder="{{'athlete.assignedFoodVouchers' | translate}}" autocomplete="off" ng-disabled="true" class="form-control" name="assignedFoodVouchers" />
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="border: 2px solid #3ac9d6;margin-top: 10px;">
+                        <label class="col-md-12">Used Food Voucher</label>
+                        <div class="col-md-12">
+                            <input ng-model="vm.user.usedFoodVouchers" type="number" ng-change="vm.numberOnly()" min="0" max="vm.user.assignedFoodVouchers-vm.user.usedFoodVouchers" step="1" placeholder="{{'athlete.usedFoodVoucherCount' | translate}}" autocomplete="off" class="form-control" name="usedFoodVoucherCount" />
+                            <p class="text-muted"> Remaining vouchers : {{vm.user.assignedFoodVouchers-vm.user.usedFoodVouchers}} </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-12">Assigned Beverage Voucher</label>
+                        <div class="col-md-12">
+                            <input type="number" ng-model="vm.user.assignedDrinkVouchers" placeholder="{{'athlete.drinkVoucherCount' | translate}}" autocomplete="off" ng-disabled="true" class="form-control" name="drinkVoucherCount" />
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="border: 2px solid #3ac9d6;margin-top: 10px;">
+                        <label class="col-md-12">Used Beverage Voucher</label>
+                        <div class="col-md-12">
+                            <input ng-model="vm.user.usedDrinkVouchers" type="number" min="0" ng-change="vm.numberOnly()" max="vm.user.assignedDrinkVouchers-vm.user.usedDrinkVouchers" step="1" placeholder="{{'athlete.usedDrinkVouchersCount' | translate}}" autocomplete="off" class="form-control" id="usedDrinkVouchersCount" name="usedDrinkVouchersCount" />
+                            <p class="text-muted">Remaining vouchers : {{vm.user.assignedDrinkVouchers-vm.user.usedDrinkVouchers}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-12">Photo</label>
+                        <div class="col-md-12">
+                            <div ng-if="vm.user.photoFullPath.split('.').pop().toLowerCase() =='jpg' || vm.user.photoFullPath.split('.').pop().toLowerCase() =='png' || vm.user.photoFullPath.split('.').pop().toLowerCase() =='jpeg'" chained-animation="fadeInUp">
+                                <a class="col-md-12" href="{{vm.user.photoFullPath}}" target="_blank" title="QR">
+                                    <img src="{{vm.user.photoFullPath}}" alt="thumb" title="QR" class="thumbnail" style="max-height:200px;width: 100%;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-12">QR code</label>
+                        <div class="col-md-12">
+                            <div ng-if="vm.user.qrFullPath.split('.').pop().toLowerCase() =='jpg' || vm.user.qrFullPath.split('.').pop().toLowerCase() =='png' || vm.user.qrFullPath.split('.').pop().toLowerCase() =='jpeg'" chained-animation="fadeInUp">
+                                <a class="col-md-7" href="{{vm.user.qrFullPath}}" target="_blank" title="QR">
+                                    <img src="{{vm.user.qrFullPath}}" alt="thumb" title="QR" class="thumbnail" style="max-height:200px;width: 100%;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-md-6">
+        <label for="inputEmail3" class="col-md-12">Voucher</label>
+        <div class="col-md-12">
+            <ui-select multiple ng-model="vm.user.aVouchers" validator="required" name="aVouchersId" theme="bootstrap" class="text-left">
+                <ui-select-match placeholder="{{'athlete.voucher' | translate}}">{{$item | localizeString}}</ui-select-match>
+                <ui-select-choices repeat="voucher in vm.vouchers | filter : $select.search">
+                    <span ng-bind-html="voucher | localizeString | highlight: $select.search"></span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>-->
+                    <div class="modal-footer" ng-if=" vm.isvalid==true">
+                        <button type="button" ng-click="vm.updateProfile()" validation-submit="profileForm" class="btn btn-info waves-effect waves-light">Save</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

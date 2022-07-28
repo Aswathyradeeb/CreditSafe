@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<!--[if (gte IE 7) &&(IE)]><!-->
+<html class="ie9" lang="en" ng-app="eventsapp">
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<!--<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en" ng-app="eventsapp">
+<!--<![endif]-->
+<head>
+    <!-- Google Tag Manager -->
+    <!--<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WCR62LK');
+    </script>-->
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="DDF E-Voucher System">
+    <meta name="keywords" content="app, responsive, angular, bootstrap, dashboard, admin">
+    <title>DDF E-Voucher System</title>
+    <link rel="shortcut icon" href="app/img/favicon.ico">
+    <!-- build:css app/css/application.css?v.0.02-->
+    <link rel="stylesheet" data-ng-href="app/css/{{(app.layout.isRTL === true? 'bootstrap-rtl.min': 'bootstrap.min')}}.css?v.0.02">
+    <link data-ng-href="app/css/{{(app.layout.isRTL === true? 'core-rtl': 'core')}}.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link href="app/css/components.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link href="app/css/icons.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link href="app/css/pages.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link data-ng-href="app/css/{{(app.layout.isRTL === true? 'menu-rtl': 'menu')}}.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link href="app/css/responsive.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link data-ng-href="app/css/{{(app.layout.isRTL === true? 'custom-rtl': 'custom')}}.css?v.0.02" rel="stylesheet" type="text/css" />
+    <link href="vendor/ika.jvectormap/jquery-jvectormap-2.0.3.css?v.0.02" rel="stylesheet" />
+    <!--<link href="vendor/jquery-clockpicker/jquery-clockpicker.min.css?v.0.02" rel="stylesheet" />-->
+    <link href="app/css/loader.css?v.0.02" rel="stylesheet" />
+    <!--<link id="mainstyles" rel="stylesheet" data-ng-href="app/css/{{(app.layout.isRTL === true? 'styles-ar': 'styles')}}.css?v.0.02">-->
+    <link href="vendor/angularjs-toaster/toaster.css?v.0.02" rel="stylesheet" />
+
+    <!-- endbuild-->
+</head>
+<body ng-cloak ng-class="{ 'layout-fixed' : app.layout.isFixed, 'layout-boxed' : app.layout.isBoxed, 'layout-dock' : app.layout.isDocked, 'layout-material': app.layout.isMaterial, 'aside-offscreen' : app.sidebar.isOffscreen, 'aside-mini' : app.sidebar.isMini, 'aside-right' : app.sidebar.isRight, 'footer-hidden': app.footer.hidden, 'in-app': !$state.includes('page')}">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCR62LK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div data-ui-view="" data-autoscroll="false" ng-controller="CoreController" class="app-container" id="wrapper"></div>
+    <div ng-include="'app/views/loader.html'"></div>
+    <!-- Settings-->
+    <!-- End Settings-->
+    <!-- build:vendor app/js/vendor.js?v.0.02-->
+    <script src="vendor/modernizr/modernizr.custom.js?v.0.02"></script>
+    <script src="vendor/jquery/dist/jquery.js?v.0.02"></script>
+    <script src="vendor/angular/angular.js?v.0.02"></script>
+    <script src="vendor/angular-component-master/dist/angular-component.js?v.0.02"></script>
+    <script src="src/js/angular-barcode.js?v.0.02" "></script>
+
+
+    <script src="src/js/bootstrap.js?v.0.02"></script>
+    <script src="vendor/angular-route/angular-route.js?v.0.02"></script>
+    <script src="vendor/angular-cookies/angular-cookies.js?v.0.02"></script>
+    <script src="vendor/angular-animate/angular-animate.js?v.0.02"></script>
+    <script src="vendor/angular-touch/angular-touch.js?v.0.02"></script>
+    <script src="vendor/angular-sanitize/angular-sanitize.js?v.0.02"></script>
+    <script src="vendor/angular-resource/angular-resource.js?v.0.02"></script>
+    <script src="vendor/angular-translate/angular-translate.js?v.0.02"></script>
+    <script src="vendor/ngstorage/ngStorage.js?v.0.02"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js?v.0.02"></script>
+    <script src="vendor/angular-ui-utils/index.js?v.0.02"></script>
+    <script src="vendor/angular-ui-mask/dist/mask.js?v.0.02"></script>
+    <script src="vendor/angular-ui-event/dist/event.js?v.0.02"></script>
+    <script src="vendor/angular-ui-validate/dist/validate.js?v.0.02"></script>
+    <script src="vendor/angular-validation/angular-validation.js?v.0.02"></script>
+    <script src="vendor/angular-validation/angular-validation-rule.js?v.0.02"></script>
+    <script src="vendor/ika.jvectormap/jquery-jvectormap-2.0.3.min.js?v.0.02"></script>
+    <script src="vendor/angular-ui-indeterminate/dist/indeterminate.js?v.0.02"></script>
+    <script src="vendor/angular-ui-scrollpoint/dist/scrollpoint.js?v.0.02"></script>
+    <script src="vendor/angular-ui-scroll/dist/ui-scroll.js?v.0.02"></script>
+    <script src="vendor/angular-ui-uploader/dist/uploader.js?v.0.02"></script>
+    <script src="vendor/angular-file-upload/dist/angular-file-upload.js?v.0.02"></script>
+    <script src="vendor/angular-translate-loader-url/angular-translate-loader-url.js?v.0.02"></script>
+    <script src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.js?v.0.02"></script>
+    <script src="vendor/angular-translate-storage-local/angular-translate-storage-local.js?v.0.02"></script>
+    <script src="vendor/angular-translate-storage-cookie/angular-translate-storage-cookie.js?v.0.02"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js?v.0.02"></script>
+    <script src="vendor/angular-dynamic-locale/dist/tmhDynamicLocale.js?v.0.02"></script>
+    <script src="vendor/oclazyload/dist/ocLazyLoad.js?v.0.02"></script>
+    <script src="vendor/angular-loading-bar/build/loading-bar.js?v.0.02"></script>
+    <script src="vendor/angular-recaptcha/release/angular-recaptcha.js?v.0.02"></script>
+    <script src="vendor/ckeditor/ckeditor.js?v.0.02"></script>
+    <script src="vendor/ckeditor/styles.js?v.0.02"></script>
+    <script src="vendor/ckeditor/config.js?v.0.02"></script>
+    <script src="vendor/ckeditor/adapters/jquery.js?v.0.02"></script>
+    <script src="vendor/pdfmake/pdfmake.min.js?v.0.02"></script>
+    <script src="vendor/pdfmake/vfs_fonts.js?v.0.02"></script>
+    <script src="vendor/angular-base64/angular-base64.js?v.0.02"></script>
+    <script src="vendor/angularjs-toaster/toaster.js?v.0.02"></script>
+    <script src="vendor/html2canvas/html2canvas.js?v.0.02"></script>
+    <script src="vendor/angular-qrcode/angular-qrcode.js?v.0.02"></script>
+    <script src="vendor/angular-qrcode/qrcode.js?v.0.02"></script>
+    <script src="vendor/angular-qrcode/qrcode_UTF8.js?v.0.02"></script>
+    <script src="vendor/FileSaver/FileSaver.js?v.0.02"></script>
+    <script src="vendor/FileSaver/FileSaver.min.js?v.0.02"></script>
+    <script src="src/js/Plugins/highstock.src.js?v.0.02"></script>
+    <script src="vendor/highcharts-ng-master/dist/highcharts-ng.js?v.0.02"></script>
+    <!--<script src="src/js/Plugins/highcharts.js?v.0.02"></script>-->
+    <script src="src/js/Plugins/series-label.js?v.0.02"></script>
+    <script src="src/js/Plugins/exporting.js?v.0.02"></script>
+    <script src="vendor/highcharts-ng-master/src/map.js?v.0.02"></script>
+    <script src="src/js/Plugins/data.js?v.0.02"></script>
+    <script src="vendor/highcharts-ng-master/src/world.js?v.0.02"></script>
+    <script src="vendor/fuelux/dist/js/fuelux.min.js?v.0.02"></script>
+    <script src="vendor/angular-filter/angular-filter.js?v.0.02"></script>
+    <script src="vendor/owl-carousel/owl.carousel.js?v.0.02"></script>
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css?v.0.02">
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.css?v.0.02">
+    <script src="vendor/angular-ui-map/ui-map.js?v.0.02"></script>
+    <script src="app/plugins/gmap/load-google-maps.js?v.0.02"></script>
+    <script src="app/js/jquery.arabisk.js?v.0.02"></script>
+    <!--<script src="vendor/jquery-clockpicker/jquery-clockpicker.min.js?v.0.02"></script>-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v.0.02"></script>-->
+    <!-- endbuild-->
+    <!-- build:js app/js/application.js?v.0.02-->
+    <script src="src/js/app.module.js?v.0.02"></script>
+    <script src="src/js/app.httpInterceptor.js?v.0.02"></script>
+    <script src="src/js/noCache.js??v.0.02"></script>
+    <script src="src/js/modules/apps/calendar.controller.js?v.0.02"></script>
+    <script src="src/js/modules/apps/chat.controller.js?v.0.02"></script>
+
+    <!-- ACCOUNT Start -->
+    <script src="app/views/Event/eventDetails/GMap/gmap.js?v.0.02"></script>
+    <script src="app/views/Account/login/loginController.js?v.0.02"></script>
+    <script src="app/views/Account/login/loginService.js?v.0.02"></script>
+    <script src="app/views/Account/login/userProfile.js?v.0.02"></script>
+    <script src="app/views/Account/register/registerController.js?v.0.02"></script>
+    <script src="app/views/Account/register/registerService.js?v.0.02"></script>
+    <script src="app/views/Account/Users/usersController.js?v.0.02"></script>
+    <script src="app/views/Reports/ReportsController.js?v.0.02"></script>
+    <script src="app/views/Account/changePassword/changePasswordController.js?v.0.02"></script>
+    <script src="app/views/Account/configureAdmin/configureAdminController.js?v.0.02"></script>
+    <script src="app/views/Home/home.controller.js?v.0.02"></script>
+    <script src="app/views/Home/registerEvent/registerEventController.js?v.0.02"></script>
+    <script src="app/views/Event/eventController.js?v.0.02"></script>
+    <script src="app/views/Event/Session/sessionController.js?v.0.02"></script>
+    <script src="app/views/Event/Agenda/agendaController.js?v.0.02"></script>
+    <script src="app/views/Event/eventVenueLocation/eventVenueController.js?v.0.02"></script>
+    <script src="app/views/Event/SurveyQuestion/surveyQuestionController.js"></script>
+    <script src="app/views/Account/confirmEmail/confirmEmailController.js?v.0.02"></script>
+    <script src="app/views/Account/confirmPhone/confirmPhoneController.js?v.0.02"></script>
+    <script src="app/views/Account/recover/recoverController.js?v.0.02"></script>
+    <script src="app/views/Account/recover/resetPasswordController.js?v.0.02"></script>
+    <script src="app/views/Account/profile/profileController.js?v.0.02"></script>
+    <script src="app/views/Speakers/speakers.controller.js?v.0.02"></script>
+    <script src="app/views/Companies/companies.controller.js?v.0.02"></script>
+    <script src="app/views/Event/Company/companyController.js?v.0.02"></script>
+    <script src="app/views/Event/Person/personController.js?v.0.02"></script>
+    <script src="app/views/Event/searchcompany/searchcompany.controller.js?v.0.02"></script>
+    <script src="app/views/Event/searchSpeaker/searchSpeaker.controller.js?v.0.02"></script>
+    <script src="app/views/Account/setPassword/setPasswordController.js?v.0.02"></script>
+    <script src="app/views/Company/editCompanyController.js?v.0.02"></script>
+    <script src="app/views/Athletes/athletes.controller.js?v.0.02"></script>
+    <script src="app/views/Restaurants/restaurants.controller.js?v.0.02"></script>
+    <script src="app/views/Person/editPersonController.js?v.0.02"></script>
+    <script src="app/views/Survey/SurveyController.js?v.0.02"></script>
+    <script src="app/views/cached/sidebar.js?v.0.02"></script>
+    <script src="app/views/Dashboard/dashboardController.js?v.0.02"></script>
+    <script src="app/views/Dashboard/chartsModule/chartsModuleDirective.js?v.0.02"></script>
+    <script src="app/views/Questionare/questionareController.js?v.0.02"></script>
+    <script src="app/views/Questions/addquestionsController.js?v.0.02"></script>
+    <script src="app/views/Event/EventAttendees/EventUserController.js?v.0.02"></script>
+    <script src="app/views/Event/EventAttendees/VisitorAttendanceController.js?v.0.02"></script>
+    <script src="app/views/UserCompany/userCompanyController.js?v.0.02"></script>
+    <script src="app/views/UserPerson/userPersonController.js?v.0.02"></script>
+    <script src="app/views/Event/EventAttendees/eventPrintController.js?v.0.02"></script>
+    <script src="app/views/Subsciptions/Subsciptions.controller.js?v.0.02"></script>
+    <script src="app/views/Subsciptions/addSubscription/addSubscription.controller.js?v.0.02"></script>
+    <script src="app/views/viewPayment/viewPaymentController.js?v.0.02"></script>
+    <script src="app/views/Athletes/AddEditAthlete/addEditAthlete.controller.js?v.0.02"></script>
+    <script src="app/views/Restaurants/AddEditRestaurant/addEditRestaurant.controller.js?v.0.02"></script>
+    <script src="app/views/Vouchers/vouchers.controller.js?v.0.02"></script>
+    <!--<script src="app/views/Vouchers/AddEditAthlete/shareVoucher.controller.js?v.0.02"></script>-->
+    <script src="app/views/Vouchers/shareVouchers/shareVoucher.controller.js?v.0.02"></script>
+    <script src="app/views/Vouchers/verifyVoucher/verifyVoucher.controller.js?v.0.02"></script>
+    <script src="app/views/Athletes/Guests/guests.controller.js?v.0.02"></script>
+    <script src="app/views/Guests/allGuests.controller.js?v.0.02"></script>
+
+    <!-- ACCOUNT Start End-->
+    <!-- Controls: Start  -->
+    <script src="app/views/Controls/address/profileAddressDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/uiMultipleDirective/uiMultipleDirective.js?v.0.02"></script>
+
+    <script src="app/views/Controls/happinessRating/happinessRatingController.js?v.0.02"></script>
+    <script src="app/views/Controls/cropImg/cropController.js?v.0.02"></script>
+    <script src="app/views/Controls/person/profileNationalityDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/terms/termsDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/uiSelectRequiredDirective/uiSelectRequiredDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/ckeditorDirective/ckeditorDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/ckeditorDirective/ckeditorDirectiveAr.js?v.0.02"></script>
+    <script src="app/views/Controls/UploadingFilesDirective/UploadingFilesDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/UploadingMultipleFilesDirective/UploadingMultipleFilesDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/PagerService.js?v.0.02"></script>
+    <script src="app/views/Controls/dataTableDirective/dataTableDirective.js?v.0.02"></script>
+    <script src="app/views/Controls/loaderDirective.js?v.0.02"></script>
+    <!-- Controls End -->
+    <script src="src/js/modules/apps/checkboxGroup.js?v.0.02"></script>
+    <script src="src/js/modules/apps/checklist-model.js?v.0.02"></script>
+    <script src="src/js/modules/apps/mailbox.controller.js?v.0.02"></script>
+    <script src="src/js/modules/apps/tasks.controller.js?v.0.02"></script>
+    <script src="src/js/modules/cards/cards.controller.js?v.0.02"></script>
+    <script src="src/js/modules/authentication/authentication.service.js?v.0.02"></script>
+    <script src="src/js/modules/authentication/rememberMeService.js?v.0.02"></script>
+    <script src="src/js/modules/authentication/flash.service.js?v.0.02"></script>
+    <script src="src/js/modules/authentication/user.service.local-storage.js?v.0.02"></script>
+    <script src="src/js/modules/charts/flot-chart-options.services.js?v.0.02"></script>
+    <script src="src/js/modules/charts/flot-chart.controller.js?v.0.02"></script>
+    <script src="src/js/modules/charts/flot-chart.directive.js?v.0.02"></script>
+    <script src="src/js/modules/charts/pie-charts.controller.js?v.0.02"></script>
+    <script src="src/js/modules/charts/sparklines.directive.js?v.0.02"></script>
+    <script src="src/js/modules/colors/colors.constant.js?v.0.02"></script>
+    <script src="src/js/modules/colors/colors.run.js?v.0.02"></script>
+    <script src="src/js/modules/colors/colors.service.js?v.0.02"></script>
+    <script src="src/js/modules/common/directives/animate-enabled.directive.js?v.0.02"></script>
+    <script src="src/js/modules/common/directives/chained-animation.directive.js?v.0.02"></script>
+    <script src="src/js/modules/common/directives/check-all-table.directive.js?v.0.02"></script>
+    <script src="src/js/modules/common/directives/fullscreen.directive.js?v.0.02"></script>
+    <script src="src/js/modules/common/directives/reset-key.directive.js?v.0.02"></script>
+    <script src="src/js/modules/common/filters/title-case.filter.js?v.0.02"></script>
+    <script src="src/js/modules/common/filters/localizeString.js?v.0.02"></script>
+    <script src="src/js/modules/common/services/browser-detection.service.js?v.0.02"></script>
+    <script src="src/js/modules/common/services/support.service.js?v.0.02"></script>
+    <script src="src/js/modules/common/services/touch-drag.service.js?v.0.02"></script>
+    <script src="src/js/modules/core/config.js?v.0.02"></script>
+    <script src="src/js/modules/core/constants.js?v.0.02"></script>
+    <script src="src/js/modules/core/core.controller.js?v.0.02"></script>
+    <script src="src/js/modules/core/core.run.js?v.0.02"></script>
+    <script src="src/js/modules/forms/file-style.directive.js?v.0.02"></script>
+    <script src="src/js/modules/forms/file-upload.controller.js?v.0.02"></script>
+    <script src="src/js/modules/forms/form-input.controller.js?v.0.02"></script>
+    <script src="src/js/modules/forms/form-validation.controller.js?v.0.02"></script>
+    <script src="src/js/modules/forms/form-xeditable.controller.js?v.0.02"></script>
+    <script src="src/js/modules/forms/image-crop.controller.js?v.0.02"></script>
+    <script src="src/js/modules/forms/slider.controller.js?v.0.02"></script>
+    <script src="src/js/modules/forms/ui-select.controller.js?v.0.02"></script>
+    <script src="src/js/modules/icons/climacon.directive.js?v.0.02"></script>
+    <script src="src/js/modules/layout/header-nav.controller.js?v.0.02"></script>
+    <script src="src/js/modules/layout/ui-sidebar.directive.js?v.0.02"></script>
+    <script src="src/js/modules/loadingbar/loadingbar.config.js?v.0.02"></script>
+    <script src="src/js/modules/loadingbar/loadingbar.run.js?v.0.02"></script>
+    <script src="src/js/modules/maps/google-map.controller.js?v.0.02"></script>
+    <script src="src/js/modules/maps/vector-map.controller.js?v.0.02"></script>
+    <script src="src/js/modules/maps/vector-map.directive.js?v.0.02"></script>
+    <script src="src/js/modules/ripple/ripple.directive.js?v.0.02"></script>
+    <script src="src/js/modules/routes/routes.config.js?v.0.02"></script>
+    <script src="src/js/modules/routes/routes.provider.js?v.0.02"></script>
+    <script src="src/js/modules/routes/routes.run.js?v.0.02"></script>
+    <script src="src/js/modules/routes/vendor.constants.js?v.0.02"></script>
+    <script src="src/js/modules/settings/settings.controller.js?v.0.02"></script>
+    <script src="src/js/modules/settings/settings.service.js?v.0.02"></script>
+    <script src="src/js/modules/tables/angular-table.controller.js?v.0.02"></script>
+    <script src="src/js/modules/tables/datatables.controller.js?v.0.02"></script>
+    <script src="src/js/modules/tables/responsive-table.controller.js?v.0.02"></script>
+    <script src="src/js/modules/tables/table-xeditable.controller.js?v.0.02"></script>
+    <script src="src/js/modules/translator/localization.config.js?v.0.02"></script>
+    <script src="src/js/modules/translator/localization.controller.js?v.0.02"></script>
+    <script src="src/js/modules/translator/translator.config.js?v.0.02"></script>
+    <script src="src/js/modules/translator/translator.service.js?v.0.02"></script>
+    <script src="src/js/modules/ui/alerts.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/buttons.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/carousel.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/datepicker.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/modal.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/nav-tree.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/nestable.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/nestable.directive.js?v.0.02"></script>
+    <script src="src/js/modules/ui/notification.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/pagination.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/popover.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/portlets.directive.js?v.0.02"></script>
+    <script src="src/js/modules/ui/progress.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/rating.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/scrollable.directive.js?v.0.02"></script>
+    <script src="src/js/modules/ui/sortable.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/sweetalert.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/toaster.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/tooltip.config.js?v.0.02"></script>
+    <script src="src/js/modules/ui/tooltip.controller.js?v.0.02"></script>
+    <script src="src/js/modules/ui/typeahead.controller.js?v.0.02"></script>
+    <script src="app/js/templates.js?v.0.02"></script>
+    <!--<script src="app/js/jquery.min.js?v.0.02"></script>-->
+    <!--<script src="app/js/bootstrap.min.js?v.0.02"></script>-->
+    <script src="app/js/detect.js?v.0.02"></script>
+    <script src="app/js/fastclick.js?v.0.02"></script>
+    <script src="app/js/jquery.blockUI.js?v.0.02"></script>
+    <script src="app/js/waves.js?v.0.02"></script>
+    <script src="app/js/jquery.slimscroll.js?v.0.02"></script>
+    <script src="app/js/jquery.scrollTo.min.js?v.0.02"></script>
+    <script src="app/js/switchery.min.js?v.0.02"></script>
+    <script src="app/plugins/gmap/load-google-maps.js?v.0.02"></script>
+
+    <!-- Jquery ui js -->
+    <script src="app/js/jquery-ui.min.js?v.0.02"></script>
+
+    <!-- App js -->
+    <script src="app/js/jquery.core.js?v.0.02"></script>
+    <script src="app/js/jquery.app.js?v.0.02"></script>
+    <!-- endbuild-->
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d886553e3699f68"></script>
+
+    <!--Excel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.10.8/xlsx.full.min.js">
+    </script>
+</body>
+</html>

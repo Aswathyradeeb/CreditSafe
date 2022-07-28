@@ -1,0 +1,71 @@
+﻿
+<div class="col-md-3" ng-if="!ChartData.disableFilter && !ChartData.disableSeriesFilter">
+    <ui-select ng-model="ChartData.selectedSeries" ng-change="rerenderChart(ChartData,false)" theme="bootstrap">
+        <ui-select-match placeholder="{{'general.select' | translate}}" allow-clear="true"> <span ng-bind-html='$select.selected | localizeString'></span></ui-select-match>
+        <ui-select-choices repeat="serie in ChartData.series | propsFilter: {nameAr: $select.search, nameEn: $select.search}">
+            <div class="row">
+                <div ng-bind-html="serie  | localizeString | highlight: $select.search"></div>
+            </div>
+        </ui-select-choices>
+    </ui-select>
+</div>
+<div class="col-md-3" ng-if="!ChartData.disableFilter && !ChartData.disableLabelsFilter">
+    <ui-select ng-model="ChartData.selectedLabel" ng-change="rerenderChart(ChartData,false)" theme="bootstrap">
+        <ui-select-match placeholder="{{'general.select' | translate}}" allow-clear="true"> <span ng-bind-html='$select.selected | localizeString'></span></ui-select-match>
+        <ui-select-choices repeat="label in ChartData.labels | propsFilter: {nameAr: $select.search, nameEn: $select.search}">
+            <div class="row">
+                <div ng-bind-html="label  | localizeString | highlight: $select.search"></div>
+            </div>
+        </ui-select-choices>
+    </ui-select>
+</div>
+<div class="col-md-3" ng-if="chartTypes.length>0 && !ChartData.disableFilter  ">
+    <ui-select ng-model="ChartData.selectedChartType" ng-change="rerenderChart(ChartData,false)" theme="bootstrap">
+        <ui-select-match placeholder="{{'general.select' | translate}}" allow-clear="true"> <span ng-bind-html='$select.selected | localizeString'></span></ui-select-match>
+        <ui-select-choices repeat="chartType in chartTypes | propsFilter: {nameAr: $select.search, nameEn: $select.search}">
+            <div class="row">
+                <div ng-bind-html="chartType | localizeString | highlight: $select.search"></div>
+            </div>
+        </ui-select-choices>
+    </ui-select>
+</div>
+<div class="col-md-3 pull-right">
+    <input type="color" id="head" name="color" ng-value="ChartData.defaultColor"
+           ng-model="ChartData.defaultColor" ng-change="rerenderChart(ChartData,false)" />
+    <button type="button" ng-if="!ChartData.disableExcel" class="btn btn-primary" ng-click="exportExcel()"><i class="fa fa-download" aria-hidden="true"></i> {{'general.exportExcel' | translate}}</button>
+</div>
+<div class="col-md-12"><br /></div>
+<div id="container{{ChartData.id}}" class="col-md-12">
+    <div ng-if="ChartData.chartConfig.series.length==0" class="text-primary text-bold text-center" style="padding: 10px">
+        <i class="fa fa-info-circle"></i>{{'general.noDataFound' | translate}}
+    </div>
+    <div ng-if="ChartData.totalCount != null" class="text-primary text-bold text-right" style="padding: 10px">
+        <i class="fa fa-info-circle"></i> {{'general.totalCount' | translate}} : {{ChartData.totalCount}}
+    </div>
+    <highchart id="chart{{ChartData.id}}" ng-if="ChartData.chartConfig.series.length>0" config="ChartData.chartConfig" style="min-width: {{ChartData.width}};  width: 100%; height:{{ChartData.height}}  ; display: block;"></highchart>
+</div>
+
+<script type="text/ng-template" id="/applications.html">
+    <div class="modal-header">
+        <h4 id="myModalLabel" class="modal-title"> {{'kpi.applications' | translate}} - {{applications[0] | localizeStringWithProperty : 'applicationStatus'}}</h4>
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="cancel()">x</button>
+    </div>
+    <form role="form" class="mb-lg form-horizontal" name="applicationsForm">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12" ng-if="dtApplicationsColumns">
+                        <datatable-directive controller-scope="controllerScope"
+                                             ng-model="applications" dt-columns="dtApplicationsColumns"
+                                             dt-instance="dtApplciationsInstance">
+                        </datatable-directive>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+
+            <button class="btn btn-primary" data-translate="general.close" ng-click="cancel()">x</button>
+        </div>
+    </form>
+</script>

@@ -1,0 +1,2112 @@
+2019-04-30 12:15:39,639 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventPersons ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EventPerson -> EventPersonDto
+EventsApp.Domain.Entities.EventPerson -> EventsApp.Domain.DTOs.EventPersonDto
+   at lambda_method(Closure , EventPerson , EventPersonDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 49
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventPersons ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EventPerson -> EventPersonDto
+EventsApp.Domain.Entities.EventPerson -> EventsApp.Domain.DTOs.EventPersonDto
+   at lambda_method(Closure , EventPerson , EventPersonDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 49
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 13:36:46,668 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventPersons ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EventPerson -> EventPersonDto
+EventsApp.Domain.Entities.EventPerson -> EventsApp.Domain.DTOs.EventPersonDto
+   at lambda_method(Closure , EventPerson , EventPersonDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 50
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventPersons ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EventPerson -> EventPersonDto
+EventsApp.Domain.Entities.EventPerson -> EventsApp.Domain.DTOs.EventPersonDto
+   at lambda_method(Closure , EventPerson , EventPersonDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 50
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 13:38:08,684 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+Notifications ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Notification -> NotificationDto
+EventsApp.Domain.Entities.Notification -> EventsApp.Domain.DTOs.NotificationDto
+   at lambda_method(Closure , Notification , NotificationDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 50
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+Notifications ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Notification -> NotificationDto
+EventsApp.Domain.Entities.Notification -> EventsApp.Domain.DTOs.NotificationDto
+   at lambda_method(Closure , Notification , NotificationDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 50
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 16:32:56,049 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:33:08,413 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:36:03,118 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:36:51,201 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:37:36,073 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:38:28,094 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:42:57,328 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:49:19,821 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetAllEvents>d__14.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 268<---
+
+ 
+2019-04-30 16:50:02,523 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 16:59:50,695 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 16:59:52,499 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 17:00:10,469 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 17:00:43,314 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 17:03:54,345 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 
+2019-04-30 17:09:58,859 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.Event, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.EventDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Type Map configuration:
+Event -> EventDto
+EventsApp.Domain.Entities.Event -> EventsApp.Domain.DTOs.EventDto
+
+Property:
+EventUsers ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Type Map configuration:
+EventUser -> EventUserDto
+EventsApp.Domain.Entities.EventUser -> EventsApp.Domain.DTOs.EventUserDto
+
+Property:
+User ---> System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'IsActive'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityReference`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__2(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.EventUser_9BAAE27386A1690D25F77B5CEC17D28C0D21164BAD58FEB8E9EB2EA9AA994066.get_User()
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in D:\Workspace\Event System\Events\eventsapp\EventsApp.Domain\DTOs\MapperHelper.cs:line 51
+   at Eventsapp.Services.EventService.<GetEventsGroupingByWeek>d__18.MoveNext() in D:\Workspace\Event System\Events\eventsapp\Eventsapp.Services\Services\Implementation\EventService.cs:line 495<---
+
+ 

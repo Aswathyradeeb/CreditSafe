@@ -1,0 +1,101 @@
+﻿<div ng-controller="ProfileController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="fa fa-user"></i> {{'profile.userProfile' | translate}}</h4>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-sm-12">
+        <div class="card-box">
+            <div class="row">
+                <!-- end col -->
+
+                <form class="form- " role="form" name="profileForm">
+                    <div class="col-md-6">
+                        <label for="fname" class="col-md-12">{{'register.firstName' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="fname" ng-model="vm.user.firstName" placeholder="{{'register.firstName' | translate}}" validator="required">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="fname" class="col-md-12">{{'register.lastName' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="lname" ng-model="vm.user.lastName" placeholder="{{'register.lastName' | translate}}" validator="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail3" class="col-md-12"> {{'register.email' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" name="inputEmail3" placeholder="{{'register.email' | translate}}" ng-model="vm.user.email" disabled validator="required">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="col-md-12">{{'register.mobile' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="mobile" ng-model="vm.user.phoneNumber" placeholder="{{'register.mobile' | translate}}" validator="required, phoneNumber" style="direction:ltr !important" valid-callback="vm.validMobileNumber()" invalid-callback="vm.invalidMobileNumber()" valid-method="blur" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail3" class="col-md-12">{{'register.role' | translate}}</label>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="Role" ng-model="vm.user.roles[0].name" disabled validator="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6" ng-if="vm.user.event!=null">
+                        <label for="inputEmail3" class="col-md-12">{{'eventReg.events' | translate}}</label>
+                        <div class="col-md-12">
+                            {{vm.user.event | localizeString}}
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6">
+                        <label  class="col-md-12">{{'register.selectPreferredLanguages' | translate}}<span class="text-danger">*</span></label>
+                        <ui-select ng-model="vm.preferredLanguagesList" validator="required" name="preferredLanguages" theme="bootstrap" class="col-md-12 text-left" multiple>
+                            <ui-select-match placeholder="{{'register.selectPreferredLanguages' | translate}}">
+                                {{$item | localizeString}}
+                            </ui-select-match>
+                            <ui-select-choices repeat="language in vm.languages | filter: $select.search">
+                                <div>{{language | localizeString}}</div>
+                            </ui-select-choices>
+                        </ui-select>
+                        <label class="text-danger" ng-if="!vm.preferredLanguagesList.length && vm.showRequiredLanguageError">{{'general.required' | translate}}</label>
+                    </div>-->
+                    <div class="col-md-12 m-t-15">
+                        <button type="submit" ng-click="vm.updateProfile()" validation-submit="profileForm" class="btn btn-info waves-effect waves-light">Save</button>
+                        <button type="submit" ng-click="vm.changePass()" class="btn btn-info waves-effect waves-light">Change Password</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <!--<div class="card-box" ng-if=" vm.user.userCompanies!=null && vm.user.roles[0].id == 2">
+            <div class="row">
+                <div class="col-md-12 mt">
+                    <label for="inputEmail3" class="col-md-12">{{'profile.registeredCompanies' | translate}}</label>
+
+                    <h4 class="text-danger col-md-12" ng-if="vm.user.userCompanies == null || vm.user.userCompanies.length == 0 " style="margin: 30px 0;"><i class="fa fa-info-circle"></i> {{'company.noCompanyInfo' | translate}}</h4>
+                    <div class="col-md-12">
+                        <form class="form- " role="form" name="companyAddForm">
+                            <div class="col-md-6">
+                                <input type="text" validator="required"
+                                       placeholder="{{'company.companyCode' | translate}}" class="form-control" name="companyCode" uib-tooltip="{{'company.addCompanyInfo' | translate}}" ng-model="vm.companyCode">
+                            </div>
+                            <button type="submit" validation-submit="companyAddForm" ng-click="vm.addCompany()" class="btn btn-info waves-effect waves-light col-md-3">{{'company.addCompany' | translate}}</button>
+                        </form>
+                    </div>
+                    <table class="col-md-5 table table-bordered table-info m-t-10" ng-if="vm.user.userCompanies.length > 0">
+                        <tr>
+                            <th>{{'company.company' | translate}}</th>
+                            <th>{{'company.companyCode' | translate}}</th>
+                        </tr>
+                        <tr ng-repeat="userCompany in vm.user.userCompanies">
+                            <td>{{userCompany.company | localizeString}}</td>
+                            <td>{{userCompany.company.companyCode}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>

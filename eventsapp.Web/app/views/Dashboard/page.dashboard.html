@@ -1,0 +1,81 @@
+﻿<div class="animated fadeInDown" ng-controller="dashboardController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="mdi mdi-view-dashboard"></i>{{'sidebar.nav.DASHBOARD' | translate}}</h4>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12" ng-if="vm.events.length == 0">
+        <uib-alert type="info"><i class="fa fa-info-circle"></i> {{'general.noDataFound' | translate}}</uib-alert>
+    </div>
+    <div class=" col-md-12">
+        <div class="panel panel-border panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"> {{'general.filterBy' | translate}}</h3>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-4">
+                    <label class="col-sm-3 control-label"><span>  {{'eventReg.events' | translate}}</span></label>
+                    <div class="col-sm-9">
+                        <ui-select ng-model="vm.eventId" validator="required" ng-change="vm.reloadKPI()" name="eventType" theme="bootstrap" class="text-left">
+                            <ui-select-match placeholder="{{'event.event' | translate}}"><span ng-bind-html='$select.selected | localizeString'></span></ui-select-match>
+                            <ui-select-choices repeat="event.id as event in vm.events | filter: $select.search">
+                                <span ng-bind-html="event | localizeString | highlight: $select.search"></span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <uib-tabset>
+        <uib-tab heading="{{'event.eventStatistics' | translate}}">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title"> {{'event.registeredUsers' | translate}}</div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12 col-xs-12" ng-if="vm.KPIByRegisteredUsers">
+                                <div class="chart-header set-style row col-md-12 popout">
+                                    <charts-module ng-model="vm.KPIByRegisteredUsers" ng-if="vm.KPIByRegisteredUsers.chartConfig"></charts-module>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">{{'event.userAttendance' | translate}}</div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12 col-xs-12" ng-if="vm.KPIByUsersAttendance">
+                                <div class="chart-header set-style row col-md-12 popout">
+                                    <charts-module ng-model="vm.KPIByUsersAttendance" ng-if="vm.KPIByUsersAttendance.chartConfig"></charts-module>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">{{'event.survey' | translate}}</div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-12 col-xs-12" ng-if="vm.KPIBySurveyResult">
+                                <div class="chart-header set-style row col-md-12 popout">
+                                    <charts-module ng-model="vm.KPIBySurveyResult" ng-if="vm.KPIBySurveyResult.chartConfig"></charts-module>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </uib-tab>
+    </uib-tabset>
+</div>

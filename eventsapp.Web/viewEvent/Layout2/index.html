@@ -1,0 +1,995 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" ng-app="eventsapp">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head -->
+    <!-- SITE TITLE -->
+    <title>E-Voucher System</title>
+    <meta name="description" content="Event Management System - Inlogic IT Solutions" />
+    <meta name="keywords" content="Bootstrap3, Event,  Conference, Meetup, Template, Responsive, HTML5" />
+    <meta name="author" content="Wajahat Ali" />
+    <!-- facebook open graph ends from here -->
+    <!--  FAVICON AND TOUCH ICONS -->
+    <link rel="icon" type="image/x-icon" href="../../app/img/fav.jpg">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" data-ng-href="../../app/css/{{(app.layout.isRTL === true? 'bootstrap-rtl.min': 'bootstrap.min')}}.css?v.0.02" media="all" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css" media="all" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/libs/maginificpopup/magnific-popup.css" media="all" />
+
+    <!-- Time Circle -->
+    <link rel="stylesheet" href="assets/libs/timer/TimeCircles.css" media="all" />
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.carousel.min.css" media="all" />
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.theme.default.min.css" media="all" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cPoppins:300,400,400i,600,600i,700,800,900" />
+
+    <!-- MASTER  STYLESHEET  -->
+    <link id="lgx-master-style" rel="stylesheet"
+          href="assets/css/style-default.css"
+          data-ng-href="assets/css/{{(app.layout.isRTL === true? 'style-default-rtl': 'style-default')}}.css?v.0.02" media="all" />
+
+    <!-- MODERNIZER CSS  -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js?v.0.02"></script>
+    <style>
+        .parallax-overlay-gradient-primary, .parallax-overlay-gradient-primary-1 {
+            position: relative;
+            z-index: initial;
+        }
+
+        .lgx-modal .modal-dialog .modal-content .modal-header {
+            background: white;
+            width: 70%;
+            margin: 0 auto;
+            overflow: hide;
+        }
+
+            .lgx-modal .modal-dialog .modal-content .modal-header .close {
+                color: grey;
+            }
+
+        .parallax-content {
+            z-index: initial;
+        }
+
+        .companyModal table tbody tr td img {
+            max-height: 130px;
+        }
+
+        .modal-header .close {
+            position: relative;
+            top: 18px;
+            padding: 5px;
+            background: white;
+        }
+
+        .modal-dialog {
+            top: 10%;
+        }
+    </style>
+</head>
+
+<body class="home">
+    <script src="../../vendor/modernizr/modernizr.custom.js?v.0.02"></script>
+    <script src="../../vendor/jquery/dist/jquery.js?v.0.02"></script>
+    <script src="../../vendor/angular/angular.js?v.0.02"></script>
+    <script src="../../vendor/angular-component-master/dist/angular-component.js?v.0.02"></script>
+    <script src="../../src/js/angular-barcode.js?v.0.02"></script>
+    <script src="../../src/js/bootstrap.js?v.0.02"></script>
+    <script src="../../vendor/angular-route/angular-route.js?v.0.02"></script>
+    <script src="../../vendor/angular-cookies/angular-cookies.js?v.0.02"></script>
+    <script src="../../vendor/angular-animate/angular-animate.js?v.0.02"></script>
+    <script src="../../vendor/angular-touch/angular-touch.js?v.0.02"></script>
+    <script src="../../vendor/angular-sanitize/angular-sanitize.js?v.0.02"></script>
+    <script src="../../vendor/angular-resource/angular-resource.js?v.0.02"></script>
+    <script src="../../vendor/angular-translate/angular-translate.js?v.0.02"></script>
+    <script src="../../vendor/ngstorage/ngStorage.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-router/release/angular-ui-router.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-utils/index.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-mask/dist/mask.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-event/dist/event.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-validate/dist/validate.js?v.0.02"></script>
+    <script src="../../vendor/angular-validation/angular-validation.js?v.0.02"></script>
+    <script src="../../vendor/angular-validation/angular-validation-rule.js?v.0.02"></script>
+    <script src="../../vendor/ika.jvectormap/jquery-jvectormap-2.0.3.min.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-indeterminate/dist/indeterminate.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-scrollpoint/dist/scrollpoint.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-scroll/dist/ui-scroll.js?v.0.02"></script>
+    <script src="../../vendor/angular-ui-uploader/dist/uploader.js?v.0.02"></script>
+    <script src="../../vendor/angular-file-upload/dist/angular-file-upload.js?v.0.02"></script>
+    <script src="../../vendor/angular-translate-loader-url/angular-translate-loader-url.js?v.0.02"></script>
+    <script src="../../vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.js?v.0.02"></script>
+    <script src="../../vendor/angular-translate-storage-local/angular-translate-storage-local.js?v.0.02"></script>
+    <script src="../../vendor/angular-translate-storage-cookie/angular-translate-storage-cookie.js?v.0.02"></script>
+    <script src="../../vendor/angular-bootstrap/ui-bootstrap-tpls.js?v.0.02"></script>
+    <script src="../../vendor/angular-dynamic-locale/dist/tmhDynamicLocale.js?v.0.02"></script>
+    <script src="../../vendor/oclazyload/dist/ocLazyLoad.js?v.0.02"></script>
+    <script src="../../vendor/angular-loading-bar/build/loading-bar.js?v.0.02"></script>
+    <script src="../../vendor/angular-recaptcha/release/angular-recaptcha.js?v.0.02"></script>
+    <script src="../../vendor/ckeditor/ckeditor.js?v.0.02"></script>
+    <script src="../../vendor/ckeditor/styles.js?v.0.02"></script>
+    <script src="../../vendor/ckeditor/config.js?v.0.02"></script>
+    <script src="../../vendor/ckeditor/adapters/jquery.js?v.0.02"></script>
+    <script src="../../vendor/pdfmake/pdfmake.min.js?v.0.02"></script>
+    <script src="../../vendor/pdfmake/vfs_fonts.js?v.0.02"></script>
+    <script src="../../vendor/angular-base64/angular-base64.js?v.0.02"></script>
+    <script src="../../vendor/angularjs-toaster/toaster.js?v.0.02"></script>
+    <script src="../../vendor/html2canvas/html2canvas.js?v.0.02"></script>
+    <script src="../../vendor/angular-qrcode/angular-qrcode.js?v.0.02"></script>
+    <script src="../../vendor/angular-qrcode/qrcode.js?v.0.02"></script>
+    <script src="../../vendor/angular-qrcode/qrcode_UTF8.js?v.0.02"></script>
+    <script src="../../vendor/FileSaver/FileSaver.js?v.0.02"></script>
+    <script src="../../vendor/FileSaver/FileSaver.min.js?v.0.02"></script>
+    <script src="../../vendor/highcharts-ng-master/src/world.js?v.0.02"></script>
+    <script src="../../vendor/fuelux/dist/js/fuelux.min.js?v.0.02"></script>
+    <script src="../../vendor/angular-filter/angular-filter.js?v.0.02"></script>
+    <script src="../../vendor/owl-carousel/owl.carousel.js?v.0.02"></script>
+    <link rel="stylesheet" href="../../vendor/owl-carousel/owl.carousel.css?v.0.02">
+    <link rel="stylesheet" href="../../vendor/owl-carousel/owl.theme.default.css?v.0.02">
+    <script src="../../vendor/angular-ui-map/ui-map.js?v.0.02"></script>
+    <script src="../../app/plugins/gmap/load-google-maps.js?v.0.02"></script>
+    <link rel="stylesheet" src="../../vendor/datatables/media/css/jquery.dataTables.min.css?v.0.02">
+    <script src="../../vendor/datatables/media/js/jquery.dataTables.min.js?v.0.02"></script>
+    <script src="../../vendor/angular-datatables/dist/angular-datatables.min.js?v.0.02"></script>
+    <script src="../../vendor/angular-datatables/responsive.js?v.0.02"></script>
+    <link rel="stylesheet" src="../../vendor/angular-datatables/responsive.css?v.0.02">
+    <script src="../../vendor/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js?v.0.02"></script>
+    <link rel="stylesheet" src="../../vendor/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.css?v.0.02">
+    <link rel="stylesheet" src="../../vendor/sweetalert/dist/sweetalert.css?v.0.02">
+    <script src="../../vendor/sweetalert/dist/sweetalert.min.js?v.0.02"></script>
+    <script src="../../vendor/angular-sweetalert/SweetAlert.js?v.0.02"></script>
+    <script src="../../vendor/angular-wizard-master/dist/angular-wizard.min.js?v.0.02"></script>
+    <link rel="stylesheet" src="../../vendor/angular-wizard-master/dist/angular-wizard.css?v.0.02">
+    <link rel="stylesheet" src="../../vendor/font-awesome/css/font-awesome.min.css?v.0.02">
+    <link rel="stylesheet" src="../../vendor/weather-icons/css/weather-icons.min.css?v.0.02">
+    <link rel="stylesheet" src="../../vendor/feather/webfont/feather-webfont/feather.css?v.0.02">
+    <script src="../../vendor/angular-ui-map/ui-map.min.js?v.0.02"></script>
+    <script src="../../app/plugins/gmap/load-google-maps.js?v.0.02"></script>
+    <script src="../Layout1/js/app.module.js?v.0.02"></script>
+    <script src="../../src/js/app.httpInterceptor.js?v.0.02"></script>
+    <script src="../Layout1/js/viewEventController.js?v.0.02"></script>
+    <script src="../../src/js/modules/common/services/browser-detection.service.js?v.0.02"></script>
+    <script src="../../src/js/modules/core/core.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/core/core.run.js?v.0.02"></script>
+    <script src="../../src/js/modules/settings/settings.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/settings/settings.service.js?v.0.02"></script>
+    <script src="../../src/js/modules/translator/localization.config.js?v.0.02"></script>
+    <script src="../../src/js/modules/translator/localization.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/translator/translator.config.js?v.0.02"></script>
+    <script src="../../src/js/modules/translator/translator.service.js?v.0.02"></script>
+    <script src="../../src/js/modules/tables/angular-table.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/tables/datatables.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/tables/responsive-table.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/tables/table-xeditable.controller.js?v.0.02"></script>
+    <script src="../../src/js/modules/layermorph/layer-morph.directive.js?v.0.02"></script>
+    <script src="../../src/js/modules/layermorph/layer-morph.service.js?v.0.02"></script>
+    <script src="../../src/js/noCache.js??v.0.02"></script>
+    <script src="../../app/views/Account/login/userProfile.js?v.0.02"></script>
+    <script src="../../app/views/Controls/dataTableDirective/dataTableDirective.js?v.0.02"></script>
+    <script src="../../src/js/modules/common/filters/localizeString.js?v.0.02"></script>
+
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p data-translate="general.loading">Please Wait...</p>
+        </div>
+    </div>
+    <div class="lgx-container " ng-controller="viewEventController as vm">
+        <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
+        <!--HEADER-->
+        <header>
+            <div style='width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background: #000000BA;'>&nbsp;</div>
+            <div id="lgx-header" class="lgx-header">
+                <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed ">
+                    <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
+                    <div class="lgx-container">
+                        <!--lgx-container-fluid-->
+                        <nav class="navbar navbar-default lgx-navbar">
+                            <div class="navbar-header">
+                                <div class="lgx-logo">
+                                    <a class="lgx-scroll">
+                                        <img src="../../app/img/DDF_logo.png" ng-if="vm.event.eventLogoFullPath == null" alt="Event Logo" />
+                                        <img src="{{vm.event.eventLogoFullPath}}" ng-if="vm.event.eventLogoFullPath != null" alt="Event Logo" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <div class="lgx-nav-right navbar-right">
+                                    <div class="lgx-cart-area">
+                                        <a class="lgx-btn lgx-btn-red homeBtn" href="/" data-triangle=".button-overlay"> <i class="fa fa-home fa-2x"></i><span class="button-overlay"></span></a>
+
+                                        <a ng-show="language.selected != langName" class="lgx-btn lgx-btn-red homeBtn" ng-repeat="(localeId, langName) in language.available" data-triangle=".button-overlay"
+                                           ng-click="language.set(localeId, $event)">
+                                            <i class="fa fa-language fa-2x"></i><span>{{langName}}  </span>
+                                            <span class="button-overlay"></span>
+                                        </a>
+
+                                        <a class="lgx-btn lgx-btn-red" ng-if="vm.event.disableRegister != true" href='{{$root.app.baseURL}}#/page/register?eid={{vm.event.id}}&companyCode={{vm.event.user.company.companyCode}}' data-triangle=".button-overlay"><span>{{'general.registerForEvent' | translate}}</span><span class="button-overlay"></span></a>
+                                    </div>
+                                </div>
+                            </div><!--/.nav-collapse -->
+                        </nav>
+                    </div>
+                    <!-- //.CONTAINER -->
+                </div>
+            </div>
+        </header>
+        <!--HEADER END-->
+        <!--BANNER-->
+        <section>
+            <div class="lgx-banner" style="background:url({{vm.event.bannerPhotoFullPath != null ?vm.event.bannerPhotoFullPath : '../Layout1/images/slide-02-1894x1042.jpg' }}) top center no-repeat;background-size: 100% 900px;">
+                <div class="lgx-banner-style">
+                    <div class="lgx-inner lgx-inner-fixed">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="lgx-banner-info-area">
+                                        <div class="lgx-banner-info-circle">
+                                            <div class="info-circle-inner">
+                                                <h3 class="date"><b class="lgx-counter">{{vm.event.startDate | date : 'dd'}}</b> <span>{{vm.event.startDate | date : 'MMMM'}}</span></h3>
+                                                <div class="lgx-countdown-area">
+                                                    <!-- Date Format :"Y/m/d" || For Example: 1017/10/5  -->
+                                                    <div id="lgx-countdown" data-date="{{vm.event.startDate | date : 'yyyy/MM/dd'}}"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lgx-banner-info">
+                                            <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg--> <!--banner-info-margin-->
+                                            <h3 class="subtitle">{{vm.event.eventType | localizeString : "nameEn" : "nameAr"}}</h3>
+                                            <h2 class="title">{{vm.event | localizeString}}</h2>
+                                            <h3 class="location" ng-show="vm.event.eventAddresses.length>0"><i class="fa fa-map-marker"></i> {{vm.event.eventAddresses[0].address.street}} - {{vm.event.eventAddresses[0].address.state |localizeString}}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.ROW-->
+                        </div>
+                        <!-- //.CONTAINER -->
+                    </div>
+                    <!-- //.INNER -->
+                </div>
+            </div>
+        </section>
+        <!--BANNER END-->
+        <!--ABOUT-->
+        <section>
+            <div id="lgx-about" class="lgx-about">
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="lgx-about-content-area">
+                                    <div class="lgx-heading">
+                                        <h2 class="heading">{{vm.event | localizeString}}</h2>
+                                    </div>
+                                    <div class="lgx-about-content">
+                                        <p class="text" ng-bind-html="vm.event | localizeString : 'descriptionEn' : 'descriptionAr'"> </p>
+
+                                        <div class="about-date-area">
+                                            <h4 class="date"><span>{{vm.event.startDate | date : 'dd'}}</span></h4>
+                                            <p>
+                                                <span>{{vm.event.startDate | date : 'MMMM yyyy'}}</span>
+                                                <span ng-show="vm.event.eventAddresses.length>0">{{vm.event.eventAddresses[0].address.street}} - {{vm.event.eventAddresses[0].address.state |localizeString}}</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="section-btn-area">
+                                            <a class="lgx-btn lgx-btn-red lgx-scroll" href='{{$root.app.baseURL}}#/page/register?eid={{vm.event.id}}&companyCode={{vm.event.user.company.companyCode}}' ng-if="vm.event.disableRegister != true"><span>{{'general.registerNow' | translate}}</span></a>
+                                            <a id="myModalLabel" ng-if="vm.event.videoURL != null" class="lgx-btn lgx-btn-red lgx-scroll" href="" data-toggle="modal" data-target="#lgx-modal">
+                                                <i class="fa fa-play-circle " aria-hidden="true"></i>{{'event.eventVideo' | translate}}
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="lgx-about-img-sp">
+                                    <img src="{{vm.event.bannerPhotoFullPath}}" ng-if="vm.event.bannerPhotoFullPath != null" alt="about">
+                                </div>
+                                <div class="row  counterblock row-bordered">
+                                    <div class="col-6 col-md-2 row-bordered-item" ng-if="vm.event.speakersCount != null && vm.event.speakersCount != 0">
+                                        <div class="wow fadeInUp animated" data-wow-delay=".3" style="visibility: visible; animation-name: fadeInUp;">
+                                            <!--Counter-->
+                                            <div class="box-counter">
+                                                <div class="box-counter-main">
+                                                    <div class="counter">{{vm.event.speakersCount}}</div>
+                                                </div>
+                                                <p class="box-counter-title">{{'event.speakers' | translate}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2 row-bordered-item" ng-if="vm.event.vipCount != null && vm.event.vipCount != 0">
+                                        <div class="wow fadeInUp animated" data-wow-delay=".3" style="visibility: visible; animation-name: fadeInUp;">
+                                            <!--Counter-->
+                                            <div class="box-counter">
+                                                <div class="box-counter-main">
+                                                    <div class="counter">{{vm.event.vipCount}}</div>
+                                                </div>
+                                                <p class="box-counter-title">{{'event.vip' | translate}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2 row-bordered-item" ng-if="vm.event.sponsorsCount != null && vm.event.sponsorsCount != 0">
+                                        <div class="wow fadeInUp animated" data-wow-delay=".5" style="visibility: visible; animation-name: fadeInUp;">
+                                            <!--Counter-->
+                                            <div class="box-counter">
+                                                <div class="box-counter-main">
+                                                    <div class="counter">{{vm.event.sponsorsCount}}</div>
+                                                </div>
+                                                <p class="box-counter-title">{{'event.sponser' | translate}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2 row-bordered-item" ng-if="vm.event.partnersCount != null && vm.event.partnersCount != 0">
+                                        <div class="wow fadeInUp animated" data-wow-delay=".6" style="visibility: visible; animation-name: fadeInUp;">
+                                            <!--Counter-->
+                                            <div class="box-counter">
+                                                <div class="box-counter-main">
+                                                    <div class="counter">{{vm.event.partnersCount}}</div>
+                                                </div>
+                                                <p class="box-counter-title">{{'event.partner' | translate}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2 row-bordered-item" ng-if="vm.event.exhibitorsCount != null && vm.event.exhibitorsCount != 0">
+                                        <div class="wow fadeInUp animated" data-wow-delay=".6" style="visibility: visible; animation-name: fadeInUp;">
+                                            <!--Counter-->
+                                            <div class="box-counter">
+                                                <div class="box-counter-main">
+                                                    <div class="counter"> {{vm.event.exhibitorsCount}} </div>
+                                                </div>
+                                                <p class="box-counter-title">{{'event.exhibitor' | translate}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2 row-bordered-item" ng-if="vm.event.sessionCount != null && vm.event.sessionCount != 0">
+                                        <div class="wow fadeInUp animated" data-wow-delay=".6" style="visibility: visible; animation-name: fadeInUp;">
+                                            <!--Counter-->
+                                            <div class="box-counter">
+                                                <div class="box-counter-main">
+                                                    <div class="counter"> {{vm.event.sessionCount}} </div>
+                                                </div>
+                                                <p class="box-counter-title">{{'event.agendaSessions' | translate}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //.CONTAINER -->
+                </div><!-- //.INNER -->
+            </div>
+        </section>
+        <!--ABOUT END-->
+        <!--SPEAKERS-->
+        <section ng-show="(vm.event.eventPersons | filter : {personTypeId : 1}).length > 0">
+            <div id="lgx-speakers" class="lgx-speakers " style="background:#31708f">
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading">{{'event.Whosspeakers' | translate}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//.ROW-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3  col-lg-3" ng-repeat="eventPerson  in vm.event.eventPersons | filter : {personTypeId : 1}">
+                                <div class="lgx-single-speaker">
+                                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                                    <figure>
+                                        <img class="speakerimg" ng-if="eventPerson.person.photoFullPath != null" src="{{eventPerson.person.photoFullPath}}" alt="Speaker" />
+                                        <img class="speakerimg" ng-if="eventPerson.person.photoFullPath == null" src="../../app/img/user/01.jpg" alt="Speaker" />
+
+                                        <figcaption>
+                                            <div class="social-group">
+                                                <a class="sp-tw" ng-if="eventPerson.person.twitterURL != null" href="{{eventPerson.person.twitterURL}}"><i class="fa fa-twitter"></i></a>
+                                                <a class="sp-fb" ng-if="eventPerson.person.facebookURL != null" href="{{eventPerson.person.facebookURL}}"><i class="fa fa-facebook"></i></a>
+                                                <a class="sp-in" ng-if="eventPerson.person.linkedInURL != null" href="{{eventPerson.person.linkedInURL}}"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                            <div class="speaker-info">
+                                                <h3 class="title"><a> {{eventPerson.person | localizeString}}</a></h3>
+                                                <h4 class="subtitle"> {{eventPerson.person | localizeString  : "titleEn" : "titleAr"}}</h4>
+                                                <h4 class="subtitle">   {{eventPerson.person.email}} - {{eventPerson.person.phone}}</h4>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.CONTAINER -->
+                </div>
+                <!-- //.INNER -->
+            </div>
+        </section>
+
+        <!--VIPS-->
+        <section ng-show="(vm.event.eventPersons | filter : {personTypeId : 2}).length > 0">
+            <div id="lgx-speakers" class="lgx-speakers " style="background:#31708f">
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading">{{'event.vip' | translate}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//.ROW-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3  col-lg-3" ng-repeat="eventPerson  in vm.event.eventPersons | filter : {personTypeId : 2}">
+                                <div class="lgx-single-speaker">
+                                    <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
+                                    <figure>
+                                        <img class="speakerimg" ng-if="eventPerson.person.photoFullPath != null" src="{{eventPerson.person.photoFullPath}}" alt="Speaker" />
+                                        <img class="speakerimg" ng-if="eventPerson.person.photoFullPath == null" src="../../app/img/user/01.jpg" alt="Speaker" />
+
+                                        <figcaption>
+                                            <div class="social-group">
+                                                <a class="sp-tw" ng-if="eventPerson.person.twitterURL != null" href="{{eventPerson.person.twitterURL}}"><i class="fa fa-twitter"></i></a>
+                                                <a class="sp-fb" ng-if="eventPerson.person.facebookURL != null" href="{{eventPerson.person.facebookURL}}"><i class="fa fa-facebook"></i></a>
+                                                <a class="sp-in" ng-if="eventPerson.person.linkedInURL != null" href="{{eventPerson.person.linkedInURL}}"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                            <div class="speaker-info">
+                                                <h3 class="title"><a> {{eventPerson.person | localizeString}}</a></h3>
+                                                <h4 class="subtitle"> {{eventPerson.person | localizeString  : "titleEn" : "titleAr"}}</h4>
+                                                <h4 class="subtitle">   {{eventPerson.person.email}} - {{eventPerson.person.phone}}</h4>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.CONTAINER -->
+                </div>
+                <!-- //.INNER -->
+            </div>
+        </section>
+
+        <!--SPEAKERS END-->
+        <!--SCHEDULE-->
+        <section>
+            <div id="lgx-schedule" class="lgx-schedule" ng-show="(vm.event.sessions).length > 0">
+                <div class="lgx-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="lgx-heading lgx-heading-white">
+                                    <h2 class="heading">{{'event.agenda' | translate}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="lgx-tab lgx-tab2">
+                                    <!--lgx-tab2 lgx-tab-vertical-->
+                                    <ul class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">
+                                        <!--lgx-nav-nogap lgx-nav-colorful-->
+                                        <li ng-class="{'active': $index == 0}" ng-repeat="session in vm.event.agendaSessions track by $index">
+                                            <a data-toggle="pill" href="#menu{{session.id}}">
+                                                <h3 ng-if="session.nameEn != null"> {{session | localizeString}} </h3>
+                                                <h3 ng-if="session.nameEn == null">Day {{session.id}} </h3>
+                                                <p>
+                                                    <span>{{session.date  | date : 'dd'}} </span>{{session.date  | date : 'MMM, yyyy'}}
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content lgx-tab-content">
+                                        <div id="menu{{session.id}}" class="tab-pane fade " ng-class="{'in active': $index == 0}" ng-repeat="session in vm.event.agendaSessions track by $index">
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                <div class="panel panel-default lgx-panel" ng-repeat="agenda in session.agenda">
+                                                    <div class="panel-heading" role="tab" id="heading{{agenda.id}}">
+                                                        <div class="panel-title">
+                                                            <a role="button" href="">
+                                                                <div class="lgx-single-schedule">
+                                                                    <div class="author">
+                                                                        <img ng-if="agenda.person.photoFullPath!= null" src="{{agenda.person.photoFullPath}}" alt="Speaker" />
+                                                                        <img ng-if="agenda.person.photoFullPath== null" src="../../app/img/user/01.jpg" alt="Speaker" />
+                                                                    </div>
+                                                                    <div class="schedule-info">
+                                                                        <span ng-if="session.nameEn != null">{{agenda.date | date : 'dd-MMM-yyyy' }}</span>
+                                                                        <h4 class="time">{{agenda.fromTime | date : 'shortTime' }} to {{agenda.toTime | date : 'shortTime' }} </h4>
+                                                                        <h3 class="title" ng-bind-html="agenda | localizeString : 'titleEn' : 'titleAr'"> </h3>
+                                                                        <p class="text" ng-bind-html="agenda | localizeString : 'descriptionEn' : 'descriptionAr'"> </p>
+                                                                        <h4 ng-if="agenda.person != null" class="author-info">By <span>{{agenda.person | localizeString}}</span> - {{agenda.person | localizeString : "titleEn" : "titleAr"}}</h4>
+
+                                                                        <h4 ng-if="agenda.location" class="location">{{agenda.location}}</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.CONTAINER -->
+                </div>
+                <!-- //.INNER -->
+            </div>
+        </section>
+
+        <!--SCHEDULE END-->
+        <!--SPONSORED-->
+        <!-- Section Official Sponsors-->
+        <section>
+            <div id="lgx-sponsors" class="lgx-sponsors" ng-show="(vm.event.eventCompanies | filter : {companyTypeId : 1}).length > 0">
+                <div class="lgx-inner-bg">
+                    <div class="lgx-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="lgx-heading">
+                                        <h2 class="heading">{{'event.sponser' | translate}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//main row-->
+                            <div class="row" ng-repeat="eventCompany in vm.event.eventCompanies | filter : {companyTypeId : 1}  | unique : 'package'">
+                                <div class="col-xs-12">
+                                    <h3 class="sponsored-heading first-heading">{{eventCompany.package.sponserType   | localizeString}} Sponsors</h3>
+                                    <div class="sponsors-area sponsors-area-nogap sponsors-area-noshadow sponsors-area-col3">
+                                        <!--sponsors-area-col3 sponsors-area-noshadow sponsors-area-nogap sponsors-area-colorfull sponsors-area-colorfull-border sponsors-area-border-->
+                                        <div class="single" ng-repeat="eventCmp in vm.event.eventCompanies | filter : {companyTypeId : 1, packageId : eventCompany.packageId}">
+                                            <a class="" href="" data-toggle="modal" data-target="#lgx-modal-cmp{{eventCmp.id}}">
+                                                <img ng-if="eventCmp.company.photoFullPath != null" src="{{eventCmp.company.photoFullPath}}" alt="" />
+                                                <span ng-if="eventCmp.company.photoFullPath == null"> {{eventCmp.company | localizeString}}</span>
+                                            </a>
+                                            <!-- Modal-->
+                                            <div id="lgx-modal-cmp{{eventCmp.id}}" class="modal fade lgx-modal">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                                                        </div>
+                                                        <div class="modal-body companyModal">
+                                                            <h4 class="text-center">{{'company.companyDetails' | translate}}</h4>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{'eventReg.name' | translate}}</td>
+                                                                    <td> {{eventCmp.company | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'company.photo' | translate}}</td>
+                                                                    <td>
+                                                                        <img src="{{eventCmp.company.photoFullPath}}" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'event.phone' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.phone}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'event.email' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.email}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.country' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.country | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.city' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.state | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.Street' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.street}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- //.Modal-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//col-->
+                            </div>
+                        </div>
+                        <!--//container-->
+                    </div>
+                </div>
+                <!--//lgx-inner-->
+            </div>
+        </section>
+
+        <!-- Section Official Exibitors-->
+        <section>
+            <div id="lgx-sponsors" class="lgx-sponsors" ng-show="(vm.event.eventCompanies | filter : {companyTypeId : 2}).length > 0">
+                <div class="lgx-inner-bg">
+                    <div class="lgx-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="lgx-heading">
+                                        <h2 class="heading">{{'event.exhibitor' | translate}} </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//main row-->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="sponsors-area sponsors-area-nogap sponsors-area-noshadow sponsors-area-col3">
+                                        <!--sponsors-area-col3 sponsors-area-noshadow sponsors-area-nogap sponsors-area-colorfull sponsors-area-colorfull-border sponsors-area-border-->
+                                        <div class="single" ng-repeat="eventCmp in vm.event.eventCompanies | filter : {companyTypeId : 2}">
+                                            <a class="" href="" data-toggle="modal" data-target="#lgx-modal-cmp{{eventCmp.id}}">
+                                                <img ng-if="eventCmp.company.photoFullPath != null" src="{{eventCmp.company.photoFullPath}}" alt="" />
+                                                <span ng-if="eventCmp.company.photoFullPath == null"> {{eventCmp.company | localizeString}}</span>
+                                            </a>
+                                            <!-- Modal-->
+                                            <div id="lgx-modal-cmp{{eventCmp.id}}" class="modal fade lgx-modal">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                                                        </div>
+                                                        <div class="modal-body companyModal">
+                                                            <h4 class="text-center">{{'company.companyDetails' | translate}}</h4>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{'eventReg.name' | translate}}</td>
+                                                                    <td> {{eventCmp.company | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'company.photo' | translate}}</td>
+                                                                    <td>
+                                                                        <img src="{{eventCmp.company.photoFullPath}}" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'event.phone' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.phone}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'event.email' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.email}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.country' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.country | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.city' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.state | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.Street' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.street}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- //.Modal-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//col-->
+                            </div>
+                        </div>
+                        <!--//container-->
+                    </div>
+                </div>
+                <!--//lgx-inner-->
+            </div>
+        </section>
+
+        <!-- Section Official Partners-->
+        <section>
+            <div id="lgx-sponsors" class="lgx-sponsors" ng-show="(vm.event.eventCompanies | filter : {companyTypeId : 3}).length > 0">
+                <div class="lgx-inner-bg">
+                    <div class="lgx-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="lgx-heading">
+                                        <h2 class="heading">{{'event.partner' | translate}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//main row-->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="sponsors-area sponsors-area-nogap sponsors-area-noshadow sponsors-area-col3">
+                                        <!--sponsors-area-col3 sponsors-area-noshadow sponsors-area-nogap sponsors-area-colorfull sponsors-area-colorfull-border sponsors-area-border-->
+                                        <div class="single" ng-repeat="eventCmp in vm.event.eventCompanies | filter : {companyTypeId : 3}">
+                                            <a class="" href="" data-toggle="modal" data-target="#lgx-modal-cmp{{eventCmp.id}}">
+                                                <img ng-if="eventCmp.company.photoFullPath != null" src="{{eventCmp.company.photoFullPath}}" alt="" />
+                                                <span ng-if="eventCmp.company.photoFullPath == null"> {{eventCmp.company | localizeString}}</span>
+                                            </a>
+                                            <!-- Modal-->
+                                            <div id="lgx-modal-cmp{{eventCmp.id}}" class="modal fade lgx-modal">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                                                        </div>
+                                                        <div class="modal-body companyModal">
+                                                            <h4 class="text-center">{{'company.companyDetails' | translate}}</h4>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>{{'eventReg.name' | translate}}</td>
+                                                                    <td> {{eventCmp.company | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'company.photo' | translate}}</td>
+                                                                    <td>
+                                                                        <img src="{{eventCmp.company.photoFullPath}}" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'event.phone' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.phone}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'event.email' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.email}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.country' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.country | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.city' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.state | localizeString}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{'address.Street' | translate}}</td>
+                                                                    <td>  {{eventCmp.company.address.street}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- //.Modal-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//col-->
+                            </div>
+                        </div>
+                        <!--//container-->
+                    </div>
+                </div>
+                <!--//lgx-inner-->
+            </div>
+        </section>
+        <!--SPONSORED END-->
+        <!--VIDEO-->
+        <!-- Modal-->
+        <div id="lgx-modal" class="modal fade lgx-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="modalvideo" ng-src="{{trustSrc(vm.event.videoURL)}}" ng-if="vm.event.videoURL != null" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- //.Modal-->
+        <!--//.VIDEO END-->
+        <!--FOOTER-->
+        <footer>
+            <div id="lgx-footer" class="lgx-footer">
+                <!--lgx-footer-white-->
+                <div class="lgx-inner-footer">
+                    <div class="container">
+                        <div class="lgx-footer-area">
+                            <div class="lgx-footer-single">
+                                <a class="logo">
+                                    <img src="../../app/img/DDF_logo.png" alt="Eventhunt Logo" />
+                                </a>
+                            </div> <!--//footer-area-->
+                            <div class="lgx-footer-single">
+                                <h3 class="footer-title" ng-show="vm.event.eventAddresses.length>0">{{'event.venueLocations' | translate}} </h3>
+                                <h4 class="date">
+                                    <time datetime="{{vm.event.startDate | date : 'yyyy-MM-dd'}}">{{vm.event.startDate | date : 'longDate'}} to {{vm.event.endDate | date : 'longDate'}}</time>
+
+                                </h4>
+                                <div ng-repeat="eventAddress in vm.event.eventAddresses" ng-show="vm.event.eventAddresses.length>0">
+                                    <p class="event-detail-address big">
+                                        {{eventAddress.address.street}} , {{eventAddress.address.state | localizeString}} ,
+                                        {{eventAddress.address.country | localizeString}}
+                                    </p>
+                                    <a id="myModalLabel2" ng-show="eventAddress.address.lat != null" data-toggle="modal" data-target="#lgx-modal-map{{eventAddress.id}}" class="event-detail-time big map-link" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> {{'general.viewMap' | translate}}</a>
+
+                                </div>
+                            </div>
+                            <div class="lgx-footer-single" ng-if="vm.event.facebookURL != null || vm.event.twitterURL != null ||
+                                 vm.event.instagramURL != null||vm.event.linkedInURL != null">
+                                <h3 class="footer-title">{{'event.socialConnection' | translate}} </h3>
+                                <ul class="list-inline lgx-social-footer">
+                                    <li ng-if="vm.event.facebookURL != null"><a href="{{vm.event.facebookURL}}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li ng-if="vm.event.twitterURL != null"><a href="{{vm.event.twitterURL}}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li ng-if="vm.event.instagramURL != null"><a href="{{vm.event.instagramURL}}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li ng-if="vm.event.linkedInURL != null"><a href="{{vm.event.linkedInURL}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--<div class="lgx-footer-single">
+                                <h2 class="footer-title">Instagram Feed</h2>
+                                <div id="instafeed">
+                                </div>
+                            </div>-->
+                        </div>
+                        <!-- Modal-->
+                        <div id="lgx-modal-map{{eventAddress.id}}" class="modal fade lgx-modal" ng-repeat="eventAddress in vm.event.eventAddresses">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4 class="event-detail-address big text-primary" style="color:black">
+                                            {{eventAddress.address.street}} , {{eventAddress.address.state | localizeString}} ,
+                                            {{eventAddress.address.country | localizeString}}
+                                        </h4>
+                                        <iframe ng-src="{{trustSrc(eventAddress.locationURL)}}" ng-if="eventAddress.locationURL != null" width="550" height="400" frameborder="0" style="border:0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- //.Modal-->
+
+                        <div class="lgx-footer-bottom">
+                            <div class="lgx-copyright">
+                                <p>
+                                    <span>
+                                        {{'general.poweredBy' | translate}} -
+                                        <a href="" target="http://hifive.ae/">Hifive</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- //.CONTAINER -->
+                </div>
+                <!-- //.footer Middle -->
+            </div>
+        </footer>
+        <!--FOOTER END-->
+
+
+    </div>
+    <!--//.LGX SITE CONTAINER-->
+    <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+    <!-- JQUERY  -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- BOOTSTRAP JS  -->
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Smooth Scroll  -->
+    <script src="assets/libs/jquery.smooth-scroll.js"></script>
+
+    <!-- SKILLS SCRIPT  -->
+    <script src="assets/libs/jquery.validate.js"></script>
+
+    <!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQvRGGtL6OrpP5xVMxq_0NgiMiRhm3ycI"></script>
+
+    <!-- CUSTOM GOOGLE MAP -->
+    <script type="text/javascript" src="assets/libs/gmap/jquery.googlemap.js"></script>
+
+    <!-- adding magnific popup js library -->
+    <script type="text/javascript" src="assets/libs/maginificpopup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Owl Carousel  -->
+    <script src="assets/libs/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- COUNTDOWN   -->
+    <script src="assets/libs/countdown.js"></script>
+    <script src="assets/libs/timer/TimeCircles.js"></script>
+
+    <!-- Counter JS -->
+    <script src="assets/libs/waypoints.min.js"></script>
+    <script src="assets/libs/counterup/jquery.counterup.min.js"></script>
+
+    <!-- SMOTH SCROLL -->
+    <script src="assets/libs/jquery.smooth-scroll.min.js"></script>
+    <script src="assets/libs/jquery.easing.min.js"></script>
+
+    <!-- type js -->
+    <script src="assets/libs/typed/typed.min.js"></script>
+
+    <!-- header parallax js -->
+    <script src="assets/libs/header-parallax.js"></script>
+
+    <!-- instafeed js -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>-->
+    <script src="assets/libs/instafeed.min.js"></script>
+
+    <!-- CUSTOM SCRIPT  -->
+    <script src="assets/js/custom.script.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d886553e3699f68"></script>
+    <style>
+
+        /** @section Preloader */
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: #ffffff;
+            transition: .3s all ease;
+        }
+
+            [data-x-mode='true'] .preloader, .preloader.loaded {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+        .preloader-body {
+            text-align: center;
+        }
+
+            .preloader-body p {
+                position: relative;
+                right: -8px;
+            }
+
+        .cssload-container {
+            width: 100%;
+            height: 36px;
+            text-align: center;
+        }
+
+        .cssload-speeding-wheel {
+            width: 36px;
+            height: 36px;
+            margin: 0 auto;
+            border: 3px solid #337ab7;
+            border-radius: 50%;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            animation: cssload-spin .88s infinite linear;
+        }
+
+        @keyframes cssload-spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<form role="form" class="mb-lg form-horizontal" name="speakerForm">
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="closeModal()">x</button>
+        <h4 id="myModalLabel" class="modal-title">{{'event.speaker' | translate}}</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row form-group">
+            <label>{{'person.nameEn' | translate}} <span ng-if="$root.englishPreferredLanguage" class="text-danger">* </span></label>
+            <input class="form-control" name="nameEn" placeholder="{{'person.nameEn' | translate}}" validator="{{$root.englishPreferredLanguage == true ? 'required' :'null'}}" autocomplete="off" ng-model="personObj.nameEn" />
+        </div>
+        <div class="row form-group">
+            <label>{{'person.nameAr' | translate}} <span ng-if="$root.arabicPreferredLanguage" class="text-danger">* </span></label>
+            <input class="form-control" name="nameAr" id="nameAr" validator="{{$root.arabicPreferredLanguage == true ? 'required' :'null'}}" ng-change="$root.setArabicInit()" placeholder="{{'person.nameAr' | translate}}" autocomplete="off" ng-model="personObj.nameAr" />
+        </div>
+        <div class="row form-group">
+            <label>{{'person.titleEn' | translate}}<span ng-if="$root.englishPreferredLanguage" class="text-danger">* </span></label>
+            <input class="form-control" name="titleEn" placeholder="{{'person.titleEn' | translate}}" autocomplete="off" ng-model="personObj.titleEn" validator="{{$root.englishPreferredLanguage == true ? 'required' :'null'}}" />
+        </div>
+        <div class="row form-group">
+            <label>{{'person.titleAr' | translate}} <span ng-if="$root.arabicPreferredLanguage" class="text-danger">* </span></label>
+            <input class="form-control" name="titleAr" id="titleAr" ng-change="$root.setArabicInit()" placeholder="{{'person.titleAr' | translate}}" autocomplete="off" ng-model="personObj.titleAr" validator="{{$root.arabicPreferredLanguage == true ? 'required' :'null'}}"/>
+        </div>
+
+        <div class="row form-group">
+            <label>{{'person.descriptionEn' | translate}}</label>
+            <textarea class="form-control" name="descriptionEn" placeholder="{{'person.descriptionEn' | translate}}" autocomplete="off" ng-model="personObj.descriptionEn" ckeditor></textarea>
+        </div>
+        <div class="row form-group">
+            <label>{{'person.descriptionAr' | translate}}</label>
+            <textarea class="form-control" name="descriptionAr" id="descriptionAr" ng-change="$root.setArabicInit()" placeholder="{{'person.descriptionAr' | translate}}" autocomplete="off" ng-model="personObj.descriptionAr" ckeditor-ar></textarea>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-5">
+                <label>{{'person.photo' | translate}}</label>
+                <uploading-files copyUrl="personObj.photo" copyUrlFullPath="personObj.photoFullPath" url="PhotoPath" isreadonly="viewMode" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-5">
+                <label>{{'person.cv' | translate}}</label>
+                <uploading-files copyUrl="personObj.resume" copyUrlFullPath="personObj.resumeFullPath" url="PhotoPath" isreadonly="viewMode" allowfiletype="['.png', '.jpg', '.jpeg', '.pdf', '.doc', '.docx']" maxsize="20971520"></uploading-files>
+            </div>
+        </div>
+        <div class="row form-group">
+            <label>{{'person.phone' | translate}}<span class="text-danger">* </span></label>
+            <input ng-model="personObj.phone" placeholder="{{'person.phone' | translate}}" validator="required, phoneNumber" autocomplete="off" class="form-control" name="phone" />
+        </div>
+
+        <div class="row form-group">
+            <label>{{'person.email' | translate}}<span class="text-danger">* </span></label>
+            <input ng-model="personObj.email" placeholder="{{'person.email' | translate}}" validator="required, email" autocomplete="off" class="form-control" name="email" />
+        </div>
+        <div class="row form-group">
+            <div>
+                <div class="checkbox checkbox-custom">
+                    <input id="isResidentOfUAE" type="checkbox" ng-init="personObj.isResidentOfUAE = true" name="isResidentOfUAE" ng-model="personObj.isResidentOfUAE" placeholder="Emirates Id" autocomplete="off">
+                    <label for="isResidentOfUAE">
+                        {{'person.HaveValidVisa' | translate}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row form-group" ng-show="personObj.isResidentOfUAE">
+            <label><span>{{'person.EmiratesId' | translate}}</span></label>
+            <input ng-model="personObj.emiratesId" type="text" placeholder="{{'person.EmiratesId' | translate}}" autocomplete="off" class="form-control" name="emiratesId" mask="999-9999-9999999-9" />
+        </div>
+        <div class="row form-group" ng-if="!personObj.isResidentOfUAE">
+            <label>{{'person.PassportNumber' | translate}} </label>
+            <input ng-model="personObj.passportNumber" placeholder="{{'person.PassportNumber' | translate}}" autocomplete="off" class="form-control" name="passportNumber" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button ng-click="ok()" ng-if="viewMode != true" validation-submit="speakerForm" class="btn btn-primary" data-translate="general.save"></button>
+        <button ng-click="closeModal()" class="btn btn-danger" data-translate="general.cancel"></button>
+    </div>
+</form>

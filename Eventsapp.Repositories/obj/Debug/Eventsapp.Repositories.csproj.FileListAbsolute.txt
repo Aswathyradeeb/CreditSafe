@@ -1,0 +1,78 @@
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll.config
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EntityFramework.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\AutoMapper.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Castle.Windsor.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Castle.Core.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\log4net.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.pdb
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll.config
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EntityFramework.xml
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\AutoMapper.xml
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Castle.Windsor.xml
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\Castle.Core.xml
+D:\Workspace\Events\events\Eventsapp.Repositories\bin\Debug\log4net.xml
+D:\Workspace\Events\events\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csprojAssemblyReference.cache
+D:\Workspace\Events\events\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CoreCompileInputs.cache
+D:\Workspace\Events\events\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CopyComplete
+D:\Workspace\Events\events\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Events\events\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\AutoMapper.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Windsor.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\log4net.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\AutoMapper.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Windsor.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\log4net.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csprojAssemblyReference.cache
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CoreCompileInputs.cache
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CopyComplete
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\AutoMapper.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Windsor.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\log4net.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\AutoMapper.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Windsor.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\Castle.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\bin\Debug\log4net.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csprojAssemblyReference.cache
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CoreCompileInputs.cache
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CopyComplete
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.pdb

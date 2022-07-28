@@ -1,0 +1,2241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eventsappModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="LoggedUserConnections">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Token" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PreferredLanguages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="LanguageId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Discriminator" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar(max)" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
+    <Property Name="DescEn" Type="nvarchar(max)" />
+    <Property Name="DescAr" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="UserActionsTaken">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="ActionDate" Type="datetime" Nullable="false" />
+    <Property Name="ActionBy" Type="int" Nullable="false" />
+    <Property Name="Note" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserActionId" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="UserCompanies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="CompanyId" Type="int" />
+  </EntityType>
+  <EntityType Name="UserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="EventId" Type="int" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="PersonId" Type="int" />
+    <Property Name="RegistrationTypeId" Type="int" />
+    <Property Name="QrImage" Type="nvarchar(max)" />
+    <Property Name="AssignedFoodVouchers" Type="int" />
+    <Property Name="AssignedDrinkVouchers" Type="int" />
+    <Property Name="UsedFoodVouchers" Type="int" />
+    <Property Name="UsedDrinkVouchers" Type="int" />
+    <Property Name="GuestOf" Type="int" />
+    <Property Name="UserCode" Type="int" />
+    <Property Name="Relation" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StateId" Type="int" />
+    <Property Name="CountryId" Type="int" />
+    <Property Name="Street" Type="nvarchar" MaxLength="256" />
+    <Property Name="LocationPhoto" Type="nvarchar(max)" />
+    <Property Name="Lat" Type="nvarchar" MaxLength="256" />
+    <Property Name="Lng" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="AddressId" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="DeletedOn" Type="datetime" />
+    <Property Name="CompanyCode" Type="nvarchar" MaxLength="256" />
+    <Property Name="InstagramURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="FacebookURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="TwitterURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="LinkedInURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="UniqueId" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="IOSDevices">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="DeviceToken" Type="nvarchar" MaxLength="256" />
+    <Property Name="DeviceId" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Persons">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="TitleEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="TitleAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="DescriptionEn" Type="nvarchar(max)" />
+    <Property Name="DescriptionAr" Type="nvarchar(max)" />
+    <Property Name="Gender" Type="tinyint" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="Resume" Type="nvarchar(max)" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="PassportNumber" Type="nvarchar(max)" />
+    <Property Name="EmiratesID" Type="nvarchar(max)" />
+    <Property Name="IsResidentOfUAE" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="DeletedOn" Type="datetime" />
+    <Property Name="InstagramURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="FacebookURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="TwitterURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="LinkedInURL" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Agenda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TitleEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="TitleAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="DescriptionEn" Type="nvarchar(max)" />
+    <Property Name="DescriptionAr" Type="nvarchar(max)" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="FromTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="ToTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="SpeakerId" Type="int" />
+    <Property Name="SessionId" Type="int" />
+    <Property Name="Location" Type="nvarchar" MaxLength="256" />
+    <Property Name="ParticipantsLimit" Type="int" />
+    <Property Name="ReservationCount" Type="int" />
+    <Property Name="AttendanceCount" Type="int" />
+  </EntityType>
+  <EntityType Name="AgendaSessions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventId" Type="int" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="OrderNumber" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="AthleteVoucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="VoucherId" Type="int" Nullable="false" />
+    <Property Name="IsValid" Type="bit" />
+  </EntityType>
+  <EntityType Name="AttendeeQuestions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuestionEn" Type="nvarchar(max)" />
+    <Property Name="QuestionAr" Type="nvarchar(max)" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="EventId" Type="int" />
+    <Property Name="SpeakerId" Type="int" />
+    <Property Name="Answered" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="AgendaId" Type="int" />
+  </EntityType>
+  <EntityType Name="ClaimedVouchers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="ClaimedFoodVoucher" Type="int" />
+    <Property Name="ClaimedDrinkVoucher" Type="int" />
+  </EntityType>
+  <EntityType Name="EventAddresses">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AddressId" />
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AddressId" Type="int" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EventCompanies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="PackageId" Type="int" />
+    <Property Name="StandLocation" Type="nvarchar" MaxLength="256" />
+    <Property Name="StandNumber" Type="nvarchar" MaxLength="256" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="CompanyTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="EventNews">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="350" />
+    <Property Name="Title" Type="nvarchar" MaxLength="350" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EventPersons">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonId" Type="int" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="PersonTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="EventTypeId" Type="int" />
+    <Property Name="BannerPhoto" Type="nvarchar(max)" />
+    <Property Name="DescriptionEn" Type="nvarchar(max)" />
+    <Property Name="DescriptionAr" Type="nvarchar(max)" />
+    <Property Name="HasSponsors" Type="bit" Nullable="false" />
+    <Property Name="HasExhibitors" Type="bit" Nullable="false" />
+    <Property Name="HasSpeaker" Type="bit" Nullable="false" />
+    <Property Name="HasPartners" Type="bit" Nullable="false" />
+    <Property Name="HasVIP" Type="bit" Nullable="false" />
+    <Property Name="SponsorsOnlineRegister" Type="bit" Nullable="false" />
+    <Property Name="ExhibitorsOnlineRegister" Type="bit" Nullable="false" />
+    <Property Name="SpeakerOnlineRegister" Type="bit" Nullable="false" />
+    <Property Name="PartnersOnlineRegister" Type="bit" Nullable="false" />
+    <Property Name="VIPOnlineRegister" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="DeletedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="BadgePhoto" Type="nvarchar(max)" />
+    <Property Name="EventLogo" Type="nvarchar(max)" />
+    <Property Name="VideoURL" Type="nvarchar(max)" />
+    <Property Name="Video" Type="nvarchar(max)" />
+    <Property Name="InstagramURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="FacebookURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="TwitterURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="LinkedInURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="ThemeURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="UniqueId" Type="nvarchar" MaxLength="256" />
+    <Property Name="UserSubscriptionId" Type="int" />
+    <Property Name="ParticipantsLimit" Type="int" Nullable="false" />
+    <Property Name="ParticipantFees" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="HasPayment" Type="bit" />
+    <Property Name="BgImageId" Type="int" />
+    <Property Name="SelectedCurrency" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParticipantsRegistrationTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="EventUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="IsAttended" Type="bit" />
+    <Property Name="RegistrationTypeId" Type="int" />
+    <Property Name="QRCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="DocumentName" Type="nchar" MaxLength="255" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="UserSubscriptionId" Type="int" />
+    <Property Name="IsRegistered" Type="bit" />
+    <Property Name="AgendaId" Type="int" />
+    <Property Name="IsIndividual" Type="bit" />
+    <Property Name="VisitorCount" Type="int" />
+  </EntityType>
+  <EntityType Name="GuestVoucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="voucherId" Type="int" Nullable="false" />
+    <Property Name="sharedBy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InterestedAgenda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="AgendaId" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="SpeakerId" Type="int" />
+    <Property Name="EventId" Type="int" />
+  </EntityType>
+  <EntityType Name="Notifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsRead" Type="bit" />
+    <Property Name="EventId" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="StartDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Benefits" Type="nvarchar(max)" />
+    <Property Name="Cost" Type="int" />
+    <Property Name="SponsorTypeId" Type="int" />
+    <Property Name="EventId" Type="int" />
+  </EntityType>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Approved" Type="bit" />
+    <Property Name="DescEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="DescAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Presentations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="AttachmentUrl" Type="nvarchar(max)" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="AgendaId" Type="int" />
+  </EntityType>
+  <EntityType Name="SpeakerRatings">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PersonId" />
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonId" Type="int" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="Rating" Type="int" />
+  </EntityType>
+  <EntityType Name="Survey">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar(max)" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="AgendaId" Type="int" />
+    <Property Name="DeletedOn" Type="datetime" />
+    <Property Name="FromSpeaker" Type="bit" />
+    <Property Name="ResponseAlotTime" Type="int" />
+  </EntityType>
+  <EntityType Name="SurveyOptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar(max)" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
+    <Property Name="SurveyId" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+  </EntityType>
+  <EntityType Name="SurveyResults">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="SurveyOptionId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="SurveyId" Type="int" />
+    <Property Name="AgendaId" Type="int" />
+    <Property Name="EventId" Type="int" />
+  </EntityType>
+  <EntityType Name="BackgroundTheme">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="URL" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CompanyTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Configurations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="FullNameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="FullNameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="ISOCode2" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="ISOCode3" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="FlagUrl" Type="nvarchar" MaxLength="256" />
+    <Property Name="BigFlagUrl" Type="nvarchar" MaxLength="256" />
+    <Property Name="PhoneCode" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="NumericCode" Type="smallint" Nullable="false" />
+    <Property Name="RegionId" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventPackages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+    <Property Name="Price" Type="decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="EventTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsRTL" Type="bit" />
+  </EntityType>
+  <EntityType Name="ParticipantsRegistrationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="PaymentStatuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="PersonTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RegistrationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="SponserTypes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="CountryID" Type="int" />
+  </EntityType>
+  <EntityType Name="UserActions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Voucher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameAr" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="DescAr" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="DescEn" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="StartFrom" Type="datetime" Nullable="false" />
+    <Property Name="StartEnd" Type="datetime" Nullable="false" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PushNotification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="ReferenceId" Type="int" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Recipients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecipientId" Type="int" />
+    <Property Name="ReferenceConnectionId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NotificationId" Type="int" Nullable="false" />
+    <Property Name="IsSent" Type="bit" />
+  </EntityType>
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cartId" Type="nvarchar(max)" />
+    <Property Name="test" Type="nvarchar(max)" />
+    <Property Name="amount" Type="nvarchar(max)" />
+    <Property Name="currency" Type="nvarchar(max)" />
+    <Property Name="reference" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="paymentref" Type="nvarchar(max)" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="forenames" Type="nvarchar(max)" />
+    <Property Name="surname" Type="nvarchar(max)" />
+    <Property Name="country" Type="nvarchar(max)" />
+    <Property Name="city" Type="nvarchar(max)" />
+    <Property Name="line1" Type="nvarchar(max)" />
+    <Property Name="authorisedURL" Type="nvarchar(max)" />
+    <Property Name="statusCode" Type="nvarchar(max)" />
+    <Property Name="statusText" Type="nvarchar(max)" />
+    <Property Name="UserSubscriptionId" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="UserSubscriptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="EventPackageId" Type="int" />
+    <Property Name="TransactionId" Type="int" />
+    <Property Name="PaymentStatusId" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Fees" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="EventId" Type="int" />
+  </EntityType>
+  <Association Name="FK_Account_UserClaims_Account_Users_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserClaims" Type="Self.UserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_UserLogins_Account_Users_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserLogins" Type="Self.UserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_UserRoles_Account_Roles_RoleId">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_UserRoles_Account_Users_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Address" Type="Self.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Address_State">
+    <End Role="State" Type="Self.State" Multiplicity="0..1" />
+    <End Role="Address" Type="Self.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Agenda_AgendaSessions">
+    <End Role="AgendaSessions" Type="Self.AgendaSessions" Multiplicity="0..1" />
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgendaSessions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agenda">
+        <PropertyRef Name="SessionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Agenda_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agenda">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Agenda_Persons">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="0..1" />
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Agenda">
+        <PropertyRef Name="SpeakerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgendaSessions_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="AgendaSessions" Type="Self.AgendaSessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgendaSessions">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AthleteVoucher_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="AthleteVoucher" Type="Self.AthleteVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AthleteVoucher">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AthleteVoucher_Voucher">
+    <End Role="Voucher" Type="Self.Voucher" Multiplicity="1" />
+    <End Role="AthleteVoucher" Type="Self.AthleteVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AthleteVoucher">
+        <PropertyRef Name="VoucherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestion_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="AttendeeQuestions" Type="Self.AttendeeQuestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestions">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestion_Person">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="0..1" />
+    <End Role="AttendeeQuestions" Type="Self.AttendeeQuestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestions">
+        <PropertyRef Name="SpeakerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestion_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="AttendeeQuestions" Type="Self.AttendeeQuestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestions">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendeeQuestions_Agenda">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="0..1" />
+    <End Role="AttendeeQuestions" Type="Self.AttendeeQuestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendeeQuestions">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClaimedVouchers_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="ClaimedVouchers" Type="Self.ClaimedVouchers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClaimedVouchers">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClaimedVouchers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ClaimedVouchers" Type="Self.ClaimedVouchers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClaimedVouchers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClaimedVouchers_Users1">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ClaimedVouchers" Type="Self.ClaimedVouchers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClaimedVouchers">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Companies_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Companies">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Company_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="0..1" />
+    <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Companies">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAddress_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="EventAddresses" Type="Self.EventAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAddresses">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventAddress_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventAddresses" Type="Self.EventAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAddresses">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventCompanies_CompanyTypes">
+    <End Role="CompanyTypes" Type="Self.CompanyTypes" Multiplicity="0..1" />
+    <End Role="EventCompanies" Type="Self.EventCompanies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompanies">
+        <PropertyRef Name="CompanyTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventCompanies_Package">
+    <End Role="Package" Type="Self.Package" Multiplicity="0..1" />
+    <End Role="EventCompanies" Type="Self.EventCompanies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Package">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompanies">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventExhabitor_Company">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EventCompanies" Type="Self.EventCompanies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompanies">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventExhabitor_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EventCompanies" Type="Self.EventCompanies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCompanies">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventNews_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventNews" Type="Self.EventNews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventNews">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventPerons_PersonTypes">
+    <End Role="PersonTypes" Type="Self.PersonTypes" Multiplicity="0..1" />
+    <End Role="EventPersons" Type="Self.EventPersons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersons">
+        <PropertyRef Name="PersonTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventRating_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SpeakerRatings" Type="Self.SpeakerRatings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SpeakerRatings">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventRating_Person">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SpeakerRatings" Type="Self.SpeakerRatings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SpeakerRatings">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_BGTheme">
+    <End Role="BackgroundTheme" Type="Self.BackgroundTheme" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BackgroundTheme">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="BgImageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventPackages">
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSubscriptions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="UserSubscriptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventTypes">
+    <End Role="EventTypes" Type="Self.EventTypes" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="EventTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_ParticipantsRegistrationType">
+    <End Role="ParticipantsRegistrationType" Type="Self.ParticipantsRegistrationType" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParticipantsRegistrationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="ParticipantsRegistrationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Users1">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="DeletedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Users2">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Events" Type="Self.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="ModifiedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventSpeaker_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EventPersons" Type="Self.EventPersons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersons">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventSpeaker_Person">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EventPersons" Type="Self.EventPersons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventPersons">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUser_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="EventUsers" Type="Self.EventUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUsers">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_Agenda">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="0..1" />
+    <End Role="EventUsers" Type="Self.EventUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUsers">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_RegistrationType">
+    <End Role="RegistrationType" Type="Self.RegistrationType" Multiplicity="0..1" />
+    <End Role="EventUsers" Type="Self.EventUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegistrationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUsers">
+        <PropertyRef Name="RegistrationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EventUsers" Type="Self.EventUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUsers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventUsers_UserSubcriptions">
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="0..1" />
+    <End Role="EventUsers" Type="Self.EventUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSubscriptions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventUsers">
+        <PropertyRef Name="UserSubscriptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GuestVoucher_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="GuestVoucher" Type="Self.GuestVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GuestVoucher">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GuestVoucher_Users1">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="GuestVoucher" Type="Self.GuestVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GuestVoucher">
+        <PropertyRef Name="sharedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GuestVoucher_Voucher">
+    <End Role="Voucher" Type="Self.Voucher" Multiplicity="1" />
+    <End Role="GuestVoucher" Type="Self.GuestVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GuestVoucher">
+        <PropertyRef Name="voucherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Agenda">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="1" />
+    <End Role="InterestedAgenda" Type="Self.InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="InterestedAgenda" Type="Self.InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Persons">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="0..1" />
+    <End Role="InterestedAgenda" Type="Self.InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="SpeakerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterestedAgenda_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="InterestedAgenda" Type="Self.InterestedAgenda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InterestedAgenda">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IOSDevices_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="IOSDevices" Type="Self.IOSDevices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="IOSDevices">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LoggedUserConnections_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="LoggedUserConnections" Type="Self.LoggedUserConnections" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="LoggedUserConnections">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notification_Recipient">
+    <End Role="PushNotification" Type="Self.PushNotification" Multiplicity="1" />
+    <End Role="Recipients" Type="Self.Recipients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PushNotification">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Recipients">
+        <PropertyRef Name="NotificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notifications_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Notifications" Type="Self.Notifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notifications">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Package_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Package" Type="Self.Package" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Package">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Package_SponserTypes">
+    <End Role="SponserTypes" Type="Self.SponserTypes" Multiplicity="0..1" />
+    <End Role="Package" Type="Self.Package" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SponserTypes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Package">
+        <PropertyRef Name="SponsorTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentTransactions_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentTransactions_UserSubcriptions">
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="0..1" />
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserSubscriptions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="UserSubscriptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persons_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Persons" Type="Self.Persons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Persons">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Photos_Event">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="Photos" Type="Self.Photos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Photos">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreferredLanguages_Languages">
+    <End Role="Languages" Type="Self.Languages" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PreferredLanguages" Type="Self.PreferredLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreferredLanguages">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreferredLanguages_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PreferredLanguages" Type="Self.PreferredLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PreferredLanguages">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presentations_Agenda">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="0..1" />
+    <End Role="Presentations" Type="Self.Presentations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Presentations">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presentations_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="Presentations" Type="Self.Presentations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Presentations">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_State_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="State" Type="Self.State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Survey_Agenda">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="0..1" />
+    <End Role="Survey" Type="Self.Survey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Survey">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Survey_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="Survey" Type="Self.Survey" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Survey">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyOptions_Surveys">
+    <End Role="Survey" Type="Self.Survey" Multiplicity="0..1" />
+    <End Role="SurveyOptions" Type="Self.SurveyOptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Survey">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyOptions">
+        <PropertyRef Name="SurveyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Agenda">
+    <End Role="Agenda" Type="Self.Agenda" Multiplicity="0..1" />
+    <End Role="SurveyResults" Type="Self.SurveyResults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agenda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResults">
+        <PropertyRef Name="AgendaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="SurveyResults" Type="Self.SurveyResults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResults">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Survey">
+    <End Role="Survey" Type="Self.Survey" Multiplicity="0..1" />
+    <End Role="SurveyResults" Type="Self.SurveyResults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Survey">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResults">
+        <PropertyRef Name="SurveyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_SurveyOptions">
+    <End Role="SurveyOptions" Type="Self.SurveyOptions" Multiplicity="1" />
+    <End Role="SurveyResults" Type="Self.SurveyResults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurveyOptions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResults">
+        <PropertyRef Name="SurveyOptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_SurveyResults">
+    <End Role="SurveyResults" Type="Self.SurveyResults" Multiplicity="1" />
+    <End Role="SurveyResults1" Type="Self.SurveyResults" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SurveyResults">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResults1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResults_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SurveyResults" Type="Self.SurveyResults" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SurveyResults">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActions_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="UserActions" Type="Self.UserActions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActions">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActionsTaken_UserActions">
+    <End Role="UserActions" Type="Self.UserActions" Multiplicity="1" />
+    <End Role="UserActionsTaken" Type="Self.UserActionsTaken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserActions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActionsTaken">
+        <PropertyRef Name="UserActionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActionsTaken_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserActionsTaken" Type="Self.UserActionsTaken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActionsTaken">
+        <PropertyRef Name="ActionBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserActionsTaken_Users1">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserActionsTaken" Type="Self.UserActionsTaken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserActionsTaken">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCompanies_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserCompanies" Type="Self.UserCompanies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserCompanies">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCompanies_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserCompanies" Type="Self.UserCompanies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserCompanies">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Persons">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_RegistrationType">
+    <End Role="RegistrationType" Type="Self.RegistrationType" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegistrationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RegistrationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_EventPackages">
+    <End Role="EventPackages" Type="Self.EventPackages" Multiplicity="0..1" />
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventPackages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscriptions">
+        <PropertyRef Name="EventPackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_PaymentStatuses">
+    <End Role="PaymentStatuses" Type="Self.PaymentStatuses" Multiplicity="0..1" />
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentStatuses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscriptions">
+        <PropertyRef Name="PaymentStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_PaymentTransactions">
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="0..1" />
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transactions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscriptions">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubcriptions_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscriptions">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubscriptions_Events">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSubscriptions">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Voucher_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Voucher">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="eventsappModelStoreContainer">
+    <EntitySet Name="LoggedUserConnections" EntityType="Self.LoggedUserConnections" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="PreferredLanguages" EntityType="Self.PreferredLanguages" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="UserActionsTaken" EntityType="Self.UserActionsTaken" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="UserClaims" EntityType="Self.UserClaims" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="UserCompanies" EntityType="Self.UserCompanies" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="UserLogins" EntityType="Self.UserLogins" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="Account" store:Type="Tables" />
+    <EntitySet Name="Address" EntityType="Self.Address" Schema="Core" store:Type="Tables" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="Core" store:Type="Tables" />
+    <EntitySet Name="IOSDevices" EntityType="Self.IOSDevices" Schema="Core" store:Type="Tables" />
+    <EntitySet Name="Persons" EntityType="Self.Persons" Schema="Core" store:Type="Tables" />
+    <EntitySet Name="Agenda" EntityType="Self.Agenda" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="AgendaSessions" EntityType="Self.AgendaSessions" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="AthleteVoucher" EntityType="Self.AthleteVoucher" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="AttendeeQuestions" EntityType="Self.AttendeeQuestions" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="ClaimedVouchers" EntityType="Self.ClaimedVouchers" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="EventAddresses" EntityType="Self.EventAddresses" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="EventCompanies" EntityType="Self.EventCompanies" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="EventNews" EntityType="Self.EventNews" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="EventPersons" EntityType="Self.EventPersons" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="EventUsers" EntityType="Self.EventUsers" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="GuestVoucher" EntityType="Self.GuestVoucher" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="InterestedAgenda" EntityType="Self.InterestedAgenda" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="Notifications" EntityType="Self.Notifications" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="Package" EntityType="Self.Package" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="Photos" EntityType="Self.Photos" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="Presentations" EntityType="Self.Presentations" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="SpeakerRatings" EntityType="Self.SpeakerRatings" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="Survey" EntityType="Self.Survey" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="SurveyOptions" EntityType="Self.SurveyOptions" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="SurveyResults" EntityType="Self.SurveyResults" Schema="Event" store:Type="Tables" />
+    <EntitySet Name="BackgroundTheme" EntityType="Self.BackgroundTheme" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="CompanyTypes" EntityType="Self.CompanyTypes" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="Configurations" EntityType="Self.Configurations" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="EventPackages" EntityType="Self.EventPackages" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventTypes" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="Languages" EntityType="Self.Languages" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="ParticipantsRegistrationType" EntityType="Self.ParticipantsRegistrationType" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="PaymentStatuses" EntityType="Self.PaymentStatuses" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="PersonTypes" EntityType="Self.PersonTypes" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="RegistrationType" EntityType="Self.RegistrationType" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="SponserTypes" EntityType="Self.SponserTypes" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="State" EntityType="Self.State" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="UserActions" EntityType="Self.UserActions" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="Voucher" EntityType="Self.Voucher" Schema="Lookup" store:Type="Tables" />
+    <EntitySet Name="PushNotification" EntityType="Self.PushNotification" Schema="Notification" store:Type="Tables" />
+    <EntitySet Name="Recipients" EntityType="Self.Recipients" Schema="Notification" store:Type="Tables" />
+    <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="Subscription" store:Type="Tables" />
+    <EntitySet Name="UserSubscriptions" EntityType="Self.UserSubscriptions" Schema="Subscription" store:Type="Tables" />
+    <AssociationSet Name="FK_Account_UserClaims_Account_Users_UserId" Association="Self.FK_Account_UserClaims_Account_Users_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserClaims" EntitySet="UserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_UserLogins_Account_Users_UserId" Association="Self.FK_Account_UserLogins_Account_Users_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserLogins" EntitySet="UserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_UserRoles_Account_Roles_RoleId" Association="Self.FK_Account_UserRoles_Account_Roles_RoleId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_UserRoles_Account_Users_UserId" Association="Self.FK_Account_UserRoles_Account_Users_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_Countries" Association="Self.FK_Address_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_State" Association="Self.FK_Address_State">
+      <End Role="State" EntitySet="State" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Agenda_AgendaSessions" Association="Self.FK_Agenda_AgendaSessions">
+      <End Role="AgendaSessions" EntitySet="AgendaSessions" />
+      <End Role="Agenda" EntitySet="Agenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Agenda_Event" Association="Self.FK_Agenda_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Agenda" EntitySet="Agenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Agenda_Persons" Association="Self.FK_Agenda_Persons">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="Agenda" EntitySet="Agenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgendaSessions_Events" Association="Self.FK_AgendaSessions_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="AgendaSessions" EntitySet="AgendaSessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AthleteVoucher_Users" Association="Self.FK_AthleteVoucher_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AthleteVoucher" EntitySet="AthleteVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AthleteVoucher_Voucher" Association="Self.FK_AthleteVoucher_Voucher">
+      <End Role="Voucher" EntitySet="Voucher" />
+      <End Role="AthleteVoucher" EntitySet="AthleteVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestion_Event" Association="Self.FK_AttendeeQuestion_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="AttendeeQuestions" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestion_Person" Association="Self.FK_AttendeeQuestion_Person">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="AttendeeQuestions" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestion_Users" Association="Self.FK_AttendeeQuestion_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AttendeeQuestions" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendeeQuestions_Agenda" Association="Self.FK_AttendeeQuestions_Agenda">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="AttendeeQuestions" EntitySet="AttendeeQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClaimedVouchers_Events" Association="Self.FK_ClaimedVouchers_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="ClaimedVouchers" EntitySet="ClaimedVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClaimedVouchers_Users" Association="Self.FK_ClaimedVouchers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ClaimedVouchers" EntitySet="ClaimedVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClaimedVouchers_Users1" Association="Self.FK_ClaimedVouchers_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ClaimedVouchers" EntitySet="ClaimedVouchers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Companies_Users" Association="Self.FK_Companies_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Companies" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Company_Address" Association="Self.FK_Company_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Companies" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAddress_Address" Association="Self.FK_EventAddress_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="EventAddresses" EntitySet="EventAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventAddress_Event" Association="Self.FK_EventAddress_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventAddresses" EntitySet="EventAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventCompanies_CompanyTypes" Association="Self.FK_EventCompanies_CompanyTypes">
+      <End Role="CompanyTypes" EntitySet="CompanyTypes" />
+      <End Role="EventCompanies" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventCompanies_Package" Association="Self.FK_EventCompanies_Package">
+      <End Role="Package" EntitySet="Package" />
+      <End Role="EventCompanies" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventExhabitor_Company" Association="Self.FK_EventExhabitor_Company">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="EventCompanies" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventExhabitor_Event" Association="Self.FK_EventExhabitor_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventCompanies" EntitySet="EventCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventNews_Events" Association="Self.FK_EventNews_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventNews" EntitySet="EventNews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventPerons_PersonTypes" Association="Self.FK_EventPerons_PersonTypes">
+      <End Role="PersonTypes" EntitySet="PersonTypes" />
+      <End Role="EventPersons" EntitySet="EventPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventRating_Event" Association="Self.FK_EventRating_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="SpeakerRatings" EntitySet="SpeakerRatings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventRating_Person" Association="Self.FK_EventRating_Person">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="SpeakerRatings" EntitySet="SpeakerRatings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_BGTheme" Association="Self.FK_Events_BGTheme">
+      <End Role="BackgroundTheme" EntitySet="BackgroundTheme" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventPackages" Association="Self.FK_Events_EventPackages">
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventTypes" Association="Self.FK_Events_EventTypes">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_ParticipantsRegistrationType" Association="Self.FK_Events_ParticipantsRegistrationType">
+      <End Role="ParticipantsRegistrationType" EntitySet="ParticipantsRegistrationType" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Users" Association="Self.FK_Events_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Users1" Association="Self.FK_Events_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Users2" Association="Self.FK_Events_Users2">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventSpeaker_Event" Association="Self.FK_EventSpeaker_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventPersons" EntitySet="EventPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventSpeaker_Person" Association="Self.FK_EventSpeaker_Person">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="EventPersons" EntitySet="EventPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUser_Event" Association="Self.FK_EventUser_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventUsers" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_Agenda" Association="Self.FK_EventUsers_Agenda">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="EventUsers" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_RegistrationType" Association="Self.FK_EventUsers_RegistrationType">
+      <End Role="RegistrationType" EntitySet="RegistrationType" />
+      <End Role="EventUsers" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_Users" Association="Self.FK_EventUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="EventUsers" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventUsers_UserSubcriptions" Association="Self.FK_EventUsers_UserSubcriptions">
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+      <End Role="EventUsers" EntitySet="EventUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GuestVoucher_Users" Association="Self.FK_GuestVoucher_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="GuestVoucher" EntitySet="GuestVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GuestVoucher_Users1" Association="Self.FK_GuestVoucher_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="GuestVoucher" EntitySet="GuestVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GuestVoucher_Voucher" Association="Self.FK_GuestVoucher_Voucher">
+      <End Role="Voucher" EntitySet="Voucher" />
+      <End Role="GuestVoucher" EntitySet="GuestVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Agenda" Association="Self.FK_InterestedAgenda_Agenda">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Events" Association="Self.FK_InterestedAgenda_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Persons" Association="Self.FK_InterestedAgenda_Persons">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterestedAgenda_Users" Association="Self.FK_InterestedAgenda_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="InterestedAgenda" EntitySet="InterestedAgenda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IOSDevices_Users" Association="Self.FK_IOSDevices_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="IOSDevices" EntitySet="IOSDevices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LoggedUserConnections_Users" Association="Self.FK_LoggedUserConnections_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="LoggedUserConnections" EntitySet="LoggedUserConnections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notification_Recipient" Association="Self.FK_Notification_Recipient">
+      <End Role="PushNotification" EntitySet="PushNotification" />
+      <End Role="Recipients" EntitySet="Recipients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notifications_Events" Association="Self.FK_Notifications_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Notifications" EntitySet="Notifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Package_Events" Association="Self.FK_Package_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Package" EntitySet="Package" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Package_SponserTypes" Association="Self.FK_Package_SponserTypes">
+      <End Role="SponserTypes" EntitySet="SponserTypes" />
+      <End Role="Package" EntitySet="Package" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentTransactions_Users" Association="Self.FK_PaymentTransactions_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentTransactions_UserSubcriptions" Association="Self.FK_PaymentTransactions_UserSubcriptions">
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persons_Users" Association="Self.FK_Persons_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Persons" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Photos_Event" Association="Self.FK_Photos_Event">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Photos" EntitySet="Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreferredLanguages_Languages" Association="Self.FK_PreferredLanguages_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="PreferredLanguages" EntitySet="PreferredLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreferredLanguages_Users" Association="Self.FK_PreferredLanguages_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="PreferredLanguages" EntitySet="PreferredLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presentations_Agenda" Association="Self.FK_Presentations_Agenda">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="Presentations" EntitySet="Presentations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presentations_Events" Association="Self.FK_Presentations_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Presentations" EntitySet="Presentations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_State_Countries" Association="Self.FK_State_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="State" EntitySet="State" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Survey_Agenda" Association="Self.FK_Survey_Agenda">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="Survey" EntitySet="Survey" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Survey_Events" Association="Self.FK_Survey_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Survey" EntitySet="Survey" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyOptions_Surveys" Association="Self.FK_SurveyOptions_Surveys">
+      <End Role="Survey" EntitySet="Survey" />
+      <End Role="SurveyOptions" EntitySet="SurveyOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Agenda" Association="Self.FK_SurveyResults_Agenda">
+      <End Role="Agenda" EntitySet="Agenda" />
+      <End Role="SurveyResults" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Events" Association="Self.FK_SurveyResults_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="SurveyResults" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Survey" Association="Self.FK_SurveyResults_Survey">
+      <End Role="Survey" EntitySet="Survey" />
+      <End Role="SurveyResults" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_SurveyOptions" Association="Self.FK_SurveyResults_SurveyOptions">
+      <End Role="SurveyOptions" EntitySet="SurveyOptions" />
+      <End Role="SurveyResults" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_SurveyResults" Association="Self.FK_SurveyResults_SurveyResults">
+      <End Role="SurveyResults" EntitySet="SurveyResults" />
+      <End Role="SurveyResults1" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResults_Users" Association="Self.FK_SurveyResults_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SurveyResults" EntitySet="SurveyResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActions_Roles" Association="Self.FK_UserActions_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UserActions" EntitySet="UserActions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActionsTaken_UserActions" Association="Self.FK_UserActionsTaken_UserActions">
+      <End Role="UserActions" EntitySet="UserActions" />
+      <End Role="UserActionsTaken" EntitySet="UserActionsTaken" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActionsTaken_Users" Association="Self.FK_UserActionsTaken_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserActionsTaken" EntitySet="UserActionsTaken" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserActionsTaken_Users1" Association="Self.FK_UserActionsTaken_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserActionsTaken" EntitySet="UserActionsTaken" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCompanies_Companies" Association="Self.FK_UserCompanies_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="UserCompanies" EntitySet="UserCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCompanies_Users" Association="Self.FK_UserCompanies_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserCompanies" EntitySet="UserCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Companies" Association="Self.FK_Users_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Events" Association="Self.FK_Users_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Persons" Association="Self.FK_Users_Persons">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_RegistrationType" Association="Self.FK_Users_RegistrationType">
+      <End Role="RegistrationType" EntitySet="RegistrationType" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_EventPackages" Association="Self.FK_UserSubcriptions_EventPackages">
+      <End Role="EventPackages" EntitySet="EventPackages" />
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_PaymentStatuses" Association="Self.FK_UserSubcriptions_PaymentStatuses">
+      <End Role="PaymentStatuses" EntitySet="PaymentStatuses" />
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_PaymentTransactions" Association="Self.FK_UserSubcriptions_PaymentTransactions">
+      <End Role="Transactions" EntitySet="Transactions" />
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubcriptions_Users" Association="Self.FK_UserSubcriptions_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubscriptions_Events" Association="Self.FK_UserSubscriptions_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Voucher_Users" Association="Self.FK_Voucher_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Voucher" EntitySet="Voucher" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,67 @@
+<div class="left side-menu" ng-controller="SidebarController as vm">
+    <div class="sidebar-inner slimscrollleft" style="padding-top: 6px;">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+
+            <ul>
+                <li>
+                    <a ui-sref="app.home"><i class="mdi mdi-calendar-multiple-check"></i> <span> {{"sidebar.nav.Event" | translate}}</span></a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3 ">
+                    <a class="waves-effect" ui-sref="app.athletes"><i class="fa fa-users"></i> <span> Athletes & Officials </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3 ">
+                    <a class="waves-effect" ui-sref="app.allguests"><i class="fa fa-user"></i> <span> All PSTs </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3 ">
+                    <a class="waves-effect" ui-sref="app.restaurants"><i class="mdi mdi-account-card-details"></i> <span> Restaurants </span> </a>
+                </li>
+                <li ng-if=" vm.user.roleName==2 && vm.user.companyId=='null'">
+                    <a class="waves-effect" ui-sref="app.vouchers"><i class="mdi mdi-comment-question-outline"></i> <span> Vouchers </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 2">
+                    <a class="waves-effect" ui-sref="app.reports"><i class="fa fa-bar-chart"></i> <span> Reports </span> </a>
+                </li>
+                <!--<li ng-if=" vm.user.roleName==2 && vm.user.companyId!='null'">
+                    <a class="waves-effect" ui-sref="app.verifyVoucher"><i class="mdi mdi-account-check"></i> <span> Verify Voucher </span> </a>
+                </li>-->
+                <!--<li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3"><a ui-sref="app.speakers"><i class="ion-man"></i><span>{{"sidebar.nav.Speakers" | translate}}</span></a></li>
+
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3">
+                    <a class="waves-effect" ui-sref="app.companies"><i class="ion-briefcase"></i> <span> {{"sidebar.nav.Sponsors" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3">
+                    <a ui-sref="app.dashboard" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> {{"sidebar.nav.DASHBOARD" | translate}} </span> </a>
+                </li>
+                <li>
+                    <a class="waves-effect" ui-sref="app.survey"><i class="glyphicon glyphicon-list-alt"></i> <span> {{"sidebar.nav.survey" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1">
+                    <a class="waves-effect" ui-sref="app.users"><i class="mdi mdi-account-multiple"></i> <span> {{"sidebar.nav.user" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3">
+                    <a class="waves-effect" ui-sref="app.eventattendees"><i class="mdi mdi-account-check"></i> <span> {{"sidebar.nav.attendees" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3">
+                    <a class="waves-effect" ui-sref="app.visitorAttendance"><i class="mdi mdi-account-check"></i> <span> {{"sidebar.nav.visitorAttendance" | translate}} </span> </a>
+                </li>
+                <li>
+                    <a class="waves-effect" ui-sref="app.questionare"><i class="mdi mdi-comment-question-outline"></i> <span> {{"sidebar.nav.questionare" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName != 1">
+                    <a class="waves-effect" ui-sref="app.userCompany"><i class="mdi mdi-home-modern"></i> <span> {{"sidebar.nav.userCompany" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName != 1">
+                    <a class="waves-effect" ui-sref="app.userProfile"><i class="mdi mdi-account-card-details"></i> <span> {{"sidebar.nav.userPerson" | translate}} </span> </a>
+                </li>
+                <li ng-if="vm.user.roleName == 1 || vm.user.roleName == 3 || vm.user.roleName==2">
+                    <a class="waves-effect" ui-sref="app.subsciptions"><i class="glyphicon glyphicon-th-list"></i> <span> {{"sidebar.nav.subscription" | translate}} </span> </a>
+                </li>-->
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+    <!-- Sidebar -left -->
+
+</div> 

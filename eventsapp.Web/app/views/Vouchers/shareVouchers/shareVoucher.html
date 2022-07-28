@@ -1,0 +1,62 @@
+<form role="form" class="mb-lg form-horizontal" name="athleteForm">
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="closeModal()">x</button>
+        <h4 id="myModalLabel" class="modal-title">{{'athlete.guest' | translate}}</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row form-group" ng-if="viewMode == false">
+            <label>{{'athlete.guest' | translate}}<span class="text-danger">*</span></label>
+            <div class="col-xs-12">
+                <ui-select ng-model="athlete.user" name="userId" theme="bootstrap" class="text-left col-md-12">
+                    <ui-select-match placeholder="{{'athlete.guest'  | translate}}">{{$select.selected.firstName}}</ui-select-match>
+                    <ui-select-choices repeat="guest in guests | filter : $select.search">
+                        <span ng-bind-html="guest.firstName | highlight: $select.search"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-primary pull-right btn-bordered waves-effect waves-light" style="margin-top: 10px;" ng-click="addGuest()">
+                    Add guest
+                </button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div ng-if="viewMode == true">
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label>{{'athlete.firstName' | translate}} <span class="text-danger">*</span></label>
+                    <input ng-model="athlete.firstName" placeholder="{{'athlete.firstName' | translate}}" autocomplete="off" class="form-control" name="firstName" validator="required" />
+                </div>
+                <div class="col-md-6">
+                    <label>{{'athlete.lastName' | translate}}<span class="text-danger">*</span></label>
+                    <input ng-model="athlete.lastName" id="lastName" placeholder="{{'athlete.lastName' | translate}}" autocomplete="off" class="form-control" name="lastName" validator="required" />
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label>{{'athlete.phone' | translate}}<span class="text-danger">*</span></label>
+                    <input ng-model="athlete.phoneNumber" placeholder="{{'athlete.phone' | translate}}" autocomplete="off" class="form-control" name="name" validator="required, phoneNumber" />
+                </div>
+                <div class="col-md-6">
+                    <label>{{'athlete.email' | translate}}<span class="text-danger">*</span></label>
+                    <input ng-model="athlete.email" placeholder="{{'athlete.email' | translate}}" autocomplete="off" class="form-control" name="name" validator="required, email" />
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label>{{'athlete.photo' | translate}}</label>
+                    <uploading-files copyUrl="athlete.photo" copyUrlFullPath="athlete.photoFullPath" url="PhotoPath" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button ng-click="ok()" ng-if="viewMode == false" class="btn btn-primary" data-translate="athlete.shareVoucher"></button>
+
+        <button ng-click="ok()" ng-if="viewMode == true" validation-submit="athleteForm" class="btn btn-primary" data-translate="athlete.shareVoucher"></button>
+        <button ng-click="closeModal()" class="btn btn-danger" data-translate="general.cancel"></button>
+    </div>
+</form>

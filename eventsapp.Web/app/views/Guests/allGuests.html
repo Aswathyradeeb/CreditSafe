@@ -1,0 +1,75 @@
+<div ng-controller="AllGuestsController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="ion-briefcase"></i>  PST</h4>
+       
+        <div class="col-md-12">
+            <input type="text" class="form-control" name="fname" ng-model="vm.userSearch" placeholder="Search PST">
+
+            <button type="button" class="btn btn-primary btn-bordered waves-effect waves-light" style="margin:6px 10px" ng-click="vm.searchPST()">
+                Search
+            </button>
+            <button type="button" class="btn btn-primary btn-bordered waves-effect waves-light" style="margin:6px 10px" ng-click="vm.getAllPST()">
+                Show All
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row autoadjust">
+        <div class="col-md-3" ng-repeat="athlete in vm.Athletes">
+            <div class="text-center card-box" ng-style="{ 'background-color' : athlete.isActive == false ? '#d3bdbd !important;' : '' }">
+                <div class="dropdown pull-right">
+                    <a class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                        <h3 class="m-0 text-muted"><i class="mdi mdi-dots-horizontal"></i></h3>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a ng-click="view('lg',athlete)">{{'general.view' | translate}}</a></li>
+                        <li><a ng-click="edit('lg',athlete)">{{'general.edit' | translate}}</a></li>
+                        <!--<li><a ng-click="vm.deleteSponser(athlete.id)">{{'general.delete' | translate}}</a></li>-->
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="member-card">
+                    <div class="member-thumb m-b-10 center-block">
+                        <img src="app/img/blank.png" ng-if="!athlete.photoFullPath" class="img-responsive thumb128 thumbnail" />
+                        <img src="{{athlete.photoFullPath}}" ng-if="athlete.photoFullPath" class="img-responsive  thumb128 thumbnail" />
+                    </div>
+
+                    <div class="">
+                        <h4 class="m-b-5">{{athlete | localizeString}}</h4>
+                        <p class="text-muted">{{athlete.firstName}} {{athlete.lastName}}<span> | </span> <span> <a class="text-pink">{{athlete.email}}</a> </span></p>
+                    </div>
+
+                    <p class="text-muted font-13">
+                        {{athlete.phoneNumber}}
+                    </p>
+                    <p class="text-muted font-13" uib-tooltip="Athelte's Relation">
+                        {{athlete.relation}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" ng-if="vm.pager.totalRecords == 0">
+            <uib-alert type="info"><i class="fa fa-info-circle"></i> {{'general.noDataFound' | translate}}</uib-alert>
+        </div>
+        <div class="row col-md-12" ng-if="vm.pager.totalRecords > 0">
+            <ul class="pager custompager">
+                <li>
+                    <button ng-click="vm.setPage(1)" ng-disabled="vm.pager.currentPage === 1" class="btn btn-margin btn-applegreen">{{'Pager.first' | translate}}</button>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.currentPage - 1)" ng-disabled="vm.pager.currentPage === 1" class="btn btn-margin btn-applegreen"><i ng-class="{'fa fa-arrow-right':app.layout.isRTL,'fa fa-arrow-left':!app.layout.isRTL}"></i> {{'Pager.previous' | translate}}</button>
+                </li>
+                <li>
+                    <span class="text-center text-sm text-bold"> {{vm.pager.currentPage}} / {{vm.pager.totalPages}} {{'Pager.pages' | translate}}</span>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.currentPage + 1)" ng-disabled="vm.pager.toRecord === vm.pager.totalRecords" class="btn btn-margin btn-applegreen">{{'Pager.next' | translate}} <i ng-class="{'fa fa-arrow-left':app.layout.isRTL,'fa fa-arrow-right':!app.layout.isRTL}"></i></button>
+                </li>
+                <li>
+                    <button ng-click="vm.setPage(vm.pager.totalPages)" ng-disabled="vm.pager.toRecord === vm.pager.totalRecords" class="btn btn-margin btn-applegreen">{{'Pager.last' | translate}}</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

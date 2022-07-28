@@ -1,0 +1,171 @@
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Eventsapp.Services.dll.config
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Eventsapp.Services.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Eventsapp.Services.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\AutoMapper.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Common.Logging.Core.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Common.Logging.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EntityFramework.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EPPlus.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EventsApp.Framework.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\FirebaseNet.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Microsoft.Owin.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Microsoft.Owin.Security.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\MoonAPNS.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\NLog.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\OneSignal.CSharp.SDK.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Owin.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Quartz.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\RestSharp.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Castle.Windsor.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Castle.Core.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\log4net.dll
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EventsApp.Framework.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EventsApp.Framework.dll.config
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.dll.config
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\AutoMapper.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Common.Logging.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Common.Logging.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Common.Logging.Core.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Common.Logging.Core.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EntityFramework.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\EPPlus.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Microsoft.Owin.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Microsoft.Owin.Security.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\NLog.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Quartz.pdb
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Quartz.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\RestSharp.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Castle.Windsor.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\Castle.Core.xml
+D:\Workspace\Events\events\Eventsapp.Services\bin\Debug\log4net.xml
+D:\Workspace\Events\events\Eventsapp.Services\obj\Debug\Eventsapp.Services.csprojAssemblyReference.cache
+D:\Workspace\Events\events\Eventsapp.Services\obj\Debug\Eventsapp.Services.csproj.CoreCompileInputs.cache
+D:\Workspace\Events\events\Eventsapp.Services\obj\Debug\Eventsapp.Services.csproj.CopyComplete
+D:\Workspace\Events\events\Eventsapp.Services\obj\Debug\Eventsapp.Services.dll
+D:\Workspace\Events\events\Eventsapp.Services\obj\Debug\Eventsapp.Services.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Services.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Services.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Services.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\AutoMapper.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EPPlus.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Framework.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\FirebaseNet.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Security.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\MoonAPNS.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\NLog.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\OneSignal.CSharp.SDK.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Owin.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Quartz.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\RestSharp.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Windsor.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Core.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\log4net.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Framework.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Framework.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.dll.config
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\AutoMapper.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.Core.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\EPPlus.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Security.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\NLog.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Quartz.pdb
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Quartz.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\RestSharp.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Windsor.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Core.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\bin\Debug\log4net.xml
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.csprojAssemblyReference.cache
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.csproj.CoreCompileInputs.cache
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.csproj.CopyComplete
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.dll
+D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Services.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Services.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Services.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\AutoMapper.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EPPlus.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Domain.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Framework.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\FirebaseNet.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Security.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\MoonAPNS.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\NLog.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\OneSignal.CSharp.SDK.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Owin.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Quartz.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\RestSharp.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Windsor.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Core.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\log4net.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Domain.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Domain.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Framework.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EventsApp.Framework.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Eventsapp.Repositories.dll.config
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\AutoMapper.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.Core.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Common.Logging.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\EPPlus.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Microsoft.Owin.Security.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\NLog.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Quartz.pdb
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Quartz.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\RestSharp.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Windsor.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\Castle.Core.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\bin\Debug\log4net.xml
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.csprojAssemblyReference.cache
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.csproj.CoreCompileInputs.cache
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.csproj.CopyComplete
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.dll
+D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Services\obj\Debug\Eventsapp.Services.pdb

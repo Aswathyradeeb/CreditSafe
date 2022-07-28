@@ -1,0 +1,64 @@
+<div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="closeModal()">X</button>
+    <h4 id="myModalLabel" class="modal-title" ng-if="companyTypeId == 1">{{'event.searchExistingSponser' | translate}}</h4>
+    <h4 id="myModalLabel" class="modal-title" ng-if="companyTypeId == 2">{{'event.searchExistingExhibitor' | translate}}</h4>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <span class="col-md-12"><input ng-model="query" class="form-control" placeholder="{{'event.searchByName' | translate}}" /></span>
+    </div>
+    <div class="row"><br /></div>
+    <div class="row autoadjust">
+        <div class="col-md-4 col-sm-6" ng-repeat="company in companies | filter:query">
+            <div class="text-center card-box">
+                <div class="member-card">
+                    <div class="member-thumb m-b-10 center-block">
+                        <img src="app/img/blank.png" ng-if="!company.photoFullPath" class="img-responsive thumb128 thumbnail" />
+                        <img src="{{company.photoFullPath}}" ng-if="company.photoFullPath" class="img-responsive  thumb128 thumbnail" />
+                    </div>
+                    <div class="">
+                        <h4 class="m-b-5">{{company | localizeString}}</h4>
+                        <p class="text-muted">{{company.phone}} <span> | </span> <span> <a class="text-pink">{{company.email}}</a> </span></p>
+                    </div>
+                    <p class="text-muted font-13">
+                        {{company.address.street}} - {{company.address.state | localizeString}} - {{company.address.country | localizeString}}
+                    </p>
+                    <div class="" ng-if="companyTypeId == 1">
+                        <ui-select ng-model="company.packageId" name="packageId" theme="bootstrap" class="text-left">
+                            <ui-select-match placeholder="{{'event.selectSponserPackage' | translate}}">{{$select.selected.sponserType | localizeString}}</ui-select-match>
+                            <ui-select-choices repeat="package.id as package in sponserPackages | filter: $select.search">
+                                <!--<span ng-bind-html="package.name | highlight: $select.search"></span> --->
+                                <span ng-bind-html="package.sponserType | localizeString | highlight: $select.search"></span> -
+                                <span ng-bind-html="package.cost | highlight: $select.search"></span>
+                            </ui-select-choices>
+                        </ui-select>
+                        <span class="label"></span>
+                        <span ng-if="!sponserPackages">
+                            <p style="color: #f34235; font-size:11px">{{'general.required' | translate}}</p>
+                        </span>
+                    </div>
+                    <div ng-if="companyTypeId == 2" >
+                        <input ng-model="company.standNumber" placeholder="{{'event.standNumber' | translate}}" autocomplete="off" class="form-control" name="name" />
+                    </div>
+
+                    <div ng-if="companyTypeId == 2">
+                        <input ng-model="company.standLocation" placeholder="{{'event.standLocation' | translate}}" autocomplete="off" class="form-control" name="name" />
+                    </div>
+                    <br />
+                    <div class="clearfix"></div>
+                    <label class="btn" ng-class="{'btn-success':companyExists(checkboxValue),'btn-simple':!companyExists(checkboxValue)}">
+                        <input id="inlineCheckbox1" class="hidden" text="select" type="checkbox" ng-true-value="{{company}}" ng-false-value="{{company.id}}" ng-click="companychecked(checkboxValue)" ng-checked="companyExists(checkboxValue)" ng-init="checkboxValue = company" ng-model="checkboxValue">
+                        {{'general.select' | translate}}
+                    </label>
+                </div>
+                
+           
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button ng-click="ok()" class="btn btn-primary" data-translate="general.save"></button>
+    <button ng-click="closeModal()" class="btn btn-danger" data-translate="general.cancel"></button>
+</div>

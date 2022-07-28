@@ -1,0 +1,72 @@
+﻿<div ng-controller="QuestionareController as vm">
+    <div class="page-title-box">
+        <h4 class="page-title"><i class="mdi mdi-comment-question-outline"></i> {{'general.questionare' | translate}} </h4>
+        <div class="btn btn-primary pull-right ng-binding" ng-click="vm.questionsDt.open('lg')">{{'general.ask' | translate}} </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- end row -->
+    <div ng-if="vm.events.length == 0">
+        <uib-alert type="info"><i class="fa fa-info-circle"></i> {{'general.noDataFound' | translate}}</uib-alert>
+    </div>
+    <div class="panel panel-border panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title"> {{'general.filterBy' | translate}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-4">
+                <label class="col-sm-3 control-label"><span>  {{'eventReg.events' | translate}}</span></label>
+                <div class="col-sm-9">
+                    <ui-select ng-model="vm.filterParams.eventId"  ng-change="getQuestions()" name="eventType" theme="bootstrap" class="text-left">
+                        <ui-select-match placeholder="{{'event.event' | translate}}" allow-clear="true"><span ng-bind-html='$select.selected | localizeString'></span></ui-select-match>
+                        <ui-select-choices repeat="event.id as event in vm.events | filter: $select.search">
+                            <span ng-bind-html="event | localizeString | highlight: $select.search"></span>
+                        </ui-select-choices>
+                    </ui-select>
+                    <span class="label"></span>{{events | localizeString}}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label class="col-sm-3 control-label"><span> {{'event.speaker' | translate}}</span></label>
+                <div class="col-sm-9">
+                    <ui-select ng-model="vm.filterParams.speakerId"  ng-change="getQuestions()"  name="speakerType" theme="bootstrap" class="text-left">
+                        <ui-select-match placeholder="{{'event.speaker' | translate}}" allow-clear="true"><span ng-bind-html='$select.selected | localizeString'></span></ui-select-match>
+                        <ui-select-choices repeat="speaker.id as speaker in vm.eventSpeaker | filter: $select.search">
+                            <span ng-bind-html="speaker | localizeString | highlight: $select.search">
+
+                            </span>
+                        </ui-select-choices>
+                    </ui-select>
+                    <span class="label"></span>{{speaker | localizeString}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-color panel-info" ng-repeat="questionItem in vm.questions | unique : 'event'">
+        <div class="panel-heading">
+            <span class="panel-title" ng-bind-html='questionItem.event | localizeString'> </span>
+        </div>
+        <div class="panel-body">
+
+            <div class="row ">
+                <div class="col-md-12">
+                    <!-- Question/Answer -->
+                    <div ng-repeat="item in vm.questions | filter : {eventId: questionItem.event.id}" class="m-t-10">
+                        <form name="form{{item.id}}">
+                            <div class="question-q-box">{{'general.question' | translate}}.</div>
+                            <h4 class="question" data-wow-delay=".1s">
+                                {{item |  localizeStringWithProperty : 'question'}}  <span ng-if="item.user"> (<i class="fa fa-user text-primary"></i> {{'general.askedBy' | translate}}: {{item.user.firstName}})</span>
+                                <i class="btn btn-info fa fa-edit" ng-if="item.answer == null && item.userId == vm.user.userId" ng-click="vm.questionsDt.edit('lg',item.id)"></i>
+                            </h4>
+                            <p ng-if="item.person" class="answer">
+                                <span class="text-primary"> <i class="fa fa-user"></i> {{'event.speaker' | translate}}:</span> {{item.person | localizeString}}
+                            </p>
+                            <p class="answer" ng-if="vm.user.roleName==2">    {{item.answer}}   </p>
+                            <input type="text" name="answer{{item.id}}" validator="required" ng-if="vm.user.roleName==1 || vm.user.roleName==3" class="form-control" rows="2" ng-model="item.answer" />
+                            <button type="button" validation-submit="form{{item.id}}" ng-if="vm.user.roleName==1|| vm.user.roleName==3" class="btn btn-info m-t-10 waves-effect waves-light" ng-click="vm.submitAnswer(item.id,item.answer)">{{'general.submit' | translate}}</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

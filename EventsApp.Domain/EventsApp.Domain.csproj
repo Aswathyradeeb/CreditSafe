@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BCC7FDC-13E8-4A9B-BA5F-8910CE4E1719}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EventsApp.Domain</RootNamespace>
+    <AssemblyName>EventsApp.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbContext.cs" />
+    <Compile Include="DTOs\Account\ICurrentUser.cs" />
+    <Compile Include="DTOs\Account\RoleInfo.cs" />
+    <Compile Include="DTOs\Account\UserActionsTakenDto.cs" />
+    <Compile Include="DTOs\Account\PreferredLanguageDto.cs" />
+    <Compile Include="DTOs\Account\UserInfo.cs" />
+    <Compile Include="DTOs\Athlete\AthleteDto.cs" />
+    <Compile Include="DTOs\Athlete\AthleteVoucherDto.cs" />
+    <Compile Include="DTOs\Athlete\ClaimedVoucherDto.cs" />
+    <Compile Include="DTOs\Athlete\VoucherDto.cs" />
+    <Compile Include="DTOs\Core\AddressDto.cs" />
+    <Compile Include="DTOs\Core\IResponseType.cs" />
+    <Compile Include="DTOs\Core\PackageDto.cs" />
+    <Compile Include="DTOs\Core\ResponseType.cs" />
+    <Compile Include="DTOs\Core\SMSMessageDto.cs" />
+    <Compile Include="DTOs\Enum\PersonTypeEnum.cs" />
+    <Compile Include="DTOs\Enum\RegistrationTypeEnum.cs" />
+    <Compile Include="DTOs\Event\AgendumGetDto.cs" />
+    <Compile Include="DTOs\Event\ContactUsDto.cs" />
+    <Compile Include="DTOs\Event\AgendumPostManDto.cs" />
+    <Compile Include="DTOs\Event\EventNewsDto.cs" />
+    <Compile Include="DTOs\Event\EventRegistrationDto.cs" />
+    <Compile Include="DTOs\Event\PollDto.cs" />
+    <Compile Include="DTOs\Event\PollOptionDto.cs" />
+    <Compile Include="DTOs\Event\PollResultDto.cs" />
+    <Compile Include="DTOs\Event\PollResultHappinessDto.cs" />
+    <Compile Include="DTOs\Event\PresentationDto.cs" />
+    <Compile Include="DTOs\Event\InterestedAgendaDto.cs" />
+    <Compile Include="DTOs\Event\AgendumListDto.cs" />
+    <Compile Include="DTOs\Event\AgendumDto.cs" />
+    <Compile Include="DTOs\Event\AttendeeQuestionDto.cs" />
+    <Compile Include="DTOs\Core\CompanyDto.cs" />
+    <Compile Include="DTOs\Event\NotificationDto.cs" />
+    <Compile Include="DTOs\Event\NotificationPostDto.cs" />
+    <Compile Include="DTOs\Event\NotifyIOSDto.cs" />
+    <Compile Include="DTOs\Event\QuestionAnswerDto.cs" />
+    <Compile Include="DTOs\Event\QuestionDto.cs" />
+    <Compile Include="DTOs\Event\QuestionOptionDto.cs" />
+    <Compile Include="DTOs\Event\SpeakerRatingDto.cs" />
+    <Compile Include="DTOs\Event\VoteOptionsDto.cs" />
+    <Compile Include="DTOs\ReportsFilterParams.cs" />
+    <Compile Include="DTOs\PagedRequestFilter.cs" />
+    <Compile Include="DTOs\KPIS\CriteriaDTO.cs" />
+    <Compile Include="DTOs\KPIS\CriteriaReverseDTO.cs" />
+    <Compile Include="DTOs\KPIS\DataDTO.cs" />
+    <Compile Include="DTOs\KPIS\FavouriteDTO.cs" />
+    <Compile Include="DTOs\KPIS\IndicatorDTO.cs" />
+    <Compile Include="DTOs\KPIS\KPIGraphDTO.cs" />
+    <Compile Include="DTOs\KPIS\KPISingleDTO.cs" />
+    <Compile Include="DTOs\KPIS\LabelDTO.cs" />
+    <Compile Include="DTOs\KPIS\LabelReverseDTO.cs" />
+    <Compile Include="DTOs\KPIS\LabelSingleDTO.cs" />
+    <Compile Include="DTOs\KPIS\SeriesDTO.cs" />
+    <Compile Include="DTOs\KPIS\SeriesReverseDTO.cs" />
+    <Compile Include="DTOs\KPIS\SeriesSingleDTO.cs" />
+    <Compile Include="DTOs\KPIS\TargetsDTO.cs" />
+    <Compile Include="DTOs\KPIS\UnitDto.cs" />
+    <Compile Include="DTOs\Lookups\AgendaSessionDto.cs" />
+    <Compile Include="DTOs\Lookups\BackgroundThemeDTO.cs" />
+    <Compile Include="DTOs\Lookups\EventPackageDto.cs" />
+    <Compile Include="DTOs\Lookups\PersonTypeDto.cs" />
+    <Compile Include="DTOs\Lookups\CompanyTypeDto.cs" />
+    <Compile Include="DTOs\Event\EventAddressDto.cs" />
+    <Compile Include="DTOs\Event\EventCompanyDto.cs" />
+    <Compile Include="DTOs\Event\EventDto.cs" />
+    <Compile Include="DTOs\Event\EventPersonDto.cs" />
+    <Compile Include="DTOs\Event\EventTypeDto.cs" />
+    <Compile Include="DTOs\Event\EventUserDto.cs" />
+    <Compile Include="DTOs\FilterParams.cs" />
+    <Compile Include="DTOs\Core\IOSDeviceDto.cs" />
+    <Compile Include="DTOs\Lookups\ParticipantsRegistrationTypeDto.cs" />
+    <Compile Include="DTOs\Lookups\RegistrationTypeDto.cs" />
+    <Compile Include="DTOs\Lookups\LookupDto.cs" />
+    <Compile Include="DTOs\Lookups\LanguageDto.cs" />
+    <Compile Include="DTOs\Lookups\StateDto.cs" />
+    <Compile Include="DTOs\Lookups\CountryDto.cs" />
+    <Compile Include="DTOs\Lookups\UserActionDto.cs" />
+    <Compile Include="DTOs\MapperHelper.cs" />
+    <Compile Include="DTOs\Core\PersonDto.cs" />
+    <Compile Include="DTOs\Event\PhotoDto.cs" />
+    <Compile Include="DTOs\Event\PhotoReverseDto.cs" />
+    <Compile Include="DTOs\Payment\TransactionRequestDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnAthletesDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnResponseDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnPackageDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnSponsersDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnExhabitorsDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnCompanyDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnSpeakerDto.cs" />
+    <Compile Include="DTOs\Event\SurveyDto.cs" />
+    <Compile Include="DTOs\Event\SurveyOptionDto.cs" />
+    <Compile Include="DTOs\Event\SurveyResultDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnEventsDto.cs" />
+    <Compile Include="DTOs\Lookups\SponserTypeDto.cs" />
+    <Compile Include="DTOs\Account\UserDto.cs" />
+    <Compile Include="DTOs\Subscription\UserSubscriptionDto.cs" />
+    <Compile Include="Entities\Address.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AgendaSession.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Agendum.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AthleteVoucher.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AttendeeQuestion.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\BackgroundTheme.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaimedVoucher.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Company.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CompanyType.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Configuration.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Country.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Event.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventAddress.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventCompany.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventNew.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventPackage.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventPerson.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\eventsappEntities.Context.cs">
+      <DependentUpon>eventsappEntities.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Entities\eventsappEntities.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Entities\eventsappEntities.Designer.cs">
+      <DependentUpon>eventsappEntities.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Entities\EventType.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventUser.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\fn_GetRegisteredUsers_Result.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\fn_GetSurveyResult_Result.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\fn_GetUsersAttendance_Result.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GuestVoucher.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InterestedAgenda.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IOSDevice.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Language.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LoggedUserConnection.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Notification.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Package.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ParticipantsRegistrationType.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PaymentStatus.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Person.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PersonType.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Photo.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PreferredLanguage.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Presentation.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PushNotification.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Recipient.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RegistrationType.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Role.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SpeakerRating.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SponserType.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\State.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Survey.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SurveyOption.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SurveyResult.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Transaction.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\User.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserAction.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserActionsTaken.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserAttendHistory_Result.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserClaim.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserCompany.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserLogin.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserSubscription.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Voucher.cs">
+      <DependentUpon>eventsappEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\CompanyTypeEnum.cs" />
+    <Compile Include="Extensions\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entities\eventsappEntities.edmx.diagram">
+      <DependentUpon>eventsappEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Entities\eventsappEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>eventsappEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entities\eventsappEntities.Context.tt">
+      <DependentUpon>eventsappEntities.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>eventsappEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\eventsappEntities.edmx.sql" />
+    <Content Include="Entities\eventsappEntities.tt">
+      <DependentUpon>eventsappEntities.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>eventsappEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

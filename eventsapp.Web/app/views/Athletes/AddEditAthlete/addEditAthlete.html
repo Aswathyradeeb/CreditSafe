@@ -1,0 +1,125 @@
+<form role="form" class="mb-lg form-horizontal" name="athleteForm">
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="closeModal()">x</button>
+        <h4 id="myModalLabel" class="modal-title" ng-if="!guestId">
+            Athlete/Official
+        </h4>
+        <h4 id="myModalLabel" class="modal-title" ng-if="guestId">
+            PST Registration Form
+        </h4>
+    </div>
+    <div class="modal-body">
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>{{'athlete.firstName' | translate}} <span class="text-danger">*</span></label>
+                <input ng-model="athlete.firstName" placeholder="{{'athlete.firstName' | translate}}" ng-disabled="viewMode" autocomplete="off" class="form-control" name="firstName" validator="required" />
+            </div>
+            <div class="col-md-6">
+                <label>{{'athlete.lastName' | translate}}<span class="text-danger">*</span></label>
+                <input ng-model="athlete.lastName" id="lastName" placeholder="{{'athlete.lastName' | translate}}" ng-disabled="viewMode" autocomplete="off" class="form-control" name="lastName" validator="required" />
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>{{'athlete.phone' | translate}}</label>
+                <input ng-model="athlete.phoneNumber" placeholder="{{'athlete.phone' | translate}}" autocomplete="off" ng-disabled="viewMode" class="form-control" name="name" />
+            </div>
+            <div class="col-md-6">
+                <label>{{'athlete.email' | translate}}<span class="text-danger">*</span></label>
+                <input ng-model="athlete.email" placeholder="{{'athlete.email' | translate}}" autocomplete="off" ng-disabled="athlete.id" class="form-control" name="email" validator="required, email" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6" ng-if="!guestId">
+                <label class="col-md-4">User Type<span class="text-danger">*</span></label>
+                <label for="registrationTypeId"> <input type="radio" id="isApproved1" ng-model="athlete.registrationTypeId" ng-value="1" name="registrationTypeId" ng-disabled="athlete.id"> Athlete </label>
+                <label for="registrationTypeId"><input type="radio" id="isApproved2" ng-model="athlete.registrationTypeId" ng-value="5" name="registrationTypeId" ng-disabled="athlete.id"> Official </label>
+            </div>
+            <div class="col-md-6">
+                <label>Is Active</label>
+                <label class="switch switch-md switch-primary">
+                    <input type="checkbox" name="isActive" ng-model="athlete.isActive" ng-checked="athlete.isActive == true">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="row form-group">
+            <!--<div class="col-md-6">
+                <label>{{'athlete.voucher' | translate}}<span class="text-danger">*</span></label>
+                <div class="col-xs-12">
+                    <ui-select multiple ng-model="athlete.aVouchers" validator="required" name="aVouchersId" theme="bootstrap" class="text-left">
+                        <ui-select-match placeholder="{{'athlete.voucher' | translate}}">{{$item | localizeString}}</ui-select-match>
+                        <ui-select-choices repeat="voucher in vouchers | filter : $select.search">
+                            <span ng-bind-html="voucher | localizeString | highlight: $select.search"></span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>s
+            </div>-->
+            <div class="col-md-6">
+                <label>Food Vouchers<span class="text-danger">*</span></label>
+                <input type="number" ng-model="athlete.assignedFoodVouchers" min="1" step="1" placeholder="No Of Food Vouchers" autocomplete="off" ng-disabled="viewMode" class="form-control" name="assignedFoodVouchers" validator="required" />
+            </div>
+            <div class="col-md-6">
+                <label>Drink Vouchers<span class="text-danger">*</span></label>
+                <input type="number" ng-model="athlete.assignedDrinkVouchers" min="1" step="1" placeholder="No Of Drink Vouchers" autocomplete="off" ng-disabled="viewMode" class="form-control" name="assignedDrinkVouchers" validator="required" />
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div ng-if="athlete.usedFoodVouchers!=0 &&athlete.usedFoodVouchers!=undefined" class="col-md-6">
+                <label>{{'athlete.usedFoodVoucherCount' | translate}}<span class="text-danger"></span></label>
+                <input type="number" ng-model="athlete.usedFoodVouchers" placeholder="{{'athlete.usedFoodVoucherCount' | translate}}" autocomplete="off" ng-disabled="viewMode" class="form-control" name="usedFoodVoucherCount" />
+            </div>
+            <div ng-if="athlete.usedDrinkVouchers!=0 && athlete.usedDrinkVouchers!=undefined" class="col-md-6">
+                <label>{{'athlete.usedDrinkVouchersCount' | translate}}<span class="text-danger"></span></label>
+                <input type="number" ng-model="athlete.usedDrinkVouchers" placeholder="{{'athlete.usedDrinkVouchersCount' | translate}}" autocomplete="off" ng-disabled="viewMode" class="form-control" name="usedDrinkVouchersCount" />
+            </div>
+        </div>
+        <div class="row form-group" ng-if="isGuest==false">
+            <div class="col-md-6">
+                <label>{{'event.event' | translate}}<span class="text-danger">*</span></label>
+                <div class="col-xs-12" ng-if="athlete.id">
+                    {{athlete.event.nameEn}}
+                </div>
+                <div class="col-xs-12" ng-if="!athlete.id">
+                    <ui-select ng-model="athlete.eventId" validator="required" name="eventType" theme="bootstrap" class="text-left">
+                        <ui-select-match allow-clear="true" placeholder="{{'event.event' | translate}}"><span ng-bind-html='$select.selected.nameEn'></span></ui-select-match>
+                        <ui-select-choices repeat="event.id as event in events | filter: $select.search">
+                            <span ng-bind-html="event.nameEn | highlight: $select.search"></span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+        </div>
+        <div class="row form-group" ng-if="guestId">
+            <div class="col-md-6">
+                <label>Relation</label>
+                <input ng-model="athlete.relation" placeholder="Relation" autocomplete="off" ng-disabled="viewMode" class="form-control" name="relation" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>{{'athlete.photo' | translate}}</label>
+                <uploading-files copyUrl="athlete.photo" copyUrlFullPath="athlete.photoFullPath" url="PhotoPath" isreadonly="viewMode" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+            </div>
+            <div class="col-md-6" ng-if="athlete.qrFullPath">
+                <label>QR</label>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ng-if="athlete.qrFullPath.split('.').pop().toLowerCase() =='jpg' || athlete.qrFullPath.split('.').pop().toLowerCase() =='png' || athlete.qrFullPath.split('.').pop().toLowerCase() =='jpeg'" chained-animation="fadeInUp">
+                            <a class="col-md-7" href="{{athlete.qrFullPath}}" target="_blank" title="QR">
+                                <img src="{{athlete.qrFullPath}}" alt="thumb" title="QR" class="thumbnail" style="max-height:200px;width: 100%;" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button ng-click="ok()" ng-if="viewMode != true" validation-submit="athleteForm" class="btn btn-primary" data-translate="general.save"></button>
+        <button ng-click="closeModal()" class="btn btn-danger" data-translate="general.cancel"></button>
+    </div>
+</form>

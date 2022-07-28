@@ -1,0 +1,189 @@
+﻿<div ng-show="isReadingEId">Reading ID data please be patiant........</div>
+<div class="row form-group">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.Nationality' | translate}}</span></label>
+    <div class="col-sm-9">
+        <ui-select ng-model="passModel.country" theme="bootstrap" validator="required" name="userCountry">
+            <ui-select-match class="flag-container">
+                <div class="col-md-4 flag-style">
+                    <img class="img-responsive" ng-src="../src/imgs/Countries/{{$select.selected.isoCode2}}.png" />
+                </div>
+                <div class="col-md-4">
+                    <span>{{$select.selected | localizeString}}</span>
+                </div>
+            </ui-select-match>
+            <ui-select-choices repeat="country1 in countries | propsFilter: {nameAr: $select.search, nameEn: $select.search}">
+                <div class="row">
+                    <div class="col-md-4 col-xs-5">
+                        <img class="img-responsive" ng-src="../src/imgs/Countries/{{country1.isoCode2}}.png" />
+                    </div>
+                    <div class="col-md-8 col-xs-7">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 ng-bind-html="country1 | localizeString | highlight: $select.search"></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <small data-translate="country.countryCode"></small>: <small ng-bind-html="country1.isoCode3"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="row form-group" ng-show="passModel.country.isoCode2 !== 'AE'">
+    <div class="col-sm-5">
+        <div class="checkbox checkbox-custom">
+            <input id="isValidResidence" type="checkbox" ng-init="isValidResidence = true" ng-model="isValidResidence" placeholder="" ng-checked="passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null" autocomplete="off">
+            <label for="isValidResidence">
+                {{'profileNationalityDirective.HaveValidVisa' | translate}}
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row form-group" ng-show="((passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) ||
+     isValidResidence) && isChrome == false">
+    <label class="col-sm-3 control-label">&nbsp;</label>
+    <div class="col-sm-9">
+        <div class="btn btn-primary" ng-click="readEmiratesIdPublicData()">{{'profileNationalityDirective.ReadEmiratesId' | translate}}</div>
+    </div>
+</div>
+<div class="row form-group" ng-show="(passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) || isValidResidence">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.EmiratesId' | translate}}</span></label>
+    <div class="col-sm-9">
+        <input ng-model="passModel.emiratesId" type="text" placeholder="{{'profileNationalityDirective.EmiratesId' | translate}}"
+               autocomplete="off" class="form-control" validator="required" name="emiratesId" restrict="reject" mask="999-9999-9999999-9" />
+    </div>
+</div>
+<div class="row form-group">
+    <label ng-show="(passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) || isValidResidence" class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.fullNameIsResident' | translate}}</span></label>
+    <label ng-show="!(passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) && !isValidResidence" class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.fullNameIsNotResident' | translate}}</span></label>
+    <div class="col-sm-9">
+        <input ng-model="passModel.name" type="text" placeholder="{{'profileNationalityDirective.fullName' | translate}}"
+               autocomplete="off" class="form-control" validator="required" name="fullName" maxlength="256" />
+    </div>
+</div>
+<div class="row form-group" ng-if="!(passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) && !isValidResidence">
+    <label class="col-sm-3 control-label">{{'profileNationalityDirective.PassportNumber' | translate}}</label>
+    <div class="col-sm-9">
+        <input ng-model="passModel.passportNumber" placeholder="{{'profileNationalityDirective.PassportNumber' | translate}}" autocomplete="off" class="form-control" name="passportNumber" validator="required" />
+    </div>
+</div>
+<div class="row form-group">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.Occupation' | translate}}</span></label>
+    <div class="col-sm-9">
+        <ui-select ng-model="passModel.title" name="userTitleName" validator="required">
+            <ui-select-match>
+                <div class="col-md-4">
+                    <span>{{$select.selected | localizeString}}</span>
+                </div>
+            </ui-select-match>
+            <ui-select-choices repeat="sss in titles | propsFilter: {nameAr: $select.search, nameEn: $select.search}">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div ng-bind-html="sss | localizeString | highlight: $select.search"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
+<div class="row form-group">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.Gender' | translate}}</span></label>
+    <div class="col-sm-9">
+        <div class="radio-inline c-radio">
+            <label>
+                <input id="inlineradio1" type="radio" name="i-radio" value="1" ng-model="passModel.genderId" ng-required="!passModel.genderId" />
+                <span class="fa fa-circle"></span>{{'profileNationalityDirective.GenderMale' | translate}}
+            </label>
+        </div>
+        <div class="radio-inline c-radio">
+            <label>
+                <input id="inlineradio2" type="radio" name="i-radio" value="2" ng-model="passModel.genderId" ng-required="!passModel.genderId" />
+                <span class="fa fa-circle"></span>{{'profileNationalityDirective.GenderFemale' | translate}}
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row form-group">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.DateOfBirth' | translate}}</span></label>
+    <div class="col-sm-9">
+        <p class="input-group">
+            <input type="text" uib-datepicker-popup="{{format}}" ng-model="passModel.dateOfBirth" is-open="dateOfBirthPopup.opened" uib-datepicker-options="dateOptions" close-text="Close"
+                   class="form-control" name="dateOfBirth" validator="required" init-date="dateOptions.maxDate" min-date="dateOptions.minDate" max-date="dateOptions.maxDate"
+                   show-weeks="false" show-button-bar="false" />
+            <span class="input-group-btn">
+                <button type="button" ng-click="opendateOfBirthDatePopup($event)" class="btn btn-default">
+                    <em class="fa fa-calendar"></em>
+                </button>
+            </span>
+        </p>
+    </div>
+</div>
+<div class="row form-group">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.UploadYourPhoto' | translate}}</span></label>
+    <div class="col-sm-9">
+        <uploading-files copyUrl="passModel.photoUrl" copyUrlFullPath="passModel.photoUrlFullPath" url="uploadPhotoUrl" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+    </div>
+</div>
+<div class="row form-group" ng-if="(passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) || isValidResidence">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.UploadEmiratesId' | translate}}</span></label>
+    <div class="col-sm-9">
+        <uploading-files copyUrl="passModel.emiratesIdCopyUrl" copyUrlFullPath="passModel.emiratesIdCopyUrlFullPath" url="uploadEmiratesIdUrl" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+    </div>
+</div>
+<div class="row form-group" ng-if="!(passModel.country.isoCode2 !== undefined && passModel.country.isoCode2 !== 'AE' && passModel.passportNumber == null && isValidResidence) && !isValidResidence">
+    <label class="col-sm-3 control-label"><span class="text-danger">* </span><span>{{'profileNationalityDirective.UploadPassport' | translate}}</span></label>
+    <div class="col-sm-9">
+        <uploading-files copyUrl="passModel.passportCopyUrl" copyUrlFullPath="passModel.passportCopyUrlFullPath" url="uploadPassportUrl" allowfiletype="['.png', '.jpg', '.jpeg']" maxsize="20971520"></uploading-files>
+    </div>
+</div>
+
+<!-- Render Java Applet if no IE Explrorer-->
+<div ng-if="isIE === false && isChrome === false">
+    <applet id="ZFComponent" alt="This browser does not support Applets."
+            code="emiratesid.jio.webcomponents.ZFApplet" archive="ZFApplet.jar" width="0" height="0">
+        This browser does not support Applets.
+    </applet>
+</div>
+
+<!-- Render ActiveX if IE Explrorer 64 -->
+<div ng-if="isIE !== false && isIE64 === true">
+    <object id="ZFComponent" width="0" height="0"
+            classid="CLSID:502A94C0-E6CB-4910-846D-6F4F261E98C0"
+            codebase="EIDA_ZF_ActiveX64.CAB">
+        <p style="color: red">ActiveX is not supported by this browser, please use Internet Explorer</p>
+    </object>
+</div>
+
+<!-- Render ActiveX if IE Explrorer -->
+<div ng-if="isIE !== false &&  isIE64 === false">
+    <object id="ZFComponent" width="0" height="0"
+            classid="CLSID:502A94C0-E6CB-4910-846D-6F4F261E98C0"
+            codebase="EIDA_ZF_ActiveX.CAB">
+        <p style="color: red">ActiveX is not supported by this browser, please use Internet Explorer</p>
+    </object>
+</div>
+
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<!--<div id="blueimp-image-carousel" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+</div>-->
+<!-- The Gallery as lightbox dialog, should be a child element of the document body-->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides">
+        <h3 class="title"></h3><a class="prev">&lsaquo;</a><a class="next">&rsaquo;</a><a class="close">&times;</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+</div> 
