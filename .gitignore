@@ -1,0 +1,32 @@
+# These are some examples of commonly ignored file patterns.
+# You should customize this list as applicable to your project.
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+/.vs/eventsapp
+
+# Visual Studio 2015 cache/options directory
+.vs/
+/.vs
+
+*.cache
+
+*.WebAPI.dll
+*.WebAPI.pdb
+*.WebAPI.xml
+*.Services.dll
+*.Services.pdb
+*.Domain.dll
+*.Domain.pdb
+*.Framework.dll
+*.Framework.pdb
+*.Repositories.dll
+*.Repositories.pdb
+*.Domain.dll.config
+*.WebAPI.dll.config
+*.Framework.dll.config
+*.Repositories.dll.config
+*.Services.dll.config
+*.Web.dll
+*.Web.pdb
+*.Web.dll.config
