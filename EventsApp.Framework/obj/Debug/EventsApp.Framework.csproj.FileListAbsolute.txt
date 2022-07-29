@@ -63,3 +63,24 @@ D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Framework\obj\Debug\EventsApp
 D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Framework\obj\Debug\EventsApp.Framework.csproj.CopyComplete
 D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Framework\obj\Debug\EventsApp.Framework.dll
 D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Framework\obj\Debug\EventsApp.Framework.pdb
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EventsApp.Framework.dll.config
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EventsApp.Framework.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EventsApp.Framework.pdb
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\AutoMapper.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\Castle.Core.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\Castle.Windsor.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EntityFramework.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EntityFramework.SqlServer.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\log4net.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\Newtonsoft.Json.dll
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\AutoMapper.xml
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\Castle.Core.xml
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\Castle.Windsor.xml
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EntityFramework.xml
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\EntityFramework.SqlServer.xml
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\log4net.xml
+E:\workspace\CreditSafe\EventsApp.Framework\bin\Debug\Newtonsoft.Json.xml
+E:\workspace\CreditSafe\EventsApp.Framework\obj\Debug\EventsApp.Framework.csproj.CoreCompileInputs.cache
+E:\workspace\CreditSafe\EventsApp.Framework\obj\Debug\EventsApp.Framework.csproj.CopyComplete
+E:\workspace\CreditSafe\EventsApp.Framework\obj\Debug\EventsApp.Framework.dll
+E:\workspace\CreditSafe\EventsApp.Framework\obj\Debug\EventsApp.Framework.pdb

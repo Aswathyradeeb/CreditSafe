@@ -156,7 +156,6 @@
     <script src="../../src/js/modules/layermorph/layer-morph.directive.js?v.0.02"></script>
     <script src="../../src/js/modules/layermorph/layer-morph.service.js?v.0.02"></script>
     <script src="../../src/js/noCache.js??v.0.02"></script>
-    <script src="../../app/views/Account/login/userProfile.js?v.0.02"></script>
     <script src="../../app/views/Controls/dataTableDirective/dataTableDirective.js?v.0.02"></script>
     <script src="../../src/js/modules/common/filters/localizeString.js?v.0.02"></script>
     <div class="preloader">
@@ -183,7 +182,7 @@
                                 <!--RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
                                     <!--Brand--><a class="brand">
-                                        <img class="brand-logo-light" src="../../app/img/DDF_logo.png" ng-if="vm.event.eventLogoFullPath == null" alt="Event Logo" />
+                                        <img class="brand-logo-light" src="../../app/img/weather_logo.png" ng-if="vm.event.eventLogoFullPath == null" alt="Event Logo" />
                                         <img class="brand-logo-light" src="{{vm.event.eventLogoFullPath}}" ng-if="vm.event.eventLogoFullPath != null" alt="Event Logo" />
                                     </a>
                                 </div>
@@ -874,7 +873,7 @@
         <section class="section section-sm bg-gray-900">
             <div class="container">
                 <div class="row row-30">
-                    <div class="col-xs-10 col-lg-4 align-self-center"><a class="brand"><img class="brand-logo-light" src="../../app/img/DDF_logo.png"></a></div>
+                    <div class="col-xs-10 col-lg-4 align-self-center"><a class="brand"><img class="brand-logo-light" src="../../app/img/weather_logo.png"></a></div>
                     <div class="col-xs-10 col-sm-6 col-lg-4">
                         <h5><span class="big font-weight-sbold">{{vm.event | localizeString}}</span></h5>
                         <div class="event-detail">

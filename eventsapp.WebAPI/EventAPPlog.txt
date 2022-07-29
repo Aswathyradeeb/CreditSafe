@@ -1,32 +1,464 @@
-2021-07-13 20:33:30,866 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
- System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436
+2022-07-29 13:40:31,894 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (405) Method Not Allowed.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 40
    --- End of inner exception stack trace ---
----> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436<---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (405) Method Not Allowed.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 40<---
 
  
-2021-07-13 20:33:30,867 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
- System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215
+2022-07-29 13:44:38,083 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 52
    --- End of inner exception stack trace ---
----> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215<---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 52<---
 
  
-2021-07-13 20:36:34,547 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
- System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215
+2022-07-29 14:08:21,654 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 52
    --- End of inner exception stack trace ---
----> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.CompanyService.<GetAllCompanies>d__15.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\CompanyService.cs:line 215<---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 52<---
 
  
-2021-07-13 20:36:34,550 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+2022-07-29 14:12:58,550 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'System.Collections.Generic.Dictionary<string,object>.this[string]' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 59
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'System.Collections.Generic.Dictionary<string,object>.this[string]' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 59<---
+
+ 
+2022-07-29 14:15:33,403 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'System.Collections.Generic.Dictionary<string,object>.this[string]' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 71
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'System.Collections.Generic.Dictionary<string,object>.this[string]' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , Object , Int32 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at EventsApp.Services.CityService.<GetAllCountries>d__2.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 71<---
+
+ 
+2022-07-29 15:59:08,510 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
  System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436
+   at EventsApp.Services.CityService.<CreateUpdateCity>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 140
    --- End of inner exception stack trace ---
 ---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
-   at EventsApp.Services.EventService.<GetAllEvents>d__23.MoveNext() in D:\Workspace\Event E-Voucher\e-voucher\Eventsapp.Services\Services\Implementation\EventService.cs:line 436<---
+   at EventsApp.Services.CityService.<CreateUpdateCity>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 140<---
+
+ 
+2022-07-29 19:11:59,997 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.City, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.CityWeatherDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWeatherDto
+EventsApp.Domain.Entities.City -> EventsApp.Domain.DTOs.CityWeatherDto
+   at lambda_method(Closure , City , CityWeatherDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in E:\workspace\CreditSafe\EventsApp.Domain\DTOs\MapperHelper.cs:line 20
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 133
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[EventsApp.Domain.Entities.City, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[EventsApp.Domain.DTOs.CityWeatherDto, EventsApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+City -> CityWeatherDto
+EventsApp.Domain.Entities.City -> EventsApp.Domain.DTOs.CityWeatherDto
+   at lambda_method(Closure , City , CityWeatherDto , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType)
+   at EventsApp.Domain.DTOs.MapperHelper.Map[T](Object source) in E:\workspace\CreditSafe\EventsApp.Domain\DTOs\MapperHelper.cs:line 20
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 133<---
+
+ 
+2022-07-29 19:16:02,043 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 159
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 159<---
+
+ 
+2022-07-29 19:16:38,494 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 159
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 159<---
+
+ 
+2022-07-29 19:18:39,872 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 161
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 161<---
+
+ 
+2022-07-29 19:23:59,213 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 163
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 163<---
+
+ 
+2022-07-29 19:24:24,435 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 163
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 163<---
+
+ 
+2022-07-29 19:26:13,364 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167<---
+
+ 
+2022-07-29 19:26:55,465 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167<---
+
+ 
+2022-07-29 19:27:26,572 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167<---
+
+ 
+2022-07-29 19:28:05,245 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.Dictionary<string,object>' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 167<---
+
+ 
+2022-07-29 19:29:55,931 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 174
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 174<---
+
+ 
+2022-07-29 19:33:36,665 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 194
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 194<---
+
+ 
+2022-07-29 19:37:46,943 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 207
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 207<---
+
+ 
+2022-07-29 19:59:35,501 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 209
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 209<---
+
+ 
+2022-07-29 20:00:37,582 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 209
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 209<---
+
+ 
+2022-07-29 20:02:01,116 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 209
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 209<---
+
+ 
+2022-07-29 20:04:25,586 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.KeyValuePair<string,object>' to 'System.Collections.IEnumerable'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 231
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.KeyValuePair<string,object>' to 'System.Collections.IEnumerable'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 231<---
+
+ 
+2022-07-29 20:05:34,810 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.KeyValuePair<string,object>' to 'System.Collections.IEnumerable'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 231
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Collections.Generic.KeyValuePair<string,object>' to 'System.Collections.IEnumerable'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 231<---
+
+ 
+2022-07-29 20:07:30,439 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236<---
+
+ 
+2022-07-29 20:08:55,936 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Key'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236<---
+
+ 
+2022-07-29 20:11:51,443 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236<---
+
+ 
+2022-07-29 20:12:19,352 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236<---
+
+ 
+2022-07-29 20:13:11,036 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Collections.Generic.Dictionary<string,object>' does not contain a definition for 'Value'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 236<---
+
+ 
+2022-07-29 20:17:26,946 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 246
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 246<---
+
+ 
+2022-07-29 20:19:23,015 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 246
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 246<---
+
+ 
+2022-07-29 20:19:50,084 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 246
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'decimal' to 'string'
+   at CallSite.Target(Closure , CallSite , Object )
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 246<---
+
+ 
+2022-07-29 21:35:30,063 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 222
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 222<---
+
+ 
+2022-07-29 21:41:10,822 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:41:12,908 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:41:26,713 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:41:41,576 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:41:43,376 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:42:09,339 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:42:21,700 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
+
+ 
+2022-07-29 21:45:44,152 EventsApp.Framework.Logging.Logger.Error [267] ERROR - One or more errors occurred. 
+ System.AggregateException: One or more errors occurred. ---> System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at EventsApp.Services.CityService.<GetAllCityWeather>d__4.MoveNext() in E:\workspace\CreditSafe\Eventsapp.Services\Services\Implementation\CityService.cs:line 225<---
 
  

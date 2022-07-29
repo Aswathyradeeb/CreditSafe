@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbContext.cs" />
-    <Compile Include="DTOs\Account\ICurrentUser.cs" />
     <Compile Include="DTOs\Account\RoleInfo.cs" />
     <Compile Include="DTOs\Account\UserActionsTakenDto.cs" />
     <Compile Include="DTOs\Account\PreferredLanguageDto.cs" />
@@ -96,7 +95,7 @@
     <Compile Include="DTOs\Event\QuestionOptionDto.cs" />
     <Compile Include="DTOs\Event\SpeakerRatingDto.cs" />
     <Compile Include="DTOs\Event\VoteOptionsDto.cs" />
-    <Compile Include="DTOs\ReportsFilterParams.cs" />
+    <Compile Include="DTOs\Lookups\CityDto.cs" />
     <Compile Include="DTOs\PagedRequestFilter.cs" />
     <Compile Include="DTOs\KPIS\CriteriaDTO.cs" />
     <Compile Include="DTOs\KPIS\CriteriaReverseDTO.cs" />
@@ -124,7 +123,6 @@
     <Compile Include="DTOs\Event\EventPersonDto.cs" />
     <Compile Include="DTOs\Event\EventTypeDto.cs" />
     <Compile Include="DTOs\Event\EventUserDto.cs" />
-    <Compile Include="DTOs\FilterParams.cs" />
     <Compile Include="DTOs\Core\IOSDeviceDto.cs" />
     <Compile Include="DTOs\Lookups\ParticipantsRegistrationTypeDto.cs" />
     <Compile Include="DTOs\Lookups\RegistrationTypeDto.cs" />
@@ -138,7 +136,7 @@
     <Compile Include="DTOs\Event\PhotoDto.cs" />
     <Compile Include="DTOs\Event\PhotoReverseDto.cs" />
     <Compile Include="DTOs\Payment\TransactionRequestDto.cs" />
-    <Compile Include="DTOs\ReturnObjects\ReturnAthletesDto.cs" />
+    <Compile Include="DTOs\ReturnObjects\ReturnCityDto.cs" />
     <Compile Include="DTOs\ReturnObjects\ReturnResponseDto.cs" />
     <Compile Include="DTOs\ReturnObjects\ReturnPackageDto.cs" />
     <Compile Include="DTOs\ReturnObjects\ReturnSponsersDto.cs" />
@@ -151,56 +149,9 @@
     <Compile Include="DTOs\ReturnObjects\ReturnEventsDto.cs" />
     <Compile Include="DTOs\Lookups\SponserTypeDto.cs" />
     <Compile Include="DTOs\Account\UserDto.cs" />
+    <Compile Include="DTOs\FilterParams.cs" />
     <Compile Include="DTOs\Subscription\UserSubscriptionDto.cs" />
-    <Compile Include="Entities\Address.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\AgendaSession.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Agendum.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\AthleteVoucher.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\AttendeeQuestion.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\BackgroundTheme.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\ClaimedVoucher.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Company.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\CompanyType.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Configuration.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Country.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Event.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EventAddress.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EventCompany.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EventNew.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EventPackage.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EventPerson.cs">
+    <Compile Include="Entities\City.cs">
       <DependentUpon>eventsappEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\eventsappEntities.Context.cs">
@@ -218,12 +169,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Entities\EventType.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EventUser.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entities\fn_GetRegisteredUsers_Result.cs">
       <DependentUpon>eventsappEntities.tt</DependentUpon>
     </Compile>
@@ -233,110 +178,10 @@
     <Compile Include="Entities\fn_GetUsersAttendance_Result.cs">
       <DependentUpon>eventsappEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GuestVoucher.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\InterestedAgenda.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\IOSDevice.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Language.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\LoggedUserConnection.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Notification.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Package.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\ParticipantsRegistrationType.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\PaymentStatus.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Person.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\PersonType.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Photo.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\PreferredLanguage.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Presentation.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\PushNotification.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Recipient.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\RegistrationType.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Role.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SpeakerRating.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SponserType.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\State.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Survey.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SurveyOption.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\SurveyResult.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Transaction.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\User.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\UserAction.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\UserActionsTaken.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entities\UserAttendHistory_Result.cs">
       <DependentUpon>eventsappEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\UserClaim.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\UserCompany.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\UserLogin.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\UserSubscription.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Voucher.cs">
-      <DependentUpon>eventsappEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Enums\CompanyTypeEnum.cs" />
-    <Compile Include="Extensions\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -369,6 +214,9 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>eventsappEntities.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

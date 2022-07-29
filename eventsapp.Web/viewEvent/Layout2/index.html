@@ -155,7 +155,6 @@
     <script src="../../app/plugins/gmap/load-google-maps.js?v.0.02"></script>
     <script src="../Layout1/js/app.module.js?v.0.02"></script>
     <script src="../../src/js/app.httpInterceptor.js?v.0.02"></script>
-    <script src="../Layout1/js/viewEventController.js?v.0.02"></script>
     <script src="../../src/js/modules/common/services/browser-detection.service.js?v.0.02"></script>
     <script src="../../src/js/modules/core/core.controller.js?v.0.02"></script>
     <script src="../../src/js/modules/core/core.run.js?v.0.02"></script>
@@ -172,7 +171,6 @@
     <script src="../../src/js/modules/layermorph/layer-morph.directive.js?v.0.02"></script>
     <script src="../../src/js/modules/layermorph/layer-morph.service.js?v.0.02"></script>
     <script src="../../src/js/noCache.js??v.0.02"></script>
-    <script src="../../app/views/Account/login/userProfile.js?v.0.02"></script>
     <script src="../../app/views/Controls/dataTableDirective/dataTableDirective.js?v.0.02"></script>
     <script src="../../src/js/modules/common/filters/localizeString.js?v.0.02"></script>
 
@@ -188,7 +186,7 @@
             <p data-translate="general.loading">Please Wait...</p>
         </div>
     </div>
-    <div class="lgx-container " ng-controller="viewEventController as vm">
+    <div class="lgx-container " >
         <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
         <!--HEADER-->
         <header>
@@ -209,7 +207,7 @@ background: #000000BA;'>&nbsp;</div>
                             <div class="navbar-header">
                                 <div class="lgx-logo">
                                     <a class="lgx-scroll">
-                                        <img src="../../app/img/DDF_logo.png" ng-if="vm.event.eventLogoFullPath == null" alt="Event Logo" />
+                                        <img src="../../app/img/weather_logo.png" ng-if="vm.event.eventLogoFullPath == null" alt="Event Logo" />
                                         <img src="{{vm.event.eventLogoFullPath}}" ng-if="vm.event.eventLogoFullPath != null" alt="Event Logo" />
                                     </a>
                                 </div>
@@ -811,7 +809,7 @@ background: #000000BA;'>&nbsp;</div>
                         <div class="lgx-footer-area">
                             <div class="lgx-footer-single">
                                 <a class="logo">
-                                    <img src="../../app/img/DDF_logo.png" alt="Eventhunt Logo" />
+                                    <img src="../../app/img/weather_logo.png" alt="Eventhunt Logo" />
                                 </a>
                             </div> <!--//footer-area-->
                             <div class="lgx-footer-single">

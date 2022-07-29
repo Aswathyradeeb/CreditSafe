@@ -1,5 +1,6 @@
 ﻿using EventsApp.Domain.DTOs;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -23,4 +24,5 @@ namespace eventsapp.WebAPI.Models
         [DataMember]
         public string SortDirection { get; set; }
     }
+
 }

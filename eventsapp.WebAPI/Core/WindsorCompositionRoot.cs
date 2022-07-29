@@ -69,9 +69,7 @@ namespace eventsapp.WebAPI
                .ImplementedBy<EntityFrameworkUnitOfWork>()
                .LifestylePerWebRequest());
 
-            container.Register(Component.For<IMailSender>().ImplementedBy<MailSender>().LifestyleSingleton());
-            container.Register(Component.For<ICurrentUser>().ImplementedBy<CurrentUser>().LifestylePerWebRequest());
-
+          
             container.Register(Component.For<System.Data.Entity.DbContext>()
                .ImplementedBy<EventsApp.Domain.Entities.eventsappEntities>()
                .LifestylePerWebRequest());

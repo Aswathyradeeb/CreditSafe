@@ -12,18 +12,12 @@
         .module('eventsapp')
         .controller('SidebarController', SidebarController);
     /* @ngInject */
-    function SidebarController($rootScope, LoginService, $state, $stateParams, UserProfile, $http) {
+    function SidebarController($rootScope, $state, $stateParams, $http) {
         var vm = this;
 
-        vm.user = UserProfile.getProfile();
-        if (vm.user.roleName == 1) {
-            vm.AdminMode = true;
-            $rootScope.app.sidebar.isOffscreen = false;
-        }
-        if (vm.user.roleName == 2) {
             vm.AdminMode = false;
             $rootScope.app.sidebar.isOffscreen = false;
-        }
+        
         setTimeout(function () {
             //init side bar - left
             $.Sidemenu.init();
@@ -33,6 +27,6 @@
             $.Components.init();
         },1000);
     }
-    SidebarController.$inject = ['$rootScope', 'LoginService', '$state', '$stateParams', 'UserProfile', '$http'];
+    SidebarController.$inject = ['$rootScope', '$state', '$stateParams', '$http'];
 
 })();

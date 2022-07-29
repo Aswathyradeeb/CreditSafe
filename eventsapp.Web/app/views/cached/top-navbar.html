@@ -2,7 +2,7 @@
 
     <!-- LOGO -->
     <div class="topbar-left">
-        <a class="logo"><span><img src="app/img/DDF_logo.png" height="55"></span><i><img src="app/img/DDF_logo.png" height="55"></i></a>
+        <a class="logo"><span><img src="app/img/weather_logo.png" height="55"></span><i><img src="app/img/weather_logo.png" height="55"></i></a>
     </div>
 
     <!-- Button mobile view to collapse sidebar menu -->
@@ -18,31 +18,7 @@
                 </li>
             </ul>
             <!-- Right(Notification) -->
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown hidden-xs">
-                    <a data-toggle="dropdown" class="dropdown-toggle menu-item waves-effect waves-light text-white" aria-expanded="false">
-                        <i class="fa fa-language" aria-hidden="true"></i> Lang
-                        <span class="caret"></span>
-                    </a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li ng-repeat="(localeId, langName) in language.available" ng-model="radioModel"
-                            ng-click="language.set(localeId, $event)"><a>{{langName}}</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a ng-click="header.logOut()" class="right-bar-toggle right-menu-item" title="{{navbar.signOut | translate}}" ripple="">
-                        <i class="fa fa-sign-out "></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a ui-sref="app.profile" class="user-box waves-effect waves-light user-link" style="color:white;">
-                        <img src="app/img/user.png" alt="user-img" class="img-circle user-img">
-                        {{header.user.firstName}} {{header.user.lastName}}
-                    </a>
-                </li>
-
-            </ul>
+        
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 ﻿//using eventsapp.WebAPI.Notifications;
-using eventsapp.WebAPI.Schedular;
+
 using EventsApp.Domain.DTOs;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,6 @@ namespace eventsapp.WebAPI
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             //EmailScheduler.Start();
-            VoucherScheduler.Start();
             //EventNotificationScehdular.Start();
         }
     }

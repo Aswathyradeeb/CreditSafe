@@ -76,3 +76,29 @@ D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Events
 D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CopyComplete
 D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.dll
 D:\Workspace\Samples\E Voucher\e-voucher\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.pdb
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll.config
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Eventsapp.Repositories.pdb
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EntityFramework.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\AutoMapper.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Castle.Windsor.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Castle.Core.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\log4net.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.pdb
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EventsApp.Domain.dll.config
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.pdb
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EventsApp.Framework.dll.config
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EntityFramework.xml
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\AutoMapper.xml
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Castle.Windsor.xml
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\Castle.Core.xml
+E:\workspace\CreditSafe\Eventsapp.Repositories\bin\Debug\log4net.xml
+E:\workspace\CreditSafe\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.AssemblyReference.cache
+E:\workspace\CreditSafe\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CoreCompileInputs.cache
+E:\workspace\CreditSafe\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.csproj.CopyComplete
+E:\workspace\CreditSafe\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.dll
+E:\workspace\CreditSafe\Eventsapp.Repositories\obj\Debug\Eventsapp.Repositories.pdb

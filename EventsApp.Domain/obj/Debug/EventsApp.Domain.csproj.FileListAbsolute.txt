@@ -41,3 +41,17 @@ D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Do
 D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CopyComplete
 D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.dll
 D:\Workspace\Samples\E Voucher\e-voucher\EventsApp.Domain\obj\Debug\EventsApp.Domain.pdb
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll.config
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EventsApp.Domain.dll
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EventsApp.Domain.pdb
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\AutoMapper.dll
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EntityFramework.dll
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\System.Data.SqlServerCe.dll
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\AutoMapper.xml
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EntityFramework.xml
+E:\workspace\CreditSafe\EventsApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\workspace\CreditSafe\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CoreCompileInputs.cache
+E:\workspace\CreditSafe\EventsApp.Domain\obj\Debug\EventsApp.Domain.csproj.CopyComplete
+E:\workspace\CreditSafe\EventsApp.Domain\obj\Debug\EventsApp.Domain.dll
+E:\workspace\CreditSafe\EventsApp.Domain\obj\Debug\EventsApp.Domain.pdb

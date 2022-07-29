@@ -216,10 +216,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Core\Script.sql" />
     <Content Include="EmailTemplate.html" />
-    <Content Include="EmailTemplates\email-guest-QR.html" />
-    <Content Include="EmailTemplates\email-userRegister.html" />
-    <Content Include="EmailTemplates\email-contact-us.html" />
-    <Content Include="EmailTemplates\sendemail-contact-us.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="IoC.xml" />
@@ -258,58 +254,22 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AthleteController.cs" />
-    <Compile Include="Controllers\EmailController.cs" />
-    <Compile Include="Controllers\EventPersonController.cs" />
-    <Compile Include="Controllers\EventCompanyController.cs" />
-    <Compile Include="Controllers\FavoriteEventController.cs" />
-    <Compile Include="Controllers\InterestedAgendaController.cs" />
-    <Compile Include="Controllers\CultureController.cs" />
-    <Compile Include="Controllers\AgendaController.cs" />
-    <Compile Include="Controllers\EventUserController.cs" />
-    <Compile Include="Controllers\KPIController.cs" />
-    <Compile Include="Controllers\NotificationsController.cs" />
-    <Compile Include="Controllers\CompaniesController.cs" />
-    <Compile Include="Controllers\CompanyTypesController.cs" />
-    <Compile Include="Controllers\EventsController.cs" />
-    <Compile Include="Controllers\EventTypesController.cs" />
-    <Compile Include="Controllers\NotifyController.cs" />
-    <Compile Include="Controllers\PhotosController.cs" />
-    <Compile Include="Controllers\CountryController.cs" />
-    <Compile Include="Controllers\PackageController.cs" />
-    <Compile Include="Controllers\PollingController.cs" />
-    <Compile Include="Controllers\RegistrationTypeController.cs" />
-    <Compile Include="Controllers\RestaurantsController.cs" />
-    <Compile Include="Controllers\RolesController.cs" />
-    <Compile Include="Controllers\PaymentController.cs" />
-    <Compile Include="Controllers\LookupController.cs" />
-    <Compile Include="Controllers\SurveyController.cs" />
-    <Compile Include="Controllers\SpeakersController.cs" />
-    <Compile Include="Controllers\SponserTypesController.cs" />
-    <Compile Include="Controllers\UploadController.cs" />
-    <Compile Include="Controllers\VoucherController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\CityController.cs" />
     <Compile Include="Core\ReCaptchaClass.cs" />
     <Compile Include="Core\WindsorCompositionRoot.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Models\EventRegisterModel.cs" />
     <Compile Include="Models\InMemoryMultipartFormDataStreamProvider.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModel.cs" />
-    <Compile Include="Models\PagedList.cs" />
-    <Compile Include="Models\ReportsRequestFilter.cs" />
     <Compile Include="Models\RequestFilter.cs" />
+    <Compile Include="Models\PagedList.cs" />
     <Compile Include="Models\RoleViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
-    <Compile Include="PushNotificationFireBase\NotificationConnector.cs" />
-    <Compile Include="Results\ChallengeResult.cs" />
-    <Compile Include="Results\CustomHttpResult.cs" />
-    <Compile Include="Schedular\VoucherScheduler.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -327,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="EmailTemplates\images\" />
     <Folder Include="Views\AttendeeQuestions\" />
     <Folder Include="Views\Notify\" />
   </ItemGroup>

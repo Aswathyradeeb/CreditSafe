@@ -7,7 +7,6 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security;
 using System.Collections.Generic;
 using Microsoft.AspNet.Identity.Owin;
-using eventsapp.WebAPI.Controllers;
 using System.Linq;
 using EventsApp.Framework;
 using EventsApp.Domain.Enums;

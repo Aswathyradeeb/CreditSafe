@@ -27,58 +27,7 @@ namespace EventsApp.Domain.Entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<LoggedUserConnection> LoggedUserConnections { get; set; }
-        public virtual DbSet<PreferredLanguage> PreferredLanguages { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<UserActionsTaken> UserActionsTakens { get; set; }
-        public virtual DbSet<UserClaim> UserClaims { get; set; }
-        public virtual DbSet<UserCompany> UserCompanies { get; set; }
-        public virtual DbSet<UserLogin> UserLogins { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Address> Addresses { get; set; }
-        public virtual DbSet<Company> Companies { get; set; }
-        public virtual DbSet<IOSDevice> IOSDevices { get; set; }
-        public virtual DbSet<Person> Persons { get; set; }
-        public virtual DbSet<Agendum> Agenda { get; set; }
-        public virtual DbSet<AgendaSession> AgendaSessions { get; set; }
-        public virtual DbSet<AthleteVoucher> AthleteVouchers { get; set; }
-        public virtual DbSet<AttendeeQuestion> AttendeeQuestions { get; set; }
-        public virtual DbSet<ClaimedVoucher> ClaimedVouchers { get; set; }
-        public virtual DbSet<EventAddress> EventAddresses { get; set; }
-        public virtual DbSet<EventCompany> EventCompanies { get; set; }
-        public virtual DbSet<EventNew> EventNews { get; set; }
-        public virtual DbSet<EventPerson> EventPersons { get; set; }
-        public virtual DbSet<Event> Events { get; set; }
-        public virtual DbSet<EventUser> EventUsers { get; set; }
-        public virtual DbSet<GuestVoucher> GuestVouchers { get; set; }
-        public virtual DbSet<InterestedAgenda> InterestedAgendas { get; set; }
-        public virtual DbSet<Notification> Notifications { get; set; }
-        public virtual DbSet<Package> Packages { get; set; }
-        public virtual DbSet<Photo> Photos { get; set; }
-        public virtual DbSet<Presentation> Presentations { get; set; }
-        public virtual DbSet<SpeakerRating> SpeakerRatings { get; set; }
-        public virtual DbSet<Survey> Surveys { get; set; }
-        public virtual DbSet<SurveyOption> SurveyOptions { get; set; }
-        public virtual DbSet<SurveyResult> SurveyResults { get; set; }
-        public virtual DbSet<BackgroundTheme> BackgroundThemes { get; set; }
-        public virtual DbSet<CompanyType> CompanyTypes { get; set; }
-        public virtual DbSet<Configuration> Configurations { get; set; }
-        public virtual DbSet<Country> Countries { get; set; }
-        public virtual DbSet<EventPackage> EventPackages { get; set; }
-        public virtual DbSet<EventType> EventTypes { get; set; }
-        public virtual DbSet<Language> Languages { get; set; }
-        public virtual DbSet<ParticipantsRegistrationType> ParticipantsRegistrationTypes { get; set; }
-        public virtual DbSet<PaymentStatus> PaymentStatuses { get; set; }
-        public virtual DbSet<PersonType> PersonTypes { get; set; }
-        public virtual DbSet<RegistrationType> RegistrationTypes { get; set; }
-        public virtual DbSet<SponserType> SponserTypes { get; set; }
-        public virtual DbSet<State> States { get; set; }
-        public virtual DbSet<UserAction> UserActions { get; set; }
-        public virtual DbSet<Voucher> Vouchers { get; set; }
-        public virtual DbSet<PushNotification> PushNotifications { get; set; }
-        public virtual DbSet<Recipient> Recipients { get; set; }
-        public virtual DbSet<Transaction> Transactions { get; set; }
-        public virtual DbSet<UserSubscription> UserSubscriptions { get; set; }
+        public virtual DbSet<City> Cities { get; set; }
     
         public virtual int AddUserRole(Nullable<int> userId, Nullable<int> roleId)
         {

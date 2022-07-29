@@ -34,46 +34,15 @@ namespace eventsapp.WebAPI
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
-        private INotificationsService notificationService;
-        private ICurrentUser user;
         private IMailSender mailSender;
-        private readonly IKeyedRepository<UserSubscription, int> _userSubscriptionRepository;
-        private readonly IKeyedRepository<PreferredLanguage, int> _preferredLanguageRepository;
-        private readonly IKeyedRepository<EventUser, int> _eventUserRepository;
-        private readonly IKeyedRepository<UserCompany, int> _userCompanyRepository;
-        private readonly IKeyedRepository<Event, int> _eventRepository;
-        private readonly IUserService _userService;
-        private readonly IKeyedRepository<AthleteVoucher, int> _athleteVouchersRepository;
-        private readonly IKeyedRepository<GuestVoucher, int> _guestVouchersRepository;
-        private readonly IKeyedRepository<User, int> _systemUserRepository;
 
 
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
 
-        public AccountController(INotificationsService notifService, IMailSender mailSender,
-            ICurrentUser user, IUserService _userService,
-            IKeyedRepository<UserSubscription, int> userSubscriptionRepository,
-            IKeyedRepository<EventUser, int> _eventUserRepository,
-            IKeyedRepository<UserCompany, int> _userCompanyRepository,
-            IKeyedRepository<Event, int> _eventRepository,
-            IKeyedRepository<PreferredLanguage, int> _preferredLanguageRepository,
-            IKeyedRepository<AthleteVoucher, int> _athleteVouchersRepository,
-            IKeyedRepository<GuestVoucher, int> _guestVouchersRepository,
-            IKeyedRepository<User, int> _systemUserRepository)
+        public AccountController( IMailSender mailSender)
         {
-            notificationService = notifService;
             this.mailSender = mailSender;
-            this.user = user;
-            this._userService = _userService;
-            this._userSubscriptionRepository = userSubscriptionRepository;
-            this._preferredLanguageRepository = _preferredLanguageRepository;
-            this._eventUserRepository = _eventUserRepository;
-            this._userCompanyRepository = _userCompanyRepository;
-            this._eventRepository = _eventRepository;
-            this._athleteVouchersRepository = _athleteVouchersRepository;
-            this._guestVouchersRepository = _guestVouchersRepository;
-            this._systemUserRepository = _systemUserRepository;
         }
 
         public AccountController()
@@ -118,7 +87,6 @@ namespace eventsapp.WebAPI
         public IHttpActionResult Logout()
         {
             Authentication.SignOut(OAuthDefaults.AuthenticationType);
-            var iosUser = notificationService.GetIOSUsers(this.user.UserInfo.Id);
             return Json(new { result = "Successfuly Loged out" });
         }
 
@@ -131,7 +99,7 @@ namespace eventsapp.WebAPI
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await UserManager.ChangePasswordAsync(this.user.UserInfo.Id, model.OldPassword,
+            IdentityResult result = await UserManager.ChangePasswordAsync(1, model.OldPassword,
                 model.NewPassword);
 
             if (!result.Succeeded)
@@ -151,7 +119,7 @@ namespace eventsapp.WebAPI
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await UserManager.AddPasswordAsync(this.user.UserInfo.Id, model.NewPassword);
+            IdentityResult result = await UserManager.AddPasswordAsync(1, model.NewPassword);
 
             if (!result.Succeeded)
             {
@@ -209,7 +177,7 @@ namespace eventsapp.WebAPI
                 return BadRequest("The external login is already associated with an account.");
             }
 
-            IdentityResult result = await UserManager.AddLoginAsync(this.user.UserInfo.Id,
+            IdentityResult result = await UserManager.AddLoginAsync(1,
                 new UserLoginInfo(externalData.LoginProvider, externalData.ProviderKey));
 
             if (!result.Succeeded)
@@ -233,11 +201,11 @@ namespace eventsapp.WebAPI
 
             if (model.LoginProvider == LocalLoginProvider)
             {
-                result = await UserManager.RemovePasswordAsync(this.user.UserInfo.Id);
+                result = await UserManager.RemovePasswordAsync(1);
             }
             else
             {
-                result = await UserManager.RemoveLoginAsync(this.user.UserInfo.Id,
+                result = await UserManager.RemoveLoginAsync(1,
                     new UserLoginInfo(model.LoginProvider, model.ProviderKey));
             }
 
@@ -461,46 +429,8 @@ namespace eventsapp.WebAPI
         //}
 
 
-        [HttpPost]
-        [Route("VerifyPhoneNumber")]
-        public async Task<IHttpActionResult> VerifyPhoneNumber(VerifyPhoneNumberViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (!UserManager.IsPhoneNumberConfirmed(this.user.UserInfo.Id))
-            {
-                var result = await UserManager.ChangePhoneNumberAsync(this.user.UserInfo.Id, UserManager.GetPhoneNumber(this.user.UserInfo.Id), model.Code);
-                return Ok(result.Succeeded ? "PhoneVerified" : "Failed to verify phone");
-            }
-            else
-            {
-                return Ok("Phone Number is already verified");
-            }
-        }
-
-        [HttpPost]
-        [Route("ResendPhoneNumberCode")]
-        public async Task<IHttpActionResult> ResendPhoneNumberCode(VerifyPhoneNumberViewModel model)
-        {
-            string phoneNumber = UserManager.GetPhoneNumber(this.user.UserInfo.Id);
-            string code = await UserManager.GenerateChangePhoneNumberTokenAsync(this.user.UserInfo.Id, UserManager.GetPhoneNumber(this.user.UserInfo.Id));
-            if (UserManager.SmsService != null)
-            {
-                var message = new IdentityMessage
-                {
-                    Destination = phoneNumber,
-                    Body = "Your security code is: " + code
-                };
-                // Send token
-                await UserManager.SmsService.SendAsync(message);
-            }
-
-            return Ok();
-        }
-
+      
+     
         [AllowAnonymous]
         [HttpPost]
         [Route("ResendConfirmEmail")]
@@ -561,15 +491,6 @@ namespace eventsapp.WebAPI
                 GuestOf = model.GuestOf,
                 Relation = model.Relation
             };
-            if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Athlete || model.RegistrationTypeId == (int?)RegistrationTypeEnum.Guest || model.RegistrationTypeId == (int?)RegistrationTypeEnum.Official)
-            {
-                var data = this._systemUserRepository.Query(m => m.RegistrationTypeId == (int?)RegistrationTypeEnum.Athlete || m.RegistrationTypeId == (int?)RegistrationTypeEnum.Guest || m.RegistrationTypeId == (int?)RegistrationTypeEnum.Official)
-                     .OrderByDescending(m => m.UserCode).FirstOrDefault();
-                if (data.UserCode == null)
-                    user.UserCode = 00001;
-                else
-                    user.UserCode = data.UserCode + 1;
-            }
             var QRCode = "";
             var owinContext = Request.GetOwinContext();
             var manager = owinContext.GetUserManager<ApplicationUserManager>();
@@ -597,89 +518,10 @@ namespace eventsapp.WebAPI
                         string FrontEndUrl = System.Configuration.ConfigurationManager.AppSettings["FrontEndUrl"];
                         var userData = FrontEndUrl + "/#/app/verifyVoucher/" + user.Id + "/" + model.EventId;
 
-                        if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Athlete)
-                        {
-                            // QRCode = GetQRBase64(userData, Brushes.White, Brushes.Red,user.UserCode.ToString());
-                            QRCode = GetQrcode(userData, 200, null, 0, Brushes.White, Brushes.Red, user.UserCode.ToString().PadLeft(5, '0'));
-                            user.QrImage = QRCode;
-                            await UserManager.UpdateAsync(user);
-                        }
-                        else if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Guest)
-                        {
-                            // QRCode = GetQRBase64(userData, "Blue");
-                            QRCode = GetQrcode(userData, 200, null, 0, Brushes.White, Brushes.Blue, user.UserCode.ToString().PadLeft(5, '0'));
-                            user.QrImage = QRCode;
-
-                            await UserManager.UpdateAsync(user);
-                        }
-                        else if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Official)
-                        {
-                            // QRCode = GetQRBase64(userData, "Green");
-                            QRCode = GetQrcode(userData, 200, null, 0, Brushes.White, Brushes.Green, user.UserCode.ToString().PadLeft(5, '0'));
-                            user.QrImage = QRCode;
-
-                            await UserManager.UpdateAsync(user);
-                        }
-                        if (model.EventId != 0)
-                        {
-                            var eventUserObj = new EventUser
-                            {
-                                UserId = user.Id,
-                                EventId = model.EventId,
-                                CreatedOn = System.DateTime.Now,
-                                QRCode = QRCode
-
-                            };
-                            this._eventUserRepository.Insert(eventUserObj);
-                            this._eventUserRepository.Commit();
-                        }
-                        //if (model.AthleteVouchers.Count > 0)
-                        //    foreach (var voucher in model.AthleteVouchers)
-                        //    {
-                        //        if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Athlete)
-                        //        {
-                        //            var athleteVoucherObj = new AthleteVoucher
-                        //            {
-                        //                UserId = user.Id,
-                        //                VoucherId = voucher.VoucherId,
-                        //                IsValid = true
-
-                        //            };
-                        //            this._athleteVouchersRepository.Insert(athleteVoucherObj);
-                        //            this._athleteVouchersRepository.Commit();
-                        //        }
-                        //        else if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Guest)
-                        //        {
-                        //            var guestVoucherObj = new GuestVoucher
-                        //            {
-                        //                userId = user.Id,
-                        //                voucherId = voucher.VoucherId,
-                        //                sharedBy = this.user.UserInfo.Id
-
-                        //            };
-                        //            this._guestVouchersRepository.Insert(guestVoucherObj);
-                        //            this._guestVouchersRepository.Commit();
-                        //        }
-
-
-                        //    }
+                     
                     }
 
-                    try
-                    {
-                        if (model.RegistrationTypeId == (int?)RegistrationTypeEnum.Guest)
-                        {
-                            var body = await createRegisterEmailBody(model.FirstName + " " + model.LastName, model.Email, model.Password, model.CompanyCode, QRCode, "", "", "", "", "", "", "", "", "", "", "");
-                            var result = await SendEmail("DDF Guest Registration", body, model.FirstName, model.Email);
-
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        EventsApp.Framework.ExceptionHandling.ExceptionHandlingManager.HandleException(ex,
-                           EventsApp.Framework.ExceptionHandling.ExceptionHandlingPolicies.ServiceLayer);
-                    }
-
+                   
 
                     if (identityResult != null && !identityResult.Succeeded)
                     {
@@ -737,22 +579,7 @@ namespace eventsapp.WebAPI
         }
 
 
-        [Route("GetUsersById")]
-        public async Task<IHttpActionResult> GetUsersById()
-        {
-            try
-            {
-                var user = await this._systemUserRepository.QueryAsync(x => x.Id == this.user.UserInfo.Id);
-                var userDtos = MapperHelper.Map<List<UserDto>>(user);
-                return Ok(userDtos);
-            }
-            catch (Exception)
-            {
-                return InternalServerError();
-            }
-
-        }
-
+       
         [AllowAnonymous]
         [Route("UpdateProfile")]
         public async Task<IHttpActionResult> UpdateProfile(UserDto model)
@@ -784,60 +611,12 @@ namespace eventsapp.WebAPI
 
                     IdentityResult identityResult = await UserManager.UpdateAsync(user);
 
-                    if (user.RegistrationTypeId == (int?)RegistrationTypeEnum.Athlete)
-                    {
-                        var guestsList = (await this._systemUserRepository.QueryAsync(x => x.GuestOf == user.Id)).ToList();
-                        foreach (var guest in guestsList)
-                        {
-                            guest.IsActive = user.IsActive;
-                        }
-                    }
-
-                    foreach (var voucher in model.AthleteVouchers)
-                    {
-                        var isExisting = this._athleteVouchersRepository.Query(x => x.VoucherId == voucher.Id && x.UserId == user.Id);
-                        if (isExisting == null)
-                        {
-                            var athleteVoucherObj = new AthleteVoucher
-                            {
-                                UserId = user.Id,
-                                VoucherId = voucher.VoucherId,
-                                IsValid = true
-
-                            };
-                            this._athleteVouchersRepository.Insert(athleteVoucherObj);
-                            this._athleteVouchersRepository.Commit();
-
-                        }
-
-                    }
-                    if (!identityResult.Succeeded)
+                  if (!identityResult.Succeeded)
                     {
                         return GetErrorResult(identityResult);
                     }
 
-                    var EventUser = (await this._eventUserRepository.QueryAsync(u => u.UserId == model.Id && u.EventId == model.EventId)).FirstOrDefault();
-                    if (EventUser == null)
-                    {
-                        var NewEventUser = new EventUser();
-                        NewEventUser.UserId = model.Id;
-                        NewEventUser.EventId = (int)model.EventId;
-                        NewEventUser.QRCode = model.QrImage;
-                        NewEventUser.RegistrationTypeId = (int)model.RegistrationTypeId;
-                        NewEventUser.IsApproved = model.IsActive;
-                        NewEventUser.CreatedOn = System.DateTime.Now;
-                        this._eventUserRepository.Insert(NewEventUser);
-                        this._eventUserRepository.Commit();
-                    }
-                    else
-                    {
-                        EventUser.QRCode = model.QrImage;
-                        EventUser.RegistrationTypeId = (int)model.RegistrationTypeId;
-                        EventUser.IsApproved = model.IsActive;
-                        EventUser.LastModified = System.DateTime.Now;
-                        this._eventUserRepository.Update(EventUser);
-                        this._eventUserRepository.Commit();
-                    }
+                 
 
                 }
                 catch (Exception ex)
@@ -1033,138 +812,5 @@ namespace eventsapp.WebAPI
             return body;
         }
 
-        private string GetQRBase64(string data, Brush bColor, Brush fColor, string userCode)
-        {
-            QrEncoder qrEncoder = new QrEncoder(ErrorCorrectionLevel.H);
-            QrCode qrCode = new QrCode();
-            qrEncoder.TryEncode(data, out qrCode);
-            int margin = 5;
-            int textHeight = 20;
-
-            var font = new Font(FontFamily.GenericMonospace, 12);
-            var brush = new SolidBrush(Color.Black);
-            var format = new StringFormat() { Alignment = StringAlignment.Center };
-
-            GraphicsRenderer renderer = new GraphicsRenderer(new FixedCodeSize(125, QuietZoneModules.Zero), bColor, fColor);
-            MemoryStream ms = new MemoryStream();
-
-
-
-            renderer.WriteToStream(qrCode.Matrix, ImageFormat.Png, ms);
-            var be = new Bitmap(ms);
-            Graphics ge = Graphics.FromImage(be);
-            var rect = new RectangleF(margin, be.Height - textHeight,
-                              be.Width - 2 * margin, textHeight);
-            ge.DrawString(userCode.ToString(), font, brush, rect, format);
-            byte[] byteImage = ms.ToArray();
-            var SigBase64 = Convert.ToBase64String(byteImage); //Get Base64
-            //return "data:image/png;base64," + SigBase64;
-
-            var fileName = Guid.NewGuid().ToString() + ".png";
-            var virtualfilepath = "~/Uploads/Attachment/" + fileName;
-            var absulotePath = VirtualPathUtility.ToAbsolute(virtualfilepath);
-            var physicalfilepath = HttpContext.Current.Server.MapPath(virtualfilepath);
-
-            File.WriteAllBytes(physicalfilepath, ms.ToArray());
-            return fileName;
-        }
-
-        private string GetQrcode(string code, int eSize, Image img, int iSize, Brush bColor, Brush fColor, string userCode)
-        {
-            var qrcoder = new QrEncoder(ErrorCorrectionLevel.H);
-            var qrCode = qrcoder.Encode(code);
-
-            var render = new GraphicsRenderer(new FixedModuleSize(5, QuietZoneModules.Four), fColor, bColor);
-
-            using (Stream stream = new MemoryStream())
-            {
-                eSize = eSize > 0 ? eSize : 200;
-
-                render.WriteToStream(qrCode.Matrix, ImageFormat.Png, stream, new Point(10, 10));
-
-                var be = new Bitmap(stream);
-                be = ResizeImage(be, eSize, eSize);
-                Graphics ge = Graphics.FromImage(be);
-
-                var imageLogo = HttpContext.Current.Server.MapPath(VirtualPathUtility.ToAbsolute("~/Uploads/Attachment/Ddf.png"));
-
-                img = Image.FromFile(imageLogo);
-                if (img != null)
-                {
-                    iSize = iSize > 0 ? iSize : 50;
-                    img = ResizeImage(img, iSize, iSize);
-
-                    var bi = new Bitmap(iSize + 10, iSize + 10);
-                    Graphics gi = Graphics.FromImage(bi);
-                    gi.Clear(Color.White);
-                    gi.DrawImage(img, 5, 5, iSize, iSize);
-
-                    ge.DrawImage(bi, (eSize - iSize) / 2, (eSize - iSize) / 2, iSize, iSize);
-                }
-                MemoryStream ms = new MemoryStream();
-
-                render.WriteToStream(qrCode.Matrix, ImageFormat.Png, ms);
-
-                byte[] byteImage = ms.ToArray();
-
-                //For adding text
-
-                //int margin = 5;
-                //int textHeight = 20;
-
-                //var font = new Font(FontFamily.GenericMonospace, 12);
-                //var brush = new SolidBrush(Color.Black);
-                //var format = new StringFormat() { Alignment = StringAlignment.Center };
-                //var txt = new Bitmap(ms);
-                //Graphics gtxt = Graphics.FromImage(txt);
-                //var rect = new RectangleF(margin, be.Height - textHeight,
-                //                  be.Width - 2 * margin, textHeight);
-                //gtxt.DrawString(userCode.ToString(), font, brush, rect, format);
-
-
-                var SigBase64 = Convert.ToBase64String(byteImage); //Get Base64
-                var fileName = Guid.NewGuid().ToString() + ".png";
-                var virtualfilepath = "~/Uploads/Attachment/" + fileName;
-                var absulotePath = VirtualPathUtility.ToAbsolute(virtualfilepath);
-                var physicalfilepath = HttpContext.Current.Server.MapPath(virtualfilepath);
-
-                File.WriteAllBytes(physicalfilepath, ms.ToArray());
-                return fileName;
-
-            }
-        }
-
-        private static Bitmap ResizeImage(Image sourceImage, int width, int height)
-        {
-            Graphics graphics = null;
-            try
-            {
-                var b = new Bitmap(width, height);
-                graphics = Graphics.FromImage(b);
-
-
-                graphics.CompositingQuality = CompositingQuality.HighQuality;
-
-                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-
-                graphics.SmoothingMode = SmoothingMode.HighQuality;
-
-                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                graphics.Clear(Color.Transparent);
-
-                graphics.DrawImage(sourceImage, new Rectangle(0, 0, width, height),
-                                   new Rectangle(0, 0, sourceImage.Width, sourceImage.Height), GraphicsUnit.Pixel);
-                return b;
-            }
-            catch
-            {
-                return null;
-            }
-            finally
-            {
-                if (graphics != null)
-                    graphics.Dispose();
-            }
-        }
-    }
+     }
 }

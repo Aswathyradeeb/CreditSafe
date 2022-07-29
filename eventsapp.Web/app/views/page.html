@@ -1,11 +1,4 @@
-<!--<div class="container-fluid">
-    <div class="container-alt" style="bottom: -10px;margin-top: 15px;">
-        <div class="btn-group" style="float: left!important;">
-            <label id="btn-{{localeId}}" ng-repeat="(localeId, langName) in language.available" ng-model="radioModel" uib-btn-radio="'Left'" ng-click="language.set(localeId, $event)" class="btn btn-default ng-pristine ng-untouched ng-valid active" style="border-right:2px solid #ddd5d5;"
-                   ng-style="langName == 'English'? {'float':'left', 'font-family': 'Roboto'}: {'float':'right', 'font-family': 'Droid Arabic Kufi'}">{{langName}}</label>
-        </div>
-    </div>
-</div>-->
+
 <div ui-view="" autoscroll="false" class="ng-fadeOutZoom ng-fluid"></div>
 <toaster-container toaster-options="{'close-button': true}"></toaster-container>
 <div ng-include="'app/views/page.footer.html'" class="p-lg text-center"></div>

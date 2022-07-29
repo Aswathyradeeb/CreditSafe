@@ -8,7 +8,6 @@
 }
 
     .topbar .topbar-left {
-        background: #3ac9d6;
         float: left;
         /* text-align: center; */
         height: 60px;
@@ -19,7 +18,7 @@
     }
 
 .navbar-default {
-    background-color: #3ac9d6;
+    background-color: #ffffff;
     border-radius: 0;
     border: none;
     margin-bottom: 0;
@@ -136,7 +135,7 @@ body.fixed-left .side-menu.left {
     }
 
 .button-menu-mobile {
-    background: transparent;
+    background: #ebeff1;
     border: none;
     color: rgba(255, 255, 255, 0.8);
     padding: 0 20px;

@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 07/08/2019 11:36:13
--- Generated from EDMX file: D:\workspace\Event\Events-Development\eventsapp\EventsApp.Domain\Entities\eventsappEntities.edmx
+-- Date Created: 07/28/2022 21:24:22
+-- Generated from EDMX file: E:\workspace\CreditSafe\EventsApp.Domain\Entities\eventsappEntities.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [eventsapp];
+USE [CreditSafe];
 GO
 GO
 

@@ -388,7 +388,7 @@ a:focus {
     background-clip: padding-box;
     margin-bottom: 20px;
     background-color: #ffffff;
-    min-height: 300px;
+    min-height: 160px;
 }
 /* Search box */
 .search-box {

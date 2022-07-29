@@ -105,64 +105,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Push Notifications\NotificationConnector.cs" />
-    <Compile Include="Schedular\VoucherJobShcedular.cs" />
     <Compile Include="Service References\MessengerService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Services\Implementation\AddtoFavoriteService.cs" />
-    <Compile Include="Services\Implementation\AthleteService.cs" />
-    <Compile Include="Services\Implementation\EmailService.cs" />
-    <Compile Include="Services\Implementation\EventPersonService.cs" />
-    <Compile Include="Services\Implementation\EventCompanyService.cs" />
-    <Compile Include="Services\Implementation\AgendumService.cs" />
-    <Compile Include="Services\Implementation\AgendaInterestedService.cs" />
-    <Compile Include="Services\Implementation\EventUserService.cs" />
-    <Compile Include="Services\Implementation\NotifyService.cs" />
-    <Compile Include="Services\Implementation\PackageService.cs" />
-    <Compile Include="Services\Implementation\PaymentService.cs" />
-    <Compile Include="Services\Implementation\PollingService.cs" />
-    <Compile Include="Services\Implementation\RestaurantService.cs" />
-    <Compile Include="Services\Implementation\SurveyResultService.cs" />
-    <Compile Include="Services\Implementation\NotificationsService.cs" />
-    <Compile Include="Services\Implementation\KPIService.cs" />
-    <Compile Include="Services\Implementation\SurveyService.cs" />
-    <Compile Include="Services\Implementation\PushNotificationService.cs" />
-    <Compile Include="Services\Implementation\CompanyService.cs" />
-    <Compile Include="Services\Implementation\SpeakerService.cs" />
-    <Compile Include="Services\Implementation\PhotoService.cs" />
-    <Compile Include="Services\Implementation\EventService.cs" />
-    <Compile Include="Services\Implementation\MessageService.cs" />
-    <Compile Include="Services\Implementation\VoucherService.cs" />
-    <Compile Include="Services\Implementation\UserService.cs" />
-    <Compile Include="Services\Interface\IAddtoFavoriteService.cs" />
-    <Compile Include="Services\Interface\IAthleteService.cs" />
-    <Compile Include="Services\Interface\IEmailService.cs" />
-    <Compile Include="Services\Interface\IEventPersonService.cs" />
-    <Compile Include="Services\Interface\IEventCompanyService.cs" />
-    <Compile Include="Services\Interface\IPackageService.cs" />
-    <Compile Include="Services\Interface\IAgendumService.cs" />
-    <Compile Include="Services\Interface\IAgendaInterestedService.cs" />
-    <Compile Include="Services\Interface\IEventUserService.cs" />
-    <Compile Include="Services\Interface\INotifyService.cs" />
-    <Compile Include="Services\Interface\IPaymentService.cs" />
-    <Compile Include="Services\Interface\IPollingService.cs" />
-    <Compile Include="Services\Interface\IPollService.cs" />
-    <Compile Include="Services\Interface\IRestaurantService.cs" />
-    <Compile Include="Services\Interface\ISurveyResultService.cs" />
-    <Compile Include="Services\Interface\INotificationsService.cs" />
-    <Compile Include="Services\Interface\IKPIService.cs" />
-    <Compile Include="Services\Interface\ISurveyService.cs" />
-    <Compile Include="Services\Interface\IPushNotificationService.cs" />
-    <Compile Include="Services\Interface\ICompanyService.cs" />
-    <Compile Include="Services\Interface\ISpeakerService.cs" />
-    <Compile Include="Services\Interface\IEventService.cs" />
-    <Compile Include="Services\Interface\IPhotoService.cs" />
-    <Compile Include="Services\Interface\IMessageService.cs" />
-    <Compile Include="Services\Interface\IVoucherService.cs" />
-    <Compile Include="Services\Interface\IUserService.cs" />
+    <Compile Include="Services\Implementation\CityService.cs" />
+    <Compile Include="Services\Interface\ICityService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EventsApp.Domain\EventsApp.Domain.csproj">
@@ -188,7 +137,6 @@
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
-    <None Include="Push Notifications\NLog.config" />
     <None Include="Service References\MessengerService\Eventsapp.Services.MessengerService.AdZoneCampaignStatisticsApiResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -233,9 +181,7 @@
     </None>
     <None Include="Service References\MessengerService\Messenger.wsdl" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Push Notifications\Logs\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />

@@ -10,11 +10,10 @@
         .module('eventsapp')
         .controller('HeaderNavController', HeaderNavController);
     /* @ngInject */    
-    function HeaderNavController($rootScope, LoginService, $state, UserProfile) {
+    function HeaderNavController($rootScope, $state) {
       var vm = this;
       vm.headerMenuCollapsed = true;
-      vm.user = UserProfile.getProfile();
-
+   
       vm.toggleHeaderMenu = function() {
         vm.headerMenuCollapsed = !vm.headerMenuCollapsed;
       };
@@ -30,6 +29,6 @@
       });
 
     }
-    HeaderNavController.$inject = ['$rootScope', 'LoginService', '$state', 'UserProfile'];
+    HeaderNavController.$inject = ['$rootScope', '$state'];
 
 })();
